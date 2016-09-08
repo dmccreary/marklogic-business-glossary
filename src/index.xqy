@@ -14,6 +14,7 @@ let $content :=
       using MarkLogic to manage business metadata.</p>
        
       <a href="/views/index.xqy">List Views</a><br/>
+      <a href="/scripts/index.xqy">List Scripts</a><br/>
       <a href="/unit-tests/index.xqy">Unit Tests</a><br/>
 </div>
 

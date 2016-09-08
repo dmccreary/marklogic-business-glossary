@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:rec="http://www.w3.org/2001/02pd/rec54#"
+  xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+  xmlns:glos="http://www.w3.org/2003/03/glossary-project/schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <rdf:Description rdf:about="">
+    <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/"
+      rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/TR/2003/REC-xforms-20031014/">
+    <dc:date>2003-10-14</dc:date>
+    <dc:title>XForms 1.0</dc:title>
+    <doc:version>http://www.w3.org/TR/2003/REC-xforms-20031014/</doc:version>
+  </rdf:Description>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#binding">
+    <skos:prefLabel xml:lang="en">binding</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> A "binding" connects an instance data node to a form control or to a model item
+          constraint by using a binding expression as a locater.</p>
+      </div>
+      <div>
+        <p> An <a href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xpath-1.0"
+            shape="rect">[XPath 1.0]</a> PathExpr used in a binding.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#bindingExpression">
+    <skos:prefLabel xml:lang="en">binding expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An <a href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xpath-1.0"
+            shape="rect">[XPath 1.0]</a> PathExpr used in a binding.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#modelBindingExpression">
+    <skos:prefLabel xml:lang="en">model binding expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An <a href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xpath-1.0"
+            shape="rect">[XPath 1.0]</a> PathExpr used in a binding that declares a model item
+          property.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#uIOrActionBindingExpression">
+    <skos:prefLabel xml:lang="en">UI or action binding expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An <a href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xpath-1.0"
+            shape="rect">[XPath 1.0]</a> PathExpr used in binding a form control to the instance, or
+          to specify the node or node-set for operation by an action.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#computedExpression">
+    <skos:prefLabel xml:lang="en">computed expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An <a href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xpath-1.0"
+            shape="rect">[XPath 1.0]</a> expression used by model item properties such as relevant
+          and calculate to include dynamic functionality in XForms.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#containingDocument">
+    <skos:prefLabel xml:lang="en">containing document</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> A specific document, for example an XHTML document, in which one or more
+          &amp;lt;model&amp;gt; elements are found.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#datatype">
+    <skos:prefLabel xml:lang="en">datatype</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> From XML Schema <a
+            href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xschema-2"
+            shape="rect">[XML Schema part 2]</a>: A 3-tuple, consisting of a) a set of distinct
+          values, called its value space, b) a set of lexical representations, called its lexical
+          space, and c) a set of facets that characterize properties of the value space, individual
+          values or lexical items.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#facet">
+    <skos:prefLabel xml:lang="en">facet</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> From XML Schema <a
+            href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xschema-2"
+            shape="rect">[XML Schema part 2]</a>: A single defining aspect of a value space.
+          Generally speaking, each facet characterizes a value space along independent axes or
+          dimensions.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#firstNodeRule">
+    <skos:prefLabel xml:lang="en">first node rule</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> When a UI Single-Node Binding attribute selects a node-set of size &amp;gt; 1, the first
+          node in the node-set is used.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#formControl">
+    <skos:prefLabel xml:lang="en">form control</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An XForms user interface control that serves as a point of user interaction.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#hostLanguage">
+    <skos:prefLabel xml:lang="en">host language</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An XML vocabulary, such as XHTML, into which XForms is embedded.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#instanceData">
+    <skos:prefLabel xml:lang="en">instance data</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An internal tree representation of the values and state of all the instance data nodes
+          associated with a particular form.</p>
+        <p> An <a href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xpath-1.0"
+            shape="rect">[XPath 1.0]</a> node from the instance data.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#instanceDataNode">
+    <skos:prefLabel xml:lang="en">instance data node</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An <a href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xpath-1.0"
+            shape="rect">[XPath 1.0]</a> node from the instance data.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#lexicalSpace">
+    <skos:prefLabel xml:lang="en">lexical space</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> From XML Schema <a
+            href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xschema-2"
+            shape="rect">[XML Schema part 2]</a>: A lexical space is the set of valid literals for a
+          datatype.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#modelItem">
+    <skos:prefLabel xml:lang="en">model item</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An instance data node with associated constraints.</p>
+      </div>
+      <div>
+        <p> An XForms-specific annotation to an instance data node.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#modelItemProperty">
+    <skos:prefLabel xml:lang="en">model item property</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> An XForms-specific annotation to an instance data node.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#schemaConstraint">
+    <skos:prefLabel xml:lang="en">schema constraint</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> A restriction, applied to form data, based on XML Schema datatypes.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#valueSpace">
+    <skos:prefLabel xml:lang="en">value space</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> From XML Schema <a
+            href="http://www.w3.org/TR/2003/REC-xforms-20031014/sliceB.html#ref-xschema-2"
+            shape="rect">[XML Schema part 2]</a>: A set of values for a given datatype. Each value
+          in the value space of a datatype is denoted by one or more literals in its lexical
+          space.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#xFormsModel">
+    <skos:prefLabel xml:lang="en">xForms model</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> The non-visible definition of an XML form as specified by XForms. The XForms Model
+          defines the individual model items and constraints and other run-time aspects of
+          XForms.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+  <skos:Concept
+    rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xforms#xFormsProcessor">
+    <skos:prefLabel xml:lang="en">xForms processor</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> A software application or program that implements and conforms to the XForms
+          specification.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2003/REC-xforms-20031014/"/>
+  </skos:Concept>
+</rdf:RDF>
