@@ -52,3 +52,37 @@ if (cts:uri-match($uri))
   then true()
   else false()
 };
+
+declare function util:list-views() as element() {
+let $options :=
+<options xmlns="xdmp:eval">
+  <database>{xdmp:modules-database()}</database>
+</options>
+
+let $uris := xdmp:eval("cts:uri-match('/views/*.xqy')", (), $options)
+return
+<div>
+Count = {count($uris) -1 }<br/>
+<table class="table table-striped table-bordered table-hover table-condensed">
+   <thead>
+     <tr>
+       <th>File</th>
+       <th>Description</th>
+     </tr>
+   </thead>
+    <tbody>
+        {
+        for $uri in $uris
+        return
+        if ($uri = '/views/index.xqy')
+           then ()
+           else
+           <tr>
+              <td><a href="{$uri}">{$uri}</a></td>
+           </tr>
+        
+        }
+    </tbody>
+</table>
+</div>
+};

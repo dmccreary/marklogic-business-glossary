@@ -1,7 +1,7 @@
 xquery version "1.0-ml";
-import module namespace style = "http://danmccreary.com/data-hub/style" at "/modules/style.xqy";
+import module namespace style = "http://danmccreary.com/style" at "/modules/style.xqy";
 
-import module namespace u = "http://danmccreary.com/data-hub/util" at "/modules/util.xqy";
+import module namespace u = "http://danmccreary.com/util" at "/modules/util.xqy";
 
 
 let $title := 'List Standard Views'
