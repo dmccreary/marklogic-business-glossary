@@ -41,8 +41,12 @@ xcc=port=
 ### Deploying Code
 *This step describes how to deploy your Roxy application into your MarkLogic Server modules database. If you have elected to run your code locally out of the filesystem you do not need to do this.*
 
-1. Open a command prompt in the root folder of Roxy
+1. Open a command prompt in the root folder of the MarkLogic Business Glossary
 2. `$ ml local deploy modules`
+3. `$ ml local deploy content`
+
+Now point your web browser to http://localhost:8040
+Run the splitter.
 
 ### Congratulations
 **Congratulations!** 
