@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:n6="http://purl.org/dc/elements/1.1/" xmlns:n4="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:n5="http://www.w3.org/2001/02pd/rec54#" xmlns:n7="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:n3="http://www.w3.org/2003/03/glossary-project/schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:Description rdf:about="">
+  <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231" />
+</rdf:Description>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#root">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">root</skos:prefLabel>
+    <skos:definition xml:lang="en">There is exactly one element, called the root, or document element, no part of which appears in the content of any other element.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#entities">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">entities</skos:prefLabel>
+    <skos:definition xml:lang="en">An XML document may consist of one or many storage units. These are called entities; they all have content and are all (except for the document entity and the external DTD subset) identified by entity name.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#internalEntity">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">internal entity</skos:prefLabel>
+    <skos:definition xml:lang="en">If the entity definition is an EntityValue, the defined entity is called an internal entity. There is no separate physical storage object, and the content of the entity is given in the declaration.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#atUserOption">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">at user option</skos:prefLabel>
+    <skos:definition xml:lang="en">Conforming software MAY or MUST (depending on the modal verb in the sentence) behave as described; if it does, it MUST provide users a means to enable or disable the behavior described.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#parameter-entityReferences">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">parameter-entity references</skos:prefLabel>
+    <skos:definition xml:lang="en">Parameter-entity references use percent-sign (%) and semicolon (;) as delimiters.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#documentEntity">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">document entity</skos:prefLabel>
+    <skos:definition xml:lang="en">The document entity serves as the root of the entity tree and a starting-point for an XML processor.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#literalEntityValue">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">literal entity value</skos:prefLabel>
+    <skos:definition xml:lang="en">For an external entity, the literal entity value is the exact text contained in the entity.</skos:definition>
+    <skos:definition xml:lang="en">For an internal entity, the literal entity value is the quoted string actually present in the entity declaration, corresponding to the non-terminal EntityValue.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#match">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">match</skos:prefLabel>
+    <skos:definition xml:lang="en">(Of strings or names:) Two strings or names being compared MUST be identical. Characters with multiple possible representations in Unicode (e.g. characters with both precomposed and base+diacritic forms) match only if they have the same representation in both strings. No case folding is performed. (Of strings and rules in the grammar:) A string matches a grammatical production if it belongs to the language generated by that production. (Of content and content models:) An element matches its declaration when it conforms in the fashion described in the constraint .</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#attributeValue">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">attribute value</skos:prefLabel>
+    <skos:definition xml:lang="en">the content of the AttValue (the text between the ' or " delimiters) as the attribute value.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#attributeSpecifications">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">attribute specifications</skos:prefLabel>
+    <skos:definition xml:lang="en">The Name-AttValue pairs are referred to as the attribute specifications of the element</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#xMLProcessor">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">XML processor</skos:prefLabel>
+    <skos:definition xml:lang="en">A software module called an XML processor is used to read XML documents and provide access to their content and structure.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#empty-elementTag">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">empty-element tag</skos:prefLabel>
+    <skos:definition xml:lang="en">An empty-element tag takes a special form:</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#publicIdentifier">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">public identifier</skos:prefLabel>
+    <skos:definition xml:lang="en">In addition to a system identifier, an external identifier MAY include a public identifier.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#externalEntity">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">external entity</skos:prefLabel>
+    <skos:definition xml:lang="en">If the entity is not internal, it is an external entity, declared as follows:</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#escape">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">escape</skos:prefLabel>
+    <skos:definition xml:lang="en">Entity and character references MAY both be used to escape the left angle bracket, ampersand, and other delimiters. A set of general entities (amp, lt, gt, apos, quot) is specified for this purpose. Numeric character references MAY also be used; they are expanded immediately when recognized and MUST be treated as character data, so the numeric character references &amp;#60; and &amp;#38;MAY be used to escape &amp;lt; and &amp; when they occur in character data.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#validatingProcessors">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">validating processors</skos:prefLabel>
+    <skos:definition xml:lang="en">Validating processorsMUST, at user option, report violations of the constraints expressed by the declarations in the DTD, and failures to fulfill the validity constraints given in this specification.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#process">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">process</skos:prefLabel>
+    <skos:definition xml:lang="en">While they are not required to check the document for validity, they are REQUIRED to process all the declarations they read in the internal DTD subset and in any parameter entity that they read, up to the first reference to a parameter entity that they do not read; that is to say, they MUST use the information in those declarations to normalize attribute values, include the replacement text of internal entities, and supply default attribute values.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#mixedContent">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">mixed content</skos:prefLabel>
+    <skos:definition xml:lang="en">An element type has mixed content when elements of that type MAY contain character data, optionally interspersed with child elements.</skos:definition>
+  </skos:Concept>
+  <rdf:Description rdf:about="http://www.w3.org/TR/xml11">
+    <n6:title>Extensible Markup Language (XML) 1.1</n6:title>
+    <n6:date>2004-02-04</n6:date>
+    <n7:version>http://www.w3.org/TR/2004/REC-xml11-20040204/</n7:version>
+    <n5:editor>
+      <rdf:Description>
+        <n4:firstName>François</n4:firstName>
+        <n4:mailbox rdf:resource="mailto:fyergeau@alis.com"/>
+        <n4:lastName>Yergeau</n4:lastName>
+      </rdf:Description>
+    </n5:editor>
+    <n5:editor>
+      <rdf:Description>
+        <n4:firstName>Eve</n4:firstName>
+        <n4:mailbox rdf:resource="mailto:eve.maler@east.sun.com"/>
+        <n4:lastName>Maler</n4:lastName>
+      </rdf:Description>
+    </n5:editor>
+    <n5:editor>
+      <rdf:Description>
+        <n4:firstName>John</n4:firstName>
+        <n4:mailbox rdf:resource="mailto:cowan@ccil.org"/>
+        <n4:lastName>Cowan</n4:lastName>
+      </rdf:Description>
+    </n5:editor>
+    <n5:editor>
+      <rdf:Description>
+        <n4:firstName>Tim</n4:firstName>
+        <n4:mailbox rdf:resource="mailto:tbray@textuality.com"/>
+        <n4:lastName>Bray</n4:lastName>
+      </rdf:Description>
+    </n5:editor>
+    <n5:editor>
+      <rdf:Description>
+        <n4:firstName>C. M.</n4:firstName>
+        <n4:mailbox rdf:resource="mailto:cmsmcq@w3.org"/>
+        <n4:lastName>Sperberg-McQueen</n4:lastName>
+      </rdf:Description>
+    </n5:editor>
+    <n5:editor>
+      <rdf:Description>
+        <n4:firstName>Jean</n4:firstName>
+        <n4:mailbox rdf:resource="mailto:jeanpa@microsoft.com"/>
+        <n4:lastName>Paoli</n4:lastName>
+      </rdf:Description>
+    </n5:editor>
+  </rdf:Description>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#forCompatibility">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">for compatibility</skos:prefLabel>
+    <skos:definition xml:lang="en">Marks a sentence describing a feature of XML included solely to ensure that XML remains compatible with SGML.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#fatalError">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">fatal error</skos:prefLabel>
+    <skos:definition xml:lang="en">An error which a conforming XML processorMUST detect and report to the application. After encountering a fatal error, the processor MAY continue processing the data to search for further errors and MAY report such errors to the application. In order to support correction of errors, the processor MAY make unprocessed data from the document (with intermingled character data and markup) available to the application. Once a fatal error is detected, however, the processor MUST NOT continue normal processing (i.e., it MUST NOT continue to pass character data and information about the document's logical structure to the application in the normal way).</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#attribute-listDeclarations">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">attribute-list declarations</skos:prefLabel>
+    <skos:definition xml:lang="en">Attribute-list declarations specify the name, data type, and default value (if any) of each attribute associated with a given element type:</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#referenceInDTD">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">reference in DTD</skos:prefLabel>
+    <skos:definition xml:lang="en">as a reference within either the internal or external subsets of the DTD, but outside of an EntityValue, AttValue, PI, Comment, SystemLiteral, PubidLiteral, or the contents of an ignored conditional section (see )..</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#replacementText">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">replacement text</skos:prefLabel>
+    <skos:definition xml:lang="en">For an internal entity, the replacement text is the content of the entity, after replacement of character references and parameter-entity references.</skos:definition>
+    <skos:definition xml:lang="en">For an external entity, the replacement text is the content of the entity, after stripping the text declaration (leaving any surrounding white space) if there is one but without any replacement of character references or parameter-entity references.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#included">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">included</skos:prefLabel>
+    <skos:definition xml:lang="en">An entity is included when its replacement text is retrieved and processed, in place of the reference itself, as though it were part of the document at the location the reference was recognized.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#enumeratedAttributes">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">enumerated attributes</skos:prefLabel>
+    <skos:definition xml:lang="en">Enumerated attributesMUST take one of a list of values provided in the declaration</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#forInteroperability">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">for interoperability</skos:prefLabel>
+    <skos:definition xml:lang="en">Marks a sentence describing a non-binding recommendation included to increase the chances that XML documents can be processed by the existing installed base of SGML processors which predate the WebSGML Adaptations Annex to ISO 8879.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#conditionalSections">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">conditional sections</skos:prefLabel>
+    <skos:definition xml:lang="en">Conditional sections are portions of the document type declaration external subsetor of external parameter entities which are included in, or excluded from, the logical structure of the DTD based on the keyword which governs them.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#attributeName">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">attribute name</skos:prefLabel>
+    <skos:definition xml:lang="en">with the Name in each pair referred to as the attribute name</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#processingInstructions">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">processing instructions</skos:prefLabel>
+    <skos:definition xml:lang="en">Processing instructions (PIs) allow documents to contain instructions for applications.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#comments">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">comments</skos:prefLabel>
+    <skos:definition xml:lang="en">CommentsMAY appear anywhere in a document outside other markup; in addition, they MAY appear within the document type declaration at places allowed by the grammar. They are not part of the document's character data; an XML processor MAY, but need not, make it possible for an application to retrieve the text of comments. For compatibility, the string -- (double-hyphen) MUST NOT occur within comments.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#xMLDocument">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">XML document</skos:prefLabel>
+    <skos:definition xml:lang="en">A data object is an XML document if it is well-formed, as defined in this specification. A well-formed XML document MAY in addition be valid if it meets certain further constraints.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#elementContent">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">element content</skos:prefLabel>
+    <skos:definition xml:lang="en">An element type has element content when elements of that type MUST contain only child elements (no character data), optionally separated by white space (characters matching the nonterminal S).</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#parsedEntity">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">parsed entity</skos:prefLabel>
+    <skos:definition xml:lang="en">The contents of a parsed entity are referred to as its replacement text; this text is considered an integral part of the document.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#entityReference">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">entity reference</skos:prefLabel>
+    <skos:definition xml:lang="en">An entity reference refers to the content of a named entity.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#character">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">character</skos:prefLabel>
+    <skos:definition xml:lang="en">A character is an atomic unit of text as specified by ISO/IEC 10646 . Legal characters are tab, carriage return, line feed, and the legal characters of Unicode and ISO/IEC 10646. The versions of these standards cited in were current at the time this document was prepared. New characters may be added to these standards by amendments or new editions. Consequently, XML processors MUST accept any character in the range specified for Char.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#markup">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">markup</skos:prefLabel>
+    <skos:definition xml:lang="en">Markup takes the form of start-tags, end-tags, empty-element tags, entity references, character references, comments, CDATA section delimiters, document type declarations, processing instructions, XML declarations, text declarations, and any white space that is at the top level of the document entity (that is, outside the document element and not inside any other markup).</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#notationDeclarations">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">notation declarations</skos:prefLabel>
+    <skos:definition xml:lang="en">Notation declarations provide a name for the notation, for use in entity and attribute-list declarations and in attribute specifications, and an external identifier for the notation which may allow an XML processor or its client application to locate a helper application capable of processing data in the given notation.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#text">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">text</skos:prefLabel>
+    <skos:definition xml:lang="en">A parsed entity contains text, a sequence of characters, which may represent markup or character data.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#valid">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">valid</skos:prefLabel>
+    <skos:definition xml:lang="en">An XML document is valid if it has an associated document type declaration and if the document complies with the constraints expressed in it.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#parameterEntities">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">parameter entities</skos:prefLabel>
+    <skos:definition xml:lang="en">Parameter entities are parsed entities for use within the DTD.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#empty">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">empty</skos:prefLabel>
+    <skos:definition xml:lang="en">An element with no content is said to be empty.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#characterData">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">character data</skos:prefLabel>
+    <skos:definition xml:lang="en">All text that is not markup constitutes the character data of the document.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#validityConstraint">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">validity constraint</skos:prefLabel>
+    <skos:definition xml:lang="en">A rule which applies to all valid XML documents. Violations of validity constraints are errors; they MUST, at user option, be reported by validating XML processors.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#xMLDeclaration">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">XML declaration</skos:prefLabel>
+    <skos:definition xml:lang="en">XML 1.1 documents MUST begin with an XML declaration which specifies the version of XML being used.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#markupDeclaration">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">markup declaration</skos:prefLabel>
+    <skos:definition xml:lang="en">A markup declaration is an element type declaration, an attribute-list declaration, an entity declaration, or a notation declaration.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#elements">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">elements</skos:prefLabel>
+    <skos:definition xml:lang="en">Each XML document contains one or more elements, the boundaries of which are either delimited by start-tags and end-tags, or, for empty elements, by an empty-element tag. Each element has a type, identified by name, sometimes called its generic identifier (GI), and MAY have a set of attribute specifications.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#unparsedEntity">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">unparsed entity</skos:prefLabel>
+    <skos:definition xml:lang="en">An unparsed entity is a resource whose contents may or may not be text, and if text, may be other than XML. Each unparsed entity has an associated notation, identified by name. Beyond a requirement that an XML processor make the identifiers for the entity and notation available to the application, XML places no constraints on the contents of unparsed entities.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#well-formednessConstraint">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">well-formedness constraint</skos:prefLabel>
+    <skos:definition xml:lang="en">A rule which applies to all well-formed XML documents. Violations of well-formedness constraints are fatal errors.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#elementTypeDeclaration">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">element type declaration</skos:prefLabel>
+    <skos:definition xml:lang="en">An element type declaration takes the form:</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#systemIdentifier">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">system identifier</skos:prefLabel>
+    <skos:definition xml:lang="en">The SystemLiteral is called the entity's system identifier. It is meant to be converted to a URI reference (as defined in , updated by ), as part of the process of dereferencing it to obtain input for the XML processor to construct the entity's replacement text.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#referenceInEntityValue">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">reference in entity value</skos:prefLabel>
+    <skos:definition xml:lang="en">as a reference within a parameter or internal entity's literal entity value in the entity's declaration; corresponds to the nonterminal EntityValue.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#name">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">name</skos:prefLabel>
+    <skos:definition xml:lang="en">A Name is a token beginning with a letter or one of a few punctuation characters, and continuing with letters, digits, hyphens, underscores, colons, or full stops, together known as name characters.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#parent">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">parent</skos:prefLabel>
+    <skos:definition xml:lang="en">As a consequence of this, for each non-root element C in the document, there is one other element P in the document such that C is in the content of P, but is not in the content of any other element that is in the content of P. P is referred to as the parent of C, and C as a child of P.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#contentModel">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">content model</skos:prefLabel>
+    <skos:definition xml:lang="en">In this case, the constraint includes a content model, a simple grammar governing the allowed types of the child elements and the order in which they are allowed to appear.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#occursAsAttributeValue">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">occurs as attribute value</skos:prefLabel>
+    <skos:definition xml:lang="en">as a Name, not a reference, appearing either as the value of an attribute which has been declared as type ENTITY, or as one of the space-separated tokens in the value of an attribute which has been declared as type ENTITIES.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#referenceInAttributeValue">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">reference in attribute value</skos:prefLabel>
+    <skos:definition xml:lang="en">as a reference within either the value of an attribute in a start-tag, or a default value in an attribute declaration; corresponds to the nonterminal AttValue.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#well-formed">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">well-formed</skos:prefLabel>
+    <skos:definition xml:lang="en">A textual object is a well-formed XML document if:</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#documentTypeDeclaration">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">document type declaration</skos:prefLabel>
+    <skos:definition xml:lang="en">The XML document type declaration contains or points to markup declarations that provide a grammar for a class of documents. This grammar is known as a document type definition, or DTD. The document type declaration can point to an external subset (a special kind of external entity) containing markup declarations, or can contain the markup declarations directly in an internal subset, or can do both. The DTD for a document consists of both subsets taken together.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#generalEntities">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">general entities</skos:prefLabel>
+    <skos:definition xml:lang="en">General entities are entities for use within the document content. In this specification, general entities are sometimes referred to with the unqualified term entity when this leads to no ambiguity.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#application">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">application</skos:prefLabel>
+    <skos:definition xml:lang="en">It is assumed that an XML processor is doing its work on behalf of another module, called the application.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#cDATASections">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">CDATA sections</skos:prefLabel>
+    <skos:definition xml:lang="en">CDATA sectionsMAY occur anywhere character data may occur; they are used to escape blocks of text containing characters which would otherwise be recognized as markup. CDATA sections begin with the string &amp;lt;![CDATA[ and end with the string ]]&amp;gt;:</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#referenceInContent">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">reference in content</skos:prefLabel>
+    <skos:definition xml:lang="en">as a reference anywhere after the start-tag and before the end-tag of an element; corresponds to the nonterminal content.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#default">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">default</skos:prefLabel>
+    <skos:definition xml:lang="en">If the declaration is neither #REQUIRED nor #IMPLIED, then the AttValue value contains the declared default value; the #FIXED keyword states that the attribute MUST always have the default value. When an XML processor encounters an element without a specification for an attribute for which it has read a default value declaration, it MUST report the attribute with the declared default value to the application.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#characterReference">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">character reference</skos:prefLabel>
+    <skos:definition xml:lang="en">A character reference refers to a specific character in the ISO/IEC 10646 character set, for example one not directly accessible from available input devices.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#end-tag">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">end-tag</skos:prefLabel>
+    <skos:definition xml:lang="en">The end of every element that begins with a start-tag MUST be marked by an end-tag containing a name that echoes the element's type as given in the start-tag:</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#content">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">content</skos:prefLabel>
+    <skos:definition xml:lang="en">The text between the start-tag and end-tag is called the element's content:</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#externalMarkupDeclaration">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">external markup declaration</skos:prefLabel>
+    <skos:definition xml:lang="en">An external markup declaration is defined as a markup declaration occurring in the external subset or in a parameter entity (external or internal, the latter being included because non-validating processors are not required to read them).</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#notations">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">notations</skos:prefLabel>
+    <skos:definition xml:lang="en">Notations identify by name the format of unparsed entities, the format of elements which bear a notation attribute, or the application to which a processing instruction is addressed.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#start-tag">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">start-tag</skos:prefLabel>
+    <skos:definition xml:lang="en">The beginning of every non-empty XML element is marked by a start-tag.</skos:definition>
+  </skos:Concept>
+  <skos:Concept xmlns="http://www.w3.org/1999/xhtml" rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xml11#error">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-xml11-20040204/"/>
+    <skos:prefLabel xml:lang="en">error</skos:prefLabel>
+    <skos:definition xml:lang="en">A violation of the rules of this specification; results are undefined. Unless otherwise specified, failure to observe a prescription of this specification indicated by one of the keywords MUST, REQUIRED, MUST NOT, SHALL and SHALL NOT is an error. Conforming software MAY detect and report an error and MAY recover from it.</skos:definition>
+  </skos:Concept>
+</rdf:RDF>

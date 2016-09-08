@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:rec="http://www.w3.org/2001/02pd/rec54#" xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:glos="http://www.w3.org/2003/03/glossary-project/schema#">
+<rdf:Description rdf:about="">
+  <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231" />
+</rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/TR/rdf-mt/">
+    <dc:date>2004-02-10</dc:date>
+    <dc:title>RDF Semantics</dc:title>
+    <doc:version>http://www.w3.org/TR/2004/REC-rdf-mt-20040210/</doc:version>
+    <rec:editor rdf:parseType="Resource">
+      <contact:mailbox rdf:resource="mailto:phayes@ihmc.us"/>
+      <contact:lastName>Hayes</contact:lastName>
+      <contact:firstName>Patrick</contact:firstName>
+    </rec:editor>
+  </rdf:Description>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#antecedent">
+    <skos:prefLabel xml:lang="en">antecedent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (n.) In an <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossInference" class="termref" shape="rect">inference</a>, the
+    expression(s) from which the <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossConsequent" class="termref" shape="rect">conclusion</a> is derived. In an <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossEntail" class="termref" shape="rect">entailment</a> relation, the
+    entailer. Also <em>assumption</em>.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#assertion">
+    <skos:prefLabel xml:lang="en">assertion</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (n.) (i) Any expression
+    which is claimed to be true. (ii) The act of claiming something to
+    be true.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#class">
+    <skos:prefLabel xml:lang="en">class</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p>
+    (n.) A general concept, category or classification. Something<a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossResource" class="termref" shape="rect"/> used primarily to
+    classify or categorize other things. Formally, in RDF, a <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossResource" class="termref" shape="rect">resource</a> of type
+    <code>rdfs:Class</code> with an associated set of <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossResource" class="termref" shape="rect">resources</a> all of which
+    have the class as a value of the <code>rdf:type</code> property.
+    Classes are often called 'predicates' in the formal logical
+    literature.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#complete">
+    <skos:prefLabel xml:lang="en">complete</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj., of an inference system). (1) 
+  Able to detect all <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossEntail" class="termref" shape="rect">entailment</a>s between any two expressions. 
+  (2) Able to draw all <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossValid" class="termref" shape="rect">valid</a> inferences. See <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossInference" class="termref" shape="rect"><em>Inference</em></a>. Also used with a qualifier: able to 
+  detect entailments or draw all <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossValid" class="termref" shape="rect">valid</a> inferences in a certain limited form or kind (e.g. 
+  between expressions in a certain normal form, or meeting certain syntactic conditions.)</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#consequent">
+    <skos:prefLabel xml:lang="en">consequent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (n.) In an inference,
+    the expression constructed from the <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossAntecedent" class="termref" shape="rect">antecedent</a>. In an entailment relation, the
+    entailee. Also <em>conclusion</em>.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#consistent">
+    <skos:prefLabel xml:lang="en">consistent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj., of an expression) Having 
+  a satisfying <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossInterpretation" class="termref" shape="rect">interpretation</a>; not internally contradictory. (Also used 
+  of an inference system as synonym for <em>Correct</em>.) </p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#correct">
+    <skos:prefLabel xml:lang="en">correct</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj., of an inference system). Unable 
+  to draw any invalid inferences, or unable to make false claims of entailment. See <em>Inference</em>.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#decideable">
+    <skos:prefLabel xml:lang="en">decideable</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> 
+  (adj., of an inference system). Able to determine for any pair of expressions, 
+  in a finite time with finite resources, whether or not the first entails the 
+  second. (Also: adj., of a logic:) Having a decideable inference system which 
+  is complete and correct for the semantics of the logic.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#entail">
+    <skos:prefLabel xml:lang="en">entail</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (v.),
+     (n.). A semantic relationship between
+    expressions which holds whenever the truth of the first guarantees
+    the truth of the second. Equivalently, whenever it is logically
+    impossible for the first expression to be true and the second one
+    false. Equivalently, when any <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossInterpretation" class="termref" shape="rect">interpretation</a> which <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossSatisfy" class="termref" shape="rect">satisfies</a> the first also satisfies the second.
+    (Also used between a set of expressions and an expression.)</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#equivalent">
+    <skos:prefLabel xml:lang="en">equivalent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (prep., with
+    <em>to</em>) True under exactly the same conditions; making
+    identical claims about the world, when asserted. <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossEntail" class="termref" shape="rect">Entails</a> and is entailed
+    by.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#extensional">
+    <skos:prefLabel xml:lang="en">extensional</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj., of a logic) A
+    set-based theory or logic of classes, in which classes are
+    considered to be sets, properties considered to be sets of
+    &amp;lt;object, value&amp;gt; pairs, and so on. A theory which admits no
+    distinction between entities with the same extension. See <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossIntensional" class="termref" shape="rect"><em>Intensional</em></a>.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#formal">
+    <skos:prefLabel xml:lang="en">formal</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj.) Couched in language
+    sufficiently precise as to enable results to be established using
+    conventional mathematical techniques.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#iff">
+    <skos:prefLabel xml:lang="en">iff</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p>
+    (conj.) Conventional abbreviation for 'if and only if'. Used to
+    express necessary and sufficient conditions.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#inconsistent">
+    <skos:prefLabel xml:lang="en">inconsistent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p><a name="glossInconsistent" id="glossInconsistent" shape="rect"/> (adj.) False under 
+  all interpretations; impossible to <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossSatisfy" class="termref" shape="rect">satisfy</a>.  
+  (n.), any inconsistent expression or graph.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#indexical">
+    <skos:prefLabel xml:lang="en">indexical</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj., of an expression) having 
+  a meaning which implicitly refers to the context of use. Examples from English 
+  include words like 'here', 'now', 'this'.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#infer">
+    <skos:prefLabel xml:lang="en">infer</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (n.) An act or 
+  process of constructing new expressions from existing expressions, or the result 
+  of such an act or process. Inferences corresponding to <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossEntail" class="termref" shape="rect">entailments</a> are described as <em>correct</em> or <em>valid</em>. 
+  , formal description of a type of inference; 
+  , organized system of inference rules; also, 
+  software which generates inferences or checks inferences for validity.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#intensional">
+    <skos:prefLabel xml:lang="en">intensional</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj., of a logic)
+    Not <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossExtensional" class="termref" shape="rect">extensional</a>. A
+    logic which allows distinct entities with the same extension.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#interpretation">
+    <skos:prefLabel xml:lang="en">interpretation</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p>
+    () (n.) A minimal formal description of those
+    aspects of a <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossWorld" class="termref" shape="rect">world</a> which
+    is just sufficient to establish the truth or falsity of any
+    expression of a logic.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#logic">
+    <skos:prefLabel xml:lang="en">logic</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p>
+    (n.) A formal language which expresses <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossProposition" class="termref" shape="rect">propositions</a>.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#metaphysical">
+    <skos:prefLabel xml:lang="en">metaphysical</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p><a name="glossMetaphysical" id="glossMetaphysical" shape="rect"/> (adj.).
+    Concerned with the true nature of things in some absolute or
+    fundamental sense.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#modelTheory">
+    <skos:prefLabel xml:lang="en">model theory</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p><a name="glossModeltheory" id="glossModeltheory" shape="rect"/> (n.) A
+    formal semantic theory which relates expressions to
+    interpretations.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#monotonic">
+    <skos:prefLabel xml:lang="en">monotonic</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj., of a logic or
+    inference system) Satisfying the condition that if S entails E then
+    (S + T) entails E, i.e. adding information to some antecedents
+    cannot invalidate a <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossValid" class="termref" shape="rect">valid</a> entailment.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#nonmonotonic">
+    <skos:prefLabel xml:lang="en">nonmonotonic</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj.,of a logic
+    or inference system) Not <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossMonotonic" class="termref" shape="rect">monotonic</a>. Non-monotonic formalisms have been
+    proposed and used in AI and various applications. Examples of
+    nonmonotonic inferences include <em>default reasoning</em>, where
+    one assumes a 'normal' general truth unless it is contradicted by
+    more particular information (birds normally fly, but penguins
+    don't fly); <em>negation-by-failure</em>, commonly assumed in logic
+    programming systems, where one concludes, from a failure to prove a
+    proposition, that the proposition is false; and <em>implicit
+    closed-world assumptions</em>, often assumed in database
+    applications, where one concludes from a lack of information about
+    an entity in some corpus that the information is false (e.g. that
+    if someone is not listed in an employee database, that he or she is not
+    an employee.)</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#ontological">
+    <skos:prefLabel xml:lang="en">ontological</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj.) (Philosophy)
+    Concerned with what kinds of things really exist. (Applied)
+    Concerned with the details of a formal description of some topic or
+    domain.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#proposition">
+    <skos:prefLabel xml:lang="en">proposition</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (n.) Something that
+    has a truth-value; a statement or expression that is true or
+    false.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#reify">
+    <skos:prefLabel xml:lang="en">reify</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p>
+    (v.),  (n.) To categorize as an object;
+    to describe as an entity. Often used to describe a convention
+    whereby a syntactic expression is treated as a semantic object and
+    itself described using another syntax. In RDF, a reified triple is
+    a description of a triple-token using other RDF triples.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#resource">
+    <skos:prefLabel xml:lang="en">resource</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (n.)(as used in RDF)(i) An
+    entity; anything in the universe. (ii) As a class name: the class
+    of everything; the most inclusive category possible.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#satisfy">
+    <skos:prefLabel xml:lang="en">satisfy</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (v.t.),
+    ,(n.) 
+    (adj., of an interpretation). To make true. The basic semantic
+    relationship between an interpretation and an expression. X
+    satisfies Y means that if <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossWorld" class="termref" shape="rect">the
+    world</a> conforms to the conditions described by X, then Y must be
+    true.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#semantic">
+    <skos:prefLabel xml:lang="en">semantic</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (adj.) ,
+     (n.). Concerned with the specification
+    of meanings. Often contrasted with <em>syntactic</em> to emphasize
+    the distinction between expressions and what they denote.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#token">
+    <skos:prefLabel xml:lang="en">token</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p><a name="glossToken" id="glossToken" shape="rect"/>
+    (n.) A particular physical inscription of a symbol or expression in
+    a document. Usually contrasted with <em>type</em>, the abstract
+    grammatical form of an expression.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#universe">
+    <skos:prefLabel xml:lang="en">universe</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (n., also <em>Universe of
+    discourse</em>) The universal classification, or the set of all
+    things that an interpretation considers to exist. In RDF/S, this is
+    identical to the set of resources.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#use">
+    <skos:prefLabel xml:lang="en">use</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p> (v.)
+    contrasted with <em>mention</em>; to use a piece of syntax to
+    denote or refer to something else. The normal way that language is
+    used.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#valid">
+    <skos:prefLabel xml:lang="en">valid</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p>
+    (adj., of an inference or inference process) Corresponding to an <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossEntail" class="termref" shape="rect">entailment</a>, i.e. the
+    conclusion of the inference is entailed by the antecedent of the
+    inference. Also <em>correct</em>.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#well-formed">
+    <skos:prefLabel xml:lang="en">well-formed</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p><a name="glossWellformed" id="glossWellformed" shape="rect"/> (adj., of an
+    expression). Syntactically legal.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/rdf-mt#world">
+    <skos:prefLabel xml:lang="en">world</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <p>
+    (n.) (with <em>the:</em>) (i) The actual world. (with
+    <em>a:</em>) (ii) A way that the actual world might be arranged.
+    (iii) An <a href="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#glossInterpretation" class="termref" shape="rect">interpretation</a> (iv) A possible world.</p>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </skos:Concept>
+</rdf:RDF>

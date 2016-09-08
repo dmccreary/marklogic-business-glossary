@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:rec="http://www.w3.org/2001/02pd/rec54#" xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:glos="http://www.w3.org/2003/03/glossary-project/schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:Description rdf:about="">
+  <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231" />
+</rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/TR/xpath">
+    <dc:date>1999-11-16</dc:date>
+    <dc:title>XML Path Language (XPath)</dc:title>
+    <doc:version>http://www.w3.org/TR/1999/REC-xpath-19991116</doc:version>
+    <rec:editor rdf:parseType="Resource">
+      <contact:mailbox rdf:resource="mailto:jjc@jclark.com"/>
+      <contact:lastName>Clark</contact:lastName>
+      <contact:firstName>James</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:mailbox rdf:resource="mailto:Steven_DeRose@Brown.edu"/>
+      <contact:lastName>DeRose</contact:lastName>
+      <contact:firstName>Steve</contact:firstName>
+    </rec:editor>
+  </rdf:Description>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#contextNode">
+    <skos:prefLabel xml:lang="en">context node</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">the context node</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#contextPosition">
+    <skos:prefLabel xml:lang="en">context position</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">the context position</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#contextSize">
+    <skos:prefLabel xml:lang="en">context size</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">the context size</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#principalNodeType">
+    <skos:prefLabel xml:lang="en">principal node type</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Every axis has a principal node type. If an axis can contain elements, then the principal node type is element; otherwise, it is the type of the nodes that the axis can contain.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#proximityPosition">
+    <skos:prefLabel xml:lang="en">proximity position</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The proximity position of a member of a node-set with respect to an axis is defined to be the position of the node in the node-set ordered in document order if the axis is a forward axis and ordered in reverse document order if the axis is a reverse axis. The first position is 1.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#string-value">
+    <skos:prefLabel xml:lang="en">string-value</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">For every type of node, there is a way of determining a string-value for a node of that type. For some types of node, the string-value is part of the node; for other types of node, the string-value is computed from the string-value of descendant nodes.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#expanded-name">
+    <skos:prefLabel xml:lang="en">expanded-name</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Some types of node also have an expanded-name, which is a pair consisting of a local part and a namespace URI. The local part is a string. The namespace URI is either null or a string. The namespace URI specified in the XML document can be a URI reference as defined in ; this means it can have a fragment identifier and can be relative. A relative URI should be resolved into an absolute URI during namespace processing: the namespace URIs of expanded-names of nodes in the data model should be absolute.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#documentOrder">
+    <skos:prefLabel xml:lang="en">document order</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">There is an ordering, document order, defined on all the nodes in the document corresponding to the order in which the first character of the XML representation of each node occurs in the XML representation of the document after expansion of general entities. Thus, the root node will be the first node. Element nodes occur before their children. Thus, document order orders element nodes in order of the occurrence of their start-tag in the XML (after expansion of entities). The attribute nodes and namespace nodes of an element occur before the children of the element. The namespace nodes are defined to occur before the attribute nodes. The relative order of namespace nodes is implementation-dependent. The relative order of attribute nodes is implementation-dependent.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#reverseDocumentOrder">
+    <skos:prefLabel xml:lang="en">reverse document order</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Reverse document order is the reverse of document order.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#parent">
+    <skos:prefLabel xml:lang="en">parent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Every node other than the root node has exactly one parent, which is either an element node or the root node.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath#descendants">
+    <skos:prefLabel xml:lang="en">descendants</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The descendants of a node are the children of the node and the descendants of the children of the node.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/1999/REC-xpath-19991116"/>
+  </skos:Concept>
+</rdf:RDF>

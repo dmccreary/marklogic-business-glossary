@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:n5="http://www.w3.org/2004/02/skos/core#"
+   xmlns:n3="http://www.w3.org/2000/10/swap/pim/contact#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:n4="http://purl.org/dc/elements/1.1/"
+   xmlns:n7="http://www.w3.org/2000/10/swap/pim/doc#"
+   xmlns:n6="http://www.w3.org/2001/02pd/rec54#"
+>
+<rdf:Description rdf:about="">
+  <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231" />
+</rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/data/glossaries/xpath-datamodel#incompletelyValidated">
+    <n5:definition xml:lang="en">An incompletely validated document is an XML document that has a corresponding schema but whose schema-validity assessment has resulted in one or more element or attribute information items being assigned values other than 'valid' for the [validity] property in the PSVI.</n5:definition>
+    <n5:prefLabel xml:lang="en">incompletely validated</n5:prefLabel>
+  </rdf:Description>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#name">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#unparsed-entity-system-id">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#incompletelyValidated">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#atomicValue">
+    <n5:definition xml:lang="en">An atomic value is a value in the value space of an atomic type and is labeled with the name of that atomic type.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">atomic value</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#document-uri">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#second">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#nodes">
+    <n5:definition xml:lang="en">There are seven kinds of Nodes in the data model: document, element, attribute, text, namespace, processing instruction, and comment.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">nodes</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#stable">
+    <n5:definition xml:lang="en">Document order is stable, which means that the relative order of two nodes will not change during the processing of a given query or transformation, even if this order is implementation-dependent.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">stable</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#prefix">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#timezone">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#nilled">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#baseURI">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#day">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#publicIdentifier">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <rdf:Description rdf:about="http://www.w3.org/TR/xpath-datamodel/">
+    <n4:title>XQuery 1.0 and XPath 2.0 Data Model (XDM)</n4:title>
+    <n4:date>2007-01-23</n4:date>
+    <n7:version>http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/</n7:version>
+    <n6:editor>
+      <rdf:Description>
+        <n3:firstName>Norman Walsh (XSL</n3:firstName>
+        <n3:mailbox rdf:resource="mailto:Norman.Walsh@Sun.COM"/>
+        <n3:lastName>WG)</n3:lastName>
+      </rdf:Description>
+    </n6:editor>
+    <n6:editor>
+      <rdf:Description>
+        <n3:firstName>Mary Fernández (XML Query</n3:firstName>
+        <n3:mailbox rdf:resource="mailto:mff@research.att.com"/>
+        <n3:lastName>WG)</n3:lastName>
+      </rdf:Description>
+    </n6:editor>
+    <n6:editor>
+      <rdf:Description>
+        <n3:firstName>Ashok Malhotra (XML Query and XSL</n3:firstName>
+        <n3:mailbox rdf:resource="mailto:ashok.malhotra@alum.mit.edu"/>
+        <n3:lastName>WGs)</n3:lastName>
+      </rdf:Description>
+    </n6:editor>
+    <n6:editor>
+      <rdf:Description>
+        <n3:firstName>Jonathan Marsh (XSL</n3:firstName>
+        <n3:mailbox rdf:resource="mailto:jmarsh@microsoft.com"/>
+        <n3:lastName>WG)</n3:lastName>
+      </rdf:Description>
+    </n6:editor>
+    <n6:editor>
+      <rdf:Description>
+        <n3:firstName>Marton Nagy (XML Query</n3:firstName>
+        <n3:mailbox rdf:resource="mailto:marton.nagy@saic.com"/>
+        <n3:lastName>WG)</n3:lastName>
+      </rdf:Description>
+    </n6:editor>
+  </rdf:Description>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#namespaceName">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#year">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#implementation-dependent">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#xsuntyped">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#namespace-bindings">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#xsanyAtomicType">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#fragment">
+    <n5:definition xml:lang="en">A tree whose root node is not a Document Node is referred to as a fragment.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">fragment</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#documentElement">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#normalizedValue">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#xsuntypedAtomic">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#unparsed-entity-public-id">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#characterCode">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#is-id">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#base-uri">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#uri">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#minute">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#unparsedEntities">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#target">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#month">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#xsdayTimeDuration">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#primitiveSimpleTypes">
+    <n5:definition xml:lang="en">There are 23 primitive simple types: the 19 defined in of and xs:untyped, xs:untypedAtomic, xs:anyAtomicType, xs:dayTimeDuration, and xs:yearMonthDuration</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">primitive simple types</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#ownerElement">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#node-name">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#item">
+    <n5:definition xml:lang="en">An item is either a node or an atomic value</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">item</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#in-scopeNamespaces">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#atomicType">
+    <n5:definition xml:lang="en">An atomic type is a primitive simple type or a type derived by restriction from another atomic type.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">atomic type</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#hour">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#unparsed-entities">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#anonymousTypeName">
+    <n5:definition xml:lang="en">An anonymous type name is an implementation dependent, unique type name provided by the processor for every anonymous type declared in the schemas available.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">anonymous type name</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#expanded-QName">
+    <n5:definition xml:lang="en">An expanded-QName is a set of three values consisting of a possibly empty prefix, a possibly empty namespace URI, and a local name.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">expanded-QName</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#instanceOfTheDataModel">
+    <n5:definition xml:lang="en">Every instance of the data model is a sequence.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">instance of the data model</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#elementContentWhitespace">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#string-value">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#parent">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#type-name">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#node-kind">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#document">
+    <n5:definition xml:lang="en">A tree whose root node is a Document Node is referred to as a document.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">document</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#documentOrder">
+    <n5:definition xml:lang="en">A document order is defined among all the nodes accessible during a given query or transformation. Document order is a total ordering, although the relative order of some nodes is implementation-dependent. Informally, document order is the order in which nodes appear in the XML serialization of a document.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">document order</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#is-idrefs">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#xsyearMonthDuration">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <rdf:Description rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/data/glossaries/xpath-datamodel#implementationDefined">
+    <n5:definition xml:lang="en">Implementation-defined indicates an aspect that may differ between implementations, but must be specified by the implementor for each particular implementation.</n5:definition>
+    <n5:prefLabel xml:lang="en">implementation defined</n5:prefLabel>
+  </rdf:Description>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#declarationBaseURI">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#namespaces">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#content">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#children">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#notation">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#implementation-defined">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#sequence">
+    <n5:definition xml:lang="en">A sequence is an ordered collection of zero or more items.</n5:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+    <n5:prefLabel xml:lang="en">sequence</n5:prefLabel>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#attributes">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#typed-value">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <rdf:Description rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/data/glossaries/xpath-datamodel#implementationDependent">
+    <n5:definition xml:lang="en">Implementation-dependent indicates an aspect that may differ between implementations, is not specified by this or any W3C specification, and is not required to be specified by the implementor for any particular implementation.</n5:definition>
+    <n5:prefLabel xml:lang="en">implementation dependent</n5:prefLabel>
+  </rdf:Description>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#localName">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#namespace-nodes">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+  <n5:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xpath-datamodel#systemIdentifier">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xpath-datamodel-20070123/"/>
+  </n5:Concept>
+</rdf:RDF>

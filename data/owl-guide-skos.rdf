@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:rec="http://www.w3.org/2001/02pd/rec54#" xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:glos="http://www.w3.org/2003/03/glossary-project/schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:Description rdf:about="">
+  <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231" />
+</rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/TR/owl-guide/">
+    <dc:date>2004-02-10</dc:date>
+    <dc:title>OWL Web Ontology Language Guide</dc:title>
+    <doc:version>http://www.w3.org/TR/2004/REC-owl-guide-20040210/</doc:version>
+    <rec:editor rdf:parseType="Resource">
+      <contact:lastName>Smith</contact:lastName>
+      <contact:firstName>Michael K.</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:lastName>Welty</contact:lastName>
+      <contact:firstName>Chris</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:lastName>McGuinness</contact:lastName>
+      <contact:firstName>Deborah L.</contact:firstName>
+    </rec:editor>
+  </rdf:Description>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#attribute">
+    <skos:prefLabel xml:lang="en">attribute</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>as in XML</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#classDefinition">
+    <skos:prefLabel xml:lang="en">class definition</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>informal term for an owl:Class element</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#classDescription">
+    <skos:prefLabel xml:lang="en">class description</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>describes an OWL class, either by a class name or
+by specifying a class extension of an unnamed anonymous class
+</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#className">
+    <skos:prefLabel xml:lang="en">class name</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>informal term for an owl:Class rdf:ID attribute value.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#class">
+    <skos:prefLabel xml:lang="en">class</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>as in RDF</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#component">
+    <skos:prefLabel xml:lang="en">component</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>for parts of a definition e.g. the arguments to intersection-of in a class definition</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#concept">
+    <skos:prefLabel xml:lang="en">concept</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>informal term for the abstractions "in the world" that ontologies describe</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#constraint">
+    <skos:prefLabel xml:lang="en">constraint</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>informal term for discussing the effect of a restriction</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#data-valuedProperty">
+    <skos:prefLabel xml:lang="en">data-valued property</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>alternative term for DataType Property</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#datatypeProperty">
+    <skos:prefLabel xml:lang="en">datatype property</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>an OWL property that relates individuals to data values</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#datatype">
+    <skos:prefLabel xml:lang="en">datatype</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>an RDFS datatype, almost always one of the built-in non-list XML Schema datatypes </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#element">
+    <skos:prefLabel xml:lang="en">element</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>(1) as in XML</div>
+      <div>(2) an element of a set</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#entity">
+    <skos:prefLabel xml:lang="en">entity</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>as in XML</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#importsClosure">
+    <skos:prefLabel xml:lang="en">imports closure</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>the information in an ontology document, plus the information in the imports closure of ontology documents that are imported by the document</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#individual-valuedProperty">
+    <skos:prefLabel xml:lang="en">individual-valued property</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>alternative term for Object Property </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#individual">
+    <skos:prefLabel xml:lang="en">individual</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>an instance of an OWL class, i.e., a resource that belongs to the class extension of an OWL class</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#instanceOf">
+    <skos:prefLabel xml:lang="en">instance of</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>the relation between an individual and a class</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#instance">
+    <skos:prefLabel xml:lang="en">instance</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>a member of the class extension of an OWL class</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#name">
+    <skos:prefLabel xml:lang="en">name</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>as in XML Namespaces</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#namedClass">
+    <skos:prefLabel xml:lang="en">named class</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>an OWL class with an associated identifier</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#node">
+    <skos:prefLabel xml:lang="en">node</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>as in RDF Graphs</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#oWLClass">
+    <skos:prefLabel xml:lang="en">OWL class</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>an RDFS class that belongs to the class extension of owl:Class</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#objectProperty">
+    <skos:prefLabel xml:lang="en">object property</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>an OWL property that relates individuals to other individuals</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#object">
+    <skos:prefLabel xml:lang="en">object</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>(1) the object of an RDF triple</div>
+      <div>(2) an alternative term for individual (used for historical reasons)</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#ontologyDocument">
+    <skos:prefLabel xml:lang="en">ontology document</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>a Web document that contains an ontology, generally indicated by the presence of an owl:Ontology element in the document</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#ontology">
+    <skos:prefLabel xml:lang="en">ontology</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>(1) collection of information, generally including information about classes and properties</div>
+      <div>(2) the information contained in an ontology document </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#propertyDefinition">
+    <skos:prefLabel xml:lang="en">property definition</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>informal term for an
+owl:ObjectProperty element and or owl:DatatypeProperty element </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#resource">
+    <skos:prefLabel xml:lang="en">resource</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>an element of the RDF domain of discourse</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#restriction,Global">
+    <skos:prefLabel xml:lang="en">restriction, global</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>reserved for discussions of the <tt>domain</tt> and <tt>range</tt> of properties</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#restriction,Local">
+    <skos:prefLabel xml:lang="en">restriction, local</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>[see above]</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#restriction">
+    <skos:prefLabel xml:lang="en">restriction</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>usually a piece of a class expression, a statement that expresses a constraint, local by default</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#set">
+    <skos:prefLabel xml:lang="en">set</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>a mathematical set</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#statement">
+    <skos:prefLabel xml:lang="en">statement</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>as in RDF Graphs</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#type">
+    <skos:prefLabel xml:lang="en">type</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>as in RDF (rdf:type)</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#uRIReference">
+    <skos:prefLabel xml:lang="en">URI reference</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>as in RDF </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#unnamedClass">
+    <skos:prefLabel xml:lang="en">unnamed class</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>an OWL class without an associated identifier, normally components of restrictions.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/owl-guide#vocabulary">
+    <skos:prefLabel xml:lang="en">vocabulary</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>a set of URI references</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-owl-guide-20040210/"/>
+  </skos:Concept>
+</rdf:RDF>

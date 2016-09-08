@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:rec="http://www.w3.org/2001/02pd/rec54#" xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:glos="http://www.w3.org/2003/03/glossary-project/schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <rdf:Description rdf:about="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html">
+    <dc:date>1999-07-23</dc:date>
+    <dc:title>Glossary of "Weaving the Web"</dc:title>
+    <doc:version>http://www.w3.org/People/Berners-Lee/Weaving/glossary.html</doc:version>
+  </rdf:Description>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#accessControl">
+    <skos:prefLabel xml:lang="en">access control</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The ability to selectively control who can get at or manipulate
+information in, for example, a Web server.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#accessibility">
+    <skos:prefLabel xml:lang="en">accessibility</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The art of ensuring that, to as large an extent as possible,
+facilities (such as, for example, Web access) are available to
+people whether or not they have impairments of one sort or another.
+
+
+<ul><li><a shape="rect" href="">The Web Accessability Initiative</a><a shape="rect">at
+W3C</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#aCSSAudioCascadingStyleSheets">
+    <skos:prefLabel xml:lang="en">ACSS (Audio cascading style sheets)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A language for telling a computer how to read a Web page aloud.
+This is now part of CSS2. 
+
+<ul><li><a shape="rect" href="/Style/css/">CSS home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#amaya">
+    <skos:prefLabel xml:lang="en">amaya</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>An open source Web browser editor from W3C and friends, used to
+push leading-edge ideas in Web client design. 
+
+<ul><li><a shape="rect" href="/Amaya/">Amaya</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#apache">
+    <skos:prefLabel xml:lang="en">apache</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>An open source Web server originally formed by taking all the
+"patches" (fixes) to the NCSA Web server and making a new server
+out of it. 
+
+<ul><li><a shape="rect" href="http://www.apache.org/">Apache Software
+Foundation</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#browser">
+    <skos:prefLabel xml:lang="en">browser</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A Web <a shape="rect" href="#client">client</a> that allows a human to read
+information on the Web.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#cERN">
+    <skos:prefLabel xml:lang="en">CERN</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The European Particle Physics Laboratory, located on the
+French-Swiss border near Geneva, Switzerland. 
+
+<ul><li><a shape="rect" href="">CERN</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#click-stream">
+    <skos:prefLabel xml:lang="en">click-stream</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Information collected about where a Web user has been on the
+Web.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#client">
+    <skos:prefLabel xml:lang="en">client</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Any program that uses the service of another program. On the
+Web, a Web client is a program, such as a browser, editor, or
+search robot, that reads or writes information on the Web.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#cSSCascadingStyleSheets">
+    <skos:prefLabel xml:lang="en">CSS (Cascading style sheets)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A W3C recommendation: a language for writing style sheets. See
+also style sheet. 
+
+<ul><li><a shape="rect" href="/Style/css/">CSS home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#cyc">
+    <skos:prefLabel xml:lang="en">cyc</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A knowledge-representation project in which a tree of
+definitions attempts to express real-world facts in a
+machine-readable fashion. (Now a trademark of Cycorp Inc.) 
+
+<ul><li><a shape="rect" href="">The cyc home page, now run commercially</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#digitalSignature">
+    <skos:prefLabel xml:lang="en">digital signature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A very large number created in such a way that it can be shown
+to have been done only by somebody in possession of a secret key
+and only by processing a document with a particular content. It can
+be used for the same purposes as a person's handwritten signature
+on a physical document. Something you can do with public key
+cryptography. W3C work addresses the digital signature of XML
+documents. 
+
+<ul><li><a shape="rect" href="">The Signed XML activity at W3C</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#dOMDocumentObjectModel">
+    <skos:prefLabel xml:lang="en">DOM (Document object model)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Within a computer, information is often organized as a set of
+"objects." When transmitted, it is sent as a "document." The DOM is
+a W3C specification that gives a common way for programs to access
+a document as a set of objects.
+        <ul>
+          <li>
+            <a shape="rect" href="/DOM/">The DOM home page</a>
+          </li>
+        </ul>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#domainName">
+    <skos:prefLabel xml:lang="en">domain name</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A name (such as "w3.org") of a service, Web site, or computer,
+and so on in a hierarchical system of delegated authority- the
+Domain Name System. 
+
+<ul><li>P.V.Mockapetris, <a shape="rect" href="http://www.ietf.org/rfc/rfc1034.txt">"Domain Names -
+implementation and specification"</a>A standard RFC</li><li><a shape="rect" href="http://www.icann.org/">The Internet Corporation for
+Assigned Names and Numbers</a></li><li><a shape="rect" href="http://www.iana.org/postel/index.html">A tribute to
+Jon Postel</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#dTD">
+    <skos:prefLabel xml:lang="en">DTD</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>In the SGML world, a DTD is a metadocument containing
+information about how a given set of SGML tags can be used. In the
+XML world this role will be taken over by a schema. Sometimes, but
+arguably, "document type definition." See also schema.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#dublinCore">
+    <skos:prefLabel xml:lang="en">dublin core</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A set of basic metadata properties (such as title, etc.) for
+classifying Web resources. 
+
+<ul><li><a shape="rect" href="http://purl.org/DC/">The Dublin Core metadata
+initiative</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#eBTElectronicBookTechnology">
+    <skos:prefLabel xml:lang="en">EBT (Electronic book technology)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A company started by Andries Van Dam and others to develop
+hypertext systems. Later bought by INSO corporation who, it seems,
+re-used the acronym to be eBusiness Technologies. 
+
+<ul><li><a shape="rect" href="http://www.ebt.com/">EBusiness Technologies</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#eDIElectronicDataInterchange">
+    <skos:prefLabel xml:lang="en">EDI (Electronic data interchange)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A pre-Web standard for the electronic exchange of commercial
+documents.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#enquire">
+    <skos:prefLabel xml:lang="en">enquire</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A 1980 program, named after the Victorian book Enquire Within
+upon Everything.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#filtering">
+    <skos:prefLabel xml:lang="en">filtering</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The setting up of criteria to select a subset of data from a
+broad stream of it. Filtering information is essential for everyone
+in daily life. Filtering by parents of small children may be wise.
+Filtering by others- ISPs or governments- is bad, and is called
+censorship.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#gIFGraphicsInterchangeFormat">
+    <skos:prefLabel xml:lang="en">GIF (Graphics interchange format)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A format for pictures transmitted pixel by pixel over the Net.
+Created by CompuServe, the GIF specification was put into the
+public domain, but Unisys found that it had a patent on the
+compression technology used. This stimulated the development of
+PNG.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#gILCGlobalInternetLibertyCampaign">
+    <skos:prefLabel xml:lang="en">GILC (Global internet liberty campaign)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A group that has been laudably vocal in support of individual
+rights on the Net (though occasionally tending to throw out the
+baby with the bathwater). 
+
+<ul><li><a shape="rect" href="http://www.gilc.org/">The GILC home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#graphics">
+    <skos:prefLabel xml:lang="en">graphics</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Two- or three-dimensional images, typically drawings or
+photographs. See also <a shape="rect" href="#GIF">GIF</a>, <a shape="rect" href="#PNG">PNG</a>, <a shape="rect" href="#SVG">SVG</a>, and <a shape="rect" href="#VRML">VRML</a>. 
+
+<ul><li><a shape="rect" href="/Graphics/">Graphics on the Web</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#hTMLHypertextMarkupLanguage">
+    <skos:prefLabel xml:lang="en">HTML (Hypertext markup language)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A computer language for representing the contents of a page of
+hypertext; the language that most Web pages are currently written
+in. 
+
+<ul><li><a shape="rect" href="/MarkUp/">The HTML home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#hTTPHypertextTransferProtocol">
+    <skos:prefLabel xml:lang="en">HTTP (Hypertext transfer protocol)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A computer protocol for transferring information across the Net
+in such a way as to meet the demands of a global hypertext system.
+Part of the original design of the Web, continued in a W3C
+activity, and now a HTTP 1.1 IETF draft standard. 
+
+<ul><li><a shape="rect" href="/Protocols/">HTTP home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#hypertext">
+    <skos:prefLabel xml:lang="en">hypertext</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Nonsequential writing; Ted Nelson's term for a medium that
+includes links. Nowadays it includes other media apart from text
+and is sometimes called hypermedia.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#informationSpace">
+    <skos:prefLabel xml:lang="en">information space</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The abstract concept of everything accessible using networks:
+the Web.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#iNRIAInstitutNationalDeRechercheEnInfomatiqueEtAutomatique">
+    <skos:prefLabel xml:lang="en">INRIA (Institut national de recherche en infomatique et automatique)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The French national research laboratory for computer science
+and control. Cohost of W3C and developers of Amaya. 
+
+<ul><li><a shape="rect" href="http://www.inria.fr">INRIA home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#internet">
+    <skos:prefLabel xml:lang="en">internet</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A global network of networks through which computers
+communicate by sending information in packets. Each network
+consists of computers connected by cables or wireless links.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#intranet">
+    <skos:prefLabel xml:lang="en">intranet</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A part of the Internet or part of the Web used internally
+within a company or organization.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#iPInternetProtocol">
+    <skos:prefLabel xml:lang="en">IP (Internet protocol)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The protocol that governs how computers send packets across the
+Internet. Designed by Vint Cerf and Bob Khan. (IP may also stand
+for intellectual property; see IPR.) 
+
+<ul><li>J. Postel, <a shape="rect" href="http://www.ietf.org/rfc/rfc0791.txt">Internet Protocol</a>
+September 1981 (Historical)</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#iPRIntellectualPropertyRights">
+    <skos:prefLabel xml:lang="en">IPR (Intellectual property rights)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The conditions under which the information created by one party
+may be appreciated by another party. 
+
+<ul><li><a shape="rect" href="/IPR/">Intellectual Property Rights</a> page at
+W3C</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#iSOInternationalStandardsOrganization">
+    <skos:prefLabel xml:lang="en">ISO (International standards organization)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>An international group of national standards bodies. 
+
+<ul><li><a shape="rect" href="http://www.iso.ch/">The ISO home page</a></li></ul>
+
+ISO standards are available, on paper, for a fee.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#iSPInternetServiceProvider">
+    <skos:prefLabel xml:lang="en">ISP (Internet service provider)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The party providing one with connectivity to the Internet. Some
+users have a cable or some sort of wireless link to their ISP. For
+others, their computer may dial an ISP by phone and send and
+receive Internet packets over the phone line; the ISP then forwards
+the packets over the Internet.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#java">
+    <skos:prefLabel xml:lang="en">java</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A programming language developed (originally as "Oak") by James
+Gosling of Sun Microsystems. Designed for portability and usability
+embedded in small devices, Java took off as a language for small
+applications ("applets") that ran within a Web browser. 
+
+<ul><li><a shape="rect" href="http://sun.com/java/">Sun's Java page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#jigsaw">
+    <skos:prefLabel xml:lang="en">jigsaw</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Open source Web server of great modularity, written in Java.
+From W3C and friends. 
+
+<ul><li><a shape="rect" href="/Jigsaw/">The Jigsaw home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#jPEGJointPhotographicExpertsGroup">
+    <skos:prefLabel xml:lang="en">JPEG (Joint photographic experts group)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>This group defined a format for encoding photographs that uses
+fewer bytes than the pixel-by-pixel approaches of GIF and PNG,
+without too much visible degradation in quality. The format (JFIF)
+is casually referred to as JPEG. 
+
+<ul><li><a shape="rect" href="/Graphics/JPEG/">About JPEG</a> pointers from W3C</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#keioUniversity">
+    <skos:prefLabel xml:lang="en">keio university</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Near Tokyo, Japan. Cohost of W3C. 
+
+<ul><li><a shape="rect" href="http://www.keio.ac.jp">Keio University</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#lCSLaboratoryForComputerScience">
+    <skos:prefLabel xml:lang="en">LCS (Laboratory for computer science)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A laboratory at the <a shape="rect" href="#MIT">Massachusetts Institute of
+Technology</a> . Cohost of W3C. 
+
+<ul><li><a shape="rect" href="http://www.lcs.mit.edu/">MIT Laboraory for Comuter
+Science</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#lEADLiveEarlyAdoptionAndDemonstration">
+    <skos:prefLabel xml:lang="en">LEAD (Live early adoption and demonstration)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A W3C policy to eat our own cooking to find out how it can be
+better. 
+
+<ul><li><a shape="rect" href="/Status">Open source releases from W3C</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#libwww">
+    <skos:prefLabel xml:lang="en">libwww</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The library (collection) of WWW-related program modules
+available for free use by anyone since the start of the Web. 
+
+<ul><li><a shape="rect" href="/Library/">The Libwww code library</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#line-mode">
+    <skos:prefLabel xml:lang="en">line-mode</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>In high and far-off times, people did not see computer programs
+through windows. They typed commands on a terminal, and the
+computer replied with text, which was displayed on the screen (or
+printed on a roll of paper) interleaved with the commands, much as
+though the person were in a chat session with the computer program.
+If you have seen a "DOS window," then you have some idea of how
+people did their communicating with computers in those days, before
+they learned how to drag and drop. Line-mode is still a very
+respectable way to communicate with a computer.</div>
+      <div>A Web client that communicated with the user in line-mode and
+could run all kinds of computers that did not have windows or mice.
+
+
+<ul><li><a shape="rect" href="/LineMode/">The line Mode Browser home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#line-modeBrowser">
+    <skos:prefLabel xml:lang="en">line-mode browser</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A Web client that communicated with the user in line-mode and
+could run all kinds of computers that did not have windows or mice.
+
+
+<ul><li><a shape="rect" href="/LineMode/">The line Mode Browser home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#link">
+    <skos:prefLabel xml:lang="en">link</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A reference from one document to another (external link), or
+from one location in the same document to another (internal link),
+that can be followed efficiently using a computer. The unit of
+connection in hypertext.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#mARCRecord">
+    <skos:prefLabel xml:lang="en">MARC record</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A standard for machine-readable library catalogue cards. 
+
+<ul><li><a shape="rect" href="http://lcweb.loc.gov/marc/">About MARC Records</a> at
+the US Library of Congress</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#meta-">
+    <skos:prefLabel xml:lang="en">meta-</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A prefix to indicate something applied to itself; for example,
+a metameeting is a meeting about meetings.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#metadata">
+    <skos:prefLabel xml:lang="en">metadata</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Data about data on the Web, including but not limited to
+authorship, classification, endorsement, policy, distribution
+terms, IPR, and so on. A significant use for the Semantic Web. 
+
+<ul><li><a shape="rect" href="/Metadata/">Metadata at W3C</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#micropayments">
+    <skos:prefLabel xml:lang="en">micropayments</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Technology allowing one to pay for Web site access in very
+small amounts as one browses. 
+
+<ul><li><a shape="rect" href="">@</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#minimalConstraint,PrincipleOf">
+    <skos:prefLabel xml:lang="en">minimal constraint, principle of</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The idea that engineering or other designs should define only
+what they have to, leaving other aspects of the system and other
+systems as unconstrained as possible. 
+
+<ul><li><a shape="rect" href="">@</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#mITMassachusettsInstituteOfTechnology">
+    <skos:prefLabel xml:lang="en">MIT (Massachusetts institute of technology)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>See <a shape="rect" href="#LCS">LCS</a>. Cohost of W3C. mobile devices</div>
+      <div>Pagers, phones, handheld computers, and so on. All are
+potentially mobile Internet devices and Web clients. 
+
+<ul><li><a shape="rect" href="http://web.mit.edu/">The MIT home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#mosaic">
+    <skos:prefLabel xml:lang="en">mosaic</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A Web browser developed by Marc Andreessen, Eric Bina, and
+their colleagues at <a shape="rect" href="#NCSA">NCSA</a>. 
+
+<ul><li><a shape="rect" href="http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/NCSAMosaicHome.html">
+The Mosaic home page at NCSA</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#nCSANationalCenterForSupercomputingApplications">
+    <skos:prefLabel xml:lang="en">NCSA (National center for supercomputing applications)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A center at the University of Illinois at Urbana-Champaign
+whose software development group created <a shape="rect" href="#Mosaic">Mosaic</a>. 
+
+<ul><li><a shape="rect" href="http://www.ncsa.uiuc.edu/">NCSA home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#nelson,Ted">
+    <skos:prefLabel xml:lang="en">nelson, ted</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Coiner of the word hypertext; guru and visionary. By
+coincidence, Ted is currently (1999) at <a shape="rect" href="#Keio">Keio
+University</a><ul><li><a shape="rect" href="http://www.sfc.keio.ac.jp/~ted/">Ted Nelson's home
+page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#net">
+    <skos:prefLabel xml:lang="en">net</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Short for <a shape="rect" href="#Internet">Internet</a>.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#neXT">
+    <skos:prefLabel xml:lang="en">neXT</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Name of the company started by Steve Jobs, and of the computer
+it manufactured, that integrated many novelties such as the Mach
+kernel, Unix, NeXTStep, Objective-C, drag-and-drop application
+builders, optical disks, and digital signal processors. The
+development platform I used for the first Web client. 
+
+<ul><li><a shape="rect">Next was bought by Apple and became</a><a shape="rect" href="">Apple
+Enterprise</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#nNTPNetworkNewsTransferProtocol">
+    <skos:prefLabel xml:lang="en">NNTP (Network news transfer protocol)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A protocol that defines how news articles are passed around
+between computers. Each computer passes an article to any of its
+neighbors that have not yet got it. 
+
+<ul><li><a shape="rect" href="">@@RFC</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#node">
+    <skos:prefLabel xml:lang="en">node</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Thing joined by links. In the Web, a node is a Web page, any
+resource with a URI.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#openSource">
+    <skos:prefLabel xml:lang="en">open source</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Software whose source code is freely distributed and modifiable
+by anyone. W3C sample code is open source software. A trademark of
+opensource.org, a relatively newcom 
+
+<ul><li><a shape="rect" href="http://www.opensource.org/">Opensource.org</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#packet">
+    <skos:prefLabel xml:lang="en">packet</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A unit into which information is divided for transmission
+across the Internet.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#partialUnderstanding">
+    <skos:prefLabel xml:lang="en">partial understanding</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The ability to understand part of the import of a document that
+uses multiple vocabularies, some but not all of which are
+understood.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#pGPPrettyGoodPrivacy">
+    <skos:prefLabel xml:lang="en">PGP (Pretty good privacy)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>An e-mail security system that uses public key cryptography and
+has the philosophy that individuals can choose whom they trust for
+what purpose- the "web of trust." 
+
+<ul><li><a shape="rect" href="">(Good link for the open source PGP stuff?)</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#pICSPlatformForInternetContentSelection">
+    <skos:prefLabel xml:lang="en">PICS (Platform form </skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>W3C's technology that allows parents to select content for
+their children on the basis of an open set of criteria, as opposed
+to government censorship. See filtering. 
+
+<ul><li><a shape="rect" href="/PICS/">PICS home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#pKCPublicKeyCryptography">
+    <skos:prefLabel xml:lang="en">PKC (public key cryptography)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A very neat bit of mathematics on which is based a security
+system in which there is no need to exchange secret keys; instead,
+people have one "private" key that only they know and one "public"
+key that everyone knows. 
+
+<ul><li><a shape="rect" href=""/></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#pKIPublicKeyInfrastructure">
+    <skos:prefLabel xml:lang="en">PKI (Public key infrastructure)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A hierarchy of "certification authorities" to allow individuals
+and organizations to identify each other for the purpose
+(principally) of doing business electronically. 
+
+<ul><li><a shape="rect" href=""/></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#pNGPortableNetworkGraphics">
+    <skos:prefLabel xml:lang="en">PNG (Portable network graphics)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A format for encoding a picture pixel by pixel and sending it
+over the Net. A recommendation of the W3C, replacing GIF. 
+
+<ul><li><a shape="rect" href="/Graphics/PNG/">The PNG home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#protocol">
+    <skos:prefLabel xml:lang="en">protocol</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A language and a set of rules that allow computers to interact
+in a well-defined way. Examples are FTP, HTTP, and NNTP.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#rDFResourceDescriptionFramework">
+    <skos:prefLabel xml:lang="en">RDF (Resource description framework)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A framework for constructing logical languages that can work
+together in the Semantic Web. A way of using XML for data rather
+than just documents. 
+
+<ul><li><a shape="rect" href="/RDF/">The RDF home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#rFCRequestForComments">
+    <skos:prefLabel xml:lang="en">RFC (Request for comments)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The humble title of the memos which defined and still define
+the workings of the Interet. The <a shape="rect" href="#IETF">Internet
+Engineering Task Force</a> later developed a growing process for
+categorizing the status of RFCs, up to a level of "Internet
+Standard". 
+
+<ul><li><a shape="rect" href="http://www.rfc-editor.org/rfcsearch.html">Search for
+RFC</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#rPCRemoteProcedureCall">
+    <skos:prefLabel xml:lang="en">RPC (remote procedure call)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>When one part of a program calls on another part to do some
+work, the action is called a procedure call. RPC is a set of tools
+that allow you to write a program whose different parts are on
+different computers, without having to worry about how the
+communication happens. A generic technique, not a specific product.
+
+
+<ul><li><a shape="rect" href=""/></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#rSA">
+    <skos:prefLabel xml:lang="en">RSA</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A public key encryption system invented by Ron Rivest, Adi
+Shamir, and Leonard Adleman. RSA algorithms have been patented (<a shape="rect" href="http://www.rsa.com/rsalabs/faq/html/6-3-1.html">expiring in
+2000</a>), and so its inventors have licensed its deployment. 
+
+<ul><li><a shape="rect" href="http://whatis.com/rsa.htm">About RSA from
+whatis.com</a></li><li><a shape="rect" href="http://www.rsa.com/rsalabs/faq/">The FAQ at RSA
+incorporated</a></li><li><a shape="rect" href="http://www.ee.mtu.edu/courses/ee465/groupa/">About RSA
+algorithms (from MTU)</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#schemaPl.,Schemata">
+    <skos:prefLabel xml:lang="en">schema (pl., schemata)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A document that describes an <a shape="rect" href="#XML">XML</a> or <a shape="rect" href="#RDF">RDF</a> vocabulary. Any document which describes, in
+formal way, a language or parameters of a langauge. 
+
+<ul><li><a shape="rect" href="">The RDF Schema</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#semanticWeb">
+    <skos:prefLabel xml:lang="en">semantic web</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The Web of data with meaning in the sense that a computer
+program can learn enough about what the data means to process it. 
+
+<ul><li><a shape="rect" href="/DesignIssues/">My rough notes on related "design
+issues"</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#separationOfFormFromContent">
+    <skos:prefLabel xml:lang="en">separation of form from content</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The principle that one should represent separately the essence
+of a document and the style with which it is presented. An element
+in my decision to use SGML and an important element in the drive
+for accessibility on the Web.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#server">
+    <skos:prefLabel xml:lang="en">server</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A program that provides a service (typically information) to
+another program, called the client. A Web server holds Web pages
+and allows client programs to read and write them. 
+
+<ul><li><a shape="rect" href="http://www.apache.org/">Apache</a><a shape="rect">is an open
+source server in C</a></li><li><a shape="rect" href="/Jigsaw/">Jigsaw</a> is W3C's open source server in
+Java</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#sGMLStandardGeneralizedMarkupLanguage">
+    <skos:prefLabel xml:lang="en">SGML (Standard generalized markup language)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>An international standard in markup languages, a basis for HTML
+and a precursor to XML. 
+
+<ul><li><a shape="rect" href="http://www.oasis-open.org/cover/sgml-xml.html">Robin
+Cover's SGML/XML web page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#sMILSynchronizedMultimediaIntegrationLanguage">
+    <skos:prefLabel xml:lang="en">SMIL (Synchronized multimedia integration language)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A language for creating a multimedia presentation by specifying
+the spatial and temporal relationships between its components. A
+W3C recommendation. 
+
+<ul><li><a shape="rect" href="/AudioVideo/">The SMIL home page</a> at W3C</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#styleSheet">
+    <skos:prefLabel xml:lang="en">style sheet</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A document that describes to a computer program (such as a
+browser) how to translate the document markup into a particular
+presentation (fonts, colors, spacing, etc.) on the screen or in
+print. See also CSS, XSL, separation of form from content. 
+
+<ul><li><a shape="rect" href="/Style/">The W3C Style activity</a></li><li><a shape="rect" href="/Provider/Style/">An early style guide for online
+hypertext</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#sVGScalableVectorGraphics">
+    <skos:prefLabel xml:lang="en">SVG (Scalable vector graphics)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A language for describing drawings in terms of the shapes that
+compose them, so that these can be rendered as well as possible. 
+
+<ul><li><a shape="rect" href="/Graphics/SVG/">The SVG home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#tangle">
+    <skos:prefLabel xml:lang="en">tangle</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A program I wrote for playing with the concept of information
+as consisting only of the connections.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#tCPTransmissionControlProtocol">
+    <skos:prefLabel xml:lang="en">TCP (Transmission control protocol)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A computer protocol that allows one computer to send the other
+a continuous stream of information by breaking it into packets and
+reassembling it at the other end, resending any packets that get
+lost in the Internet. TCP uses IP to send the packets, and the two
+together are referred to as TCP/IP. 
+
+<ul><li><a shape="rect" href="http://www.ietf.org/rfc/rfc0793.txt">Transmission
+Control Protocol</a>An Internet Standard RFC</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#uRIUniversalResourceIdentifier">
+    <skos:prefLabel xml:lang="en">URI (Universal resource identifier)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The string (often starting with http:) that is used to identify
+anything on the Web. 
+
+<ul><li><a shape="rect" href="/Addressing/">About URIs, URLs and URNs</a></li><li><a shape="rect" href="/DesignIssues/Axioms.html">Axioms of Web Architecture:
+URIs</a> - TBL</li><li><a shape="rect" href="http://www.ietf.org/rfc/rfc1630.txt">Universal
+Resource Identifiers in WWW</a> An informational RFC, TBL,
+1994/6</li><li><a shape="rect" href="http://www.ietf.org/rfc/rfc2396.txt">Uniform Resource
+Identifiers (URI) Generic Syntax</a> A draft standard RFC, 1998/8
+1994</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#uRLUniformResourceLocator">
+    <skos:prefLabel xml:lang="en">URL (Uniform resource locator)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A term used sometimes for certain URIs to indicate that they
+might change. See URI.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#viola">
+    <skos:prefLabel xml:lang="en">viola</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>An interpreted computer language (like Java) developed by Pei
+Wei at the University of Berkeley. Also, a Web browser built using
+Viola. 
+
+<ul><li><a shape="rect" href="/History/19921103-hypertext/hypertext/Viola/Review.html"/>
+An early review I wrote of Viola</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#virtualHypertext">
+    <skos:prefLabel xml:lang="en">virtual hypertext</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Hypertext that is generated from its URI by a program, rather
+than by recourse to a stored file. This was my name for the idea.
+The CERN phone book was the first example, in 1991. It is sometimes
+difficult to tell, and impossible to define formally, what is
+virtual hypertext and what is not.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#vRMLVirtualRealityModelingLanguage">
+    <skos:prefLabel xml:lang="en">VRML (Virtual reality modeling language)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>An idea for 3D compositional graphics on the Web, proposed by
+Dave Raggett as "Virtual Reality Markup Language," and implemented
+by Mark Pesce as a variant of Silicon Graphics's "Inventor" format;
+later managed by the VRML consortium, now "Web 3D" consortium. 
+
+<ul><li><a shape="rect" href="http://www.vrml.org/">The Web 3D Consortium</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#w3CWorldWideWebConsortium">
+    <skos:prefLabel xml:lang="en">W3C (World wide web consortium)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A neutral meeting of those to whom the Web is important, with
+the mission of leading the Web to its full potential. 
+
+<ul><li><a shape="rect" href="/Overview.html"/>The World Wide Web Consortium</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#wAIWebAccessibilityInitiative">
+    <skos:prefLabel xml:lang="en">WAI (Web accessibility initiative)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A domain of W3C that attempts to ensure the use of the Web by
+anyone regardless of disability. 
+
+<ul><li><a shape="rect" href="/WAI/">The Web Accessinility Initiative</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#wAISWideAreaInformationServers">
+    <skos:prefLabel xml:lang="en">WAIS (Wide area information servers)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A distributed information system designed by Brewster Kahle
+while at Thinking Machines. WAIS was like a Web of search engines,
+but without hypertext. 
+
+<ul><li><a shape="rect" href="">@</a>.</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#web">
+    <skos:prefLabel xml:lang="en">web</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Short for <a shape="rect" href="#WWW">World Wide Web</a>.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#worldWideWeb">
+    <skos:prefLabel xml:lang="en">world wide web</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>(three words; also known as WWW) The set of all
+information accessible using computers and networking, each unit of
+information identified by a URI.</div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#worldWideWebOneWord;NoSpaces">
+    <skos:prefLabel xml:lang="en">worldWideWeb (one word; no spaces)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The name of the first Web client, a browser/editor that ran on
+a NeXT machine. 
+
+<ul><li><a shape="rect" href="../WorldWideWeb.html">About the first Web
+client</a></li><li><a shape="rect" href="/History/1994/WWW/Journals/CACM/screensnap2_24c.gif">Screen
+shot</a></li><li style="list-style: none">(242kB)</li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#x">
+    <skos:prefLabel xml:lang="en">X</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>The X Window system, invented by Bob Scheifler; a standard
+interface between a program and a screen that was ubiquitous on
+Unix systems. Unlike Microsoft's Windows, from the beginning X
+allowed programs running on one machine to display on another,
+across the Internet. Scheifler ran the X Consortium from MIT/LCS
+for many years, then spun it off, and eventually closed it. 
+
+<ul><li><a shape="rect" href="http://www.x.org/">X.Org</a> is the worldwide
+consortium empowered with the stewardship and collaborative
+development of the X Window System technology and standards</li></ul></div>
+      <div>Ted Nelson's planned global hypertext project. 
+
+<ul><li><a shape="rect" href="http://www.Xanadu.com/">@</a></li></ul></div>
+      <div>A simplified successor to SGML. W3C's generic language for
+creating new markup languages. Markup languages (such as HTML) are
+used to represent documents with a nested, treelike structure. XML
+is a product of W3C and a trademark of MIT. 
+
+<ul><li><a shape="rect" href="/XML/"/><a shape="rect" href="/XML/">The XML Home Page</a></li></ul></div>
+      <div>A style sheet language, like CSS, but also allowing document
+transformation. 
+
+<ul><li><a shape="rect" href="/Style/XSL/">The XSL home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#xanadu">
+    <skos:prefLabel xml:lang="en">xanadu</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>Ted Nelson's planned global hypertext project. 
+
+<ul><li><a shape="rect" href="http://www.Xanadu.com/">@</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#xMLExtensibleMarkupLanguage">
+    <skos:prefLabel xml:lang="en">XML (Extensible markup language)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A simplified successor to SGML. W3C's generic language for
+creating new markup languages. Markup languages (such as HTML) are
+used to represent documents with a nested, treelike structure. XML
+is a product of W3C and a trademark of MIT. 
+
+<ul><li><a shape="rect" href="/XML/"/><a shape="rect" href="/XML/">The XML Home Page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/weaving#xSLExtensibleStyleSheetLanguage">
+    <skos:prefLabel xml:lang="en">XSL (Extensible style sheet language)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>A style sheet language, like CSS, but also allowing document
+transformation. 
+
+<ul><li><a shape="rect" href="/Style/XSL/">The XSL home page</a></li></ul></div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/People/Berners-Lee/Weaving/glossary.html"/>
+  </skos:Concept>
+</rdf:RDF>

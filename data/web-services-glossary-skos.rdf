@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:rec="http://www.w3.org/2001/02pd/rec54#" xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:glos="http://www.w3.org/2003/03/glossary-project/schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:Description rdf:about="">
+  <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231" />
+</rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/TR/ws-gloss/">
+    <dc:date>2004-02-11</dc:date>
+    <dc:title>Web Services Glossary</dc:title>
+    <doc:version>http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/</doc:version>
+    <rec:editor rdf:parseType="Resource">
+      <contact:lastName>Haas</contact:lastName>
+      <contact:firstName>Hugo</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:lastName>Brown</contact:lastName>
+      <contact:firstName>Allen</contact:firstName>
+    </rec:editor>
+  </rdf:Description>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#access">
+    <skos:prefLabel xml:lang="en">access</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>To interact with a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#systementity" title="" shape="rect">system
+	    entity</a> in order to manipulate, use, gain
+	    knowledge of, and/or obtain a representation of some
+	    or all of a system entity's resources. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#accessControl">
+    <skos:prefLabel xml:lang="en">access control</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Protection of resources against unauthorized access; a
+	    process by which use of resources is regulated according
+to a
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securitypolicy" title="" shape="rect">security policy</a>
+and is permitted by only authorized system
+	    entities according to that policy. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#accessControlInformation">
+    <skos:prefLabel xml:lang="en">access control information</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>Any information used for <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#ac" title="" shape="rect">access
+		control</a> purposes, including contextual
+		information. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#X812" shape="rect">[X.812]</a></p>
+          </li>
+          <li>
+            <p>Contextual information might
+		include source IP address, encryption strength, the
+type of
+		operation being requested, time of day, etc. Portions
+of
+		<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#ac" title="" shape="rect">access control</a> information
+may be specific to the request
+		itself, some may be associated with the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#connection" title="" shape="rect">connection</a> via which
+		the request is transmitted, and others (for example,
+time of
+		day) may be "environmental". <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2829" shape="rect">[RFC 2829]</a></p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#accessRights">
+    <skos:prefLabel xml:lang="en">access rights</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A description of the type of authorized interactions a
+subject
+	    can have with a resource. Examples include read, write,
+	    execute, add, modify, and delete. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSIAG" shape="rect">[WSIA Glossary]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#actor">
+    <skos:prefLabel xml:lang="en">actor</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>A <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#poo" title="" shape="rect">person or organization</a> that may be the owner of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agents</a> that either seek to use <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web services</a> or provide Web services.</p>
+          </li>
+          <li>
+            <p>A physical or conceptual entity that can perform
+		actions.  Examples: people; companies; machines;
+		running software.  An actor can take on (or
+		implement) one or more roles.  An actor at one level
+		of abstraction may be viewed as a role at a lower
+		level of abstraction.
+		</p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#agent">
+    <skos:prefLabel xml:lang="en">agent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An agent is a program acting on behalf of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#poo" title="" shape="rect">person or organization</a>. (This
+	    definition is a specialization of the definition in
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webarch" shape="rect">[Web Arch]</a>. It corresponds to the notion of
+	    software agent in <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webarch" shape="rect">[Web Arch]</a>.)</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#anonymity">
+    <skos:prefLabel xml:lang="en">anonymity</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The quality or
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#state" title="" shape="rect">state</a> of being anonymous,
+which is the
+	    condition of having a name or identity that is unknown or
+	    concealed. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#architecture">
+    <skos:prefLabel xml:lang="en">architecture</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>The software architecture of a program or computing
+		system is the structure or structures of the system.
+		This structure includes software components, the
+		externally visible properties of those components,
+		the relationships among them and the constraints on
+		their use. (based on the definition of architecture in
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#SAP" shape="rect">[Soft Arch Pract]</a>)</p>
+          </li>
+          <li>
+            <p>A software architecture is an abstraction of the
+		run-time elements of a software system during some
+		phase of its operation. A system may be composed of
+		many levels of abstraction and many phases of
+		operation, each with its own software
+		architecture. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RoyFieldingThesis" shape="rect">[Fielding]</a></p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#artifact">
+    <skos:prefLabel xml:lang="en">artifact</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A piece of digital information. An artifact may be any
+size, and may be composed of other artifacts.  Examples of artifacts:
+a message; a URI; an XML document; a PNG image; a bit stream.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#asynchronous">
+    <skos:prefLabel xml:lang="en">asynchronous</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An interaction is said to be asynchronous when the
+associated messages are chronologically and procedurally
+decoupled. For example, in a request-response interaction, the client
+agent can process the response at some indeterminate point in the
+future when its existence is discovered. Mechanisms to do this include
+polling, notification by receipt of another message, etc.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#attribute">
+    <skos:prefLabel xml:lang="en">attribute</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A distinct characteristic of an object. An object's
+	    attributes are said to describe the object. Objects'
+	    attributes are often specified in terms of their
+	    physical traits, such as size, shape, weight, and color,
+	    etc., for real-world objects. Objects in cyberspace
+	    might have attributes describing size, type of encoding,
+	    network address, etc. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSIAG" shape="rect">[WSIA Glossary]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#auditGuard">
+    <skos:prefLabel xml:lang="en">audit guard</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      An audit guard is a mechanism used on behalf of an owner
+	      that monitors actions and <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agents</a> to verify the satisfaction
+	      of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#obligation" title="" shape="rect">obligations</a>.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#authentication">
+    <skos:prefLabel xml:lang="en">authentication</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Authentication is the process of verifying that a
+potential partner in a conversation is capable of representing a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#poo" title="" shape="rect">person or organization</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#authorization">
+    <skos:prefLabel xml:lang="en">authorization</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The process of
+	    determining, by evaluating applicable <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#acinformation" title="" shape="rect">access
+	    control information</a>, whether a subject is
+allowed to have the
+	    specified types of access to a particular
+resource. Usually,
+	    authorization is in the context of authentication. Once a
+	    subject is authenticated, it may be authorized to perform
+	    different types of access. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#STG" shape="rect">[STG]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#binding">
+    <skos:prefLabel xml:lang="en">binding</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>An association between an <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#interface" title="" shape="rect">interface</a>, a concrete
+		<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#protocol" title="" shape="rect">protocol</a> and a data
+format. A binding specifies the
+		protocol and data format to be used in transmitting
+		messages defined by the associated interface. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSDReqs" shape="rect">[WSD Reqs]</a></p>
+          </li>
+          <li>
+            <p>The mapping of an <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#interface" title="" shape="rect">interface</a> and its associated <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#operation" title="" shape="rect">operations</a> to a particular concrete message
+format and transmission <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#protocol" title="" shape="rect">protocol</a>.</p>
+          </li>
+          <li>
+            <p>See also <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapbinding" title="" shape="rect">SOAP
+binding</a>.</p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#capability">
+    <skos:prefLabel xml:lang="en">capability</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A capability is a named piece of functionality (or
+	    feature) that is declared as supported or requested by an
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agent</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#choreography">
+    <skos:prefLabel xml:lang="en">choreography</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>A choreography defines the sequence and conditions
+		under which multiple cooperating independent <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agents</a> exchange messages in
+		order to perform a task to achieve a goal state.</p>
+          </li>
+          <li>
+            <p> Web Services Choreography concerns the
+interactions of services with their users. Any user of a Web service,
+		automated or otherwise, is a client of that
+		service. These users may, in turn, be other Web
+		Services, applications or human beings. Transactions
+		among Web Services and their clients must clearly be
+		well defined at the time of their execution, and may
+		consist of multiple separate interactions whose
+		composition constitutes a complete transaction. This
+		composition, its message protocols, interfaces,
+		sequencing, and associated logic, is considered to be
+		a choreography. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSCWGreqs" shape="rect">[WSC Reqs]</a></p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#component">
+    <skos:prefLabel xml:lang="en">component</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>A component is a software object, meant to interact
+		with other components, encapsulating certain
+functionality
+		or a set of functionalities. A component has a clearly
+		defined interface and conforms to a prescribed
+behavior
+		common to all components within an
+		architecture. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#CCATD" shape="rect">[CCA T&amp;D]</a></p>
+          </li>
+          <li>
+            <p>A component is an abstract unit of software
+		instructions and internal state that provides a
+		transformation of data via its interface. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RoyFieldingThesis" shape="rect">[Fielding]</a></p>
+          </li>
+          <li>
+            <p>A component is a unit of architecture with defined
+		boundaries.</p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#confidentiality">
+    <skos:prefLabel xml:lang="en">confidentiality</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Assuring information will be kept secret, with <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#access" title="" shape="rect">access</a>
+	    limited to appropriate persons. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#NSAG" shape="rect">[NSA Glossary]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#configuration">
+    <skos:prefLabel xml:lang="en">configuration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A collection of properties which may be changed. A
+property may influence the behavior of an entity.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#connection">
+    <skos:prefLabel xml:lang="en">connection</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A transport layer virtual circuit established between
+	      two programs for the purpose of communication.
+	      <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2616" shape="rect">[RFC 2616]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#control">
+    <skos:prefLabel xml:lang="en">control</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>To cause a desired change in state. Management systems
+	    may control the life cycle
+of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#manageableservice" title="" shape="rect">manageable Web services</a> or information flow such as messages.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#conversation">
+    <skos:prefLabel xml:lang="en">conversation</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A Web service conversation involves maintaining some state during an
+	    interaction that involves multiple <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">messages</a> and/or participants.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#credentials">
+    <skos:prefLabel xml:lang="en">credentials</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Data that is transferred to establish a claimed
+principal
+	    identity. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#X800" shape="rect">[X.800]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#deliveryPolicy">
+    <skos:prefLabel xml:lang="en">delivery policy</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A delivery policy is a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#policy" title="" shape="rect">policy</a> that constrains the methods
+	    by which <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">messages</a> are
+	    delivered by the message transport.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#digitalSignature">
+    <skos:prefLabel xml:lang="en">digital signature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A value computed with a cryptographic algorithm and
+appended
+	    to a data object in such a way that any recipient of the
+data can
+	    use the signature to verify the data's origin and
+integrity. (See:
+	    data origin authentication service, data integrity
+service,
+	    digitized signature, electronic signature, signer.)
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#discovery">
+    <skos:prefLabel xml:lang="en">discovery</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The act of locating a machine-processable description
+	    of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web
+	    service</a>-related resource that
+may have been previously unknown and
+	    that meets certain functional criteria. It involves
+	    matching a set of functional and other criteria with a set
+	    of resource descriptions. The goal is to find an
+	    appropriate Web service-related resource.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#discoveryService">
+    <skos:prefLabel xml:lang="en">discovery service</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A discovery service is a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a> that enables agents to retrieve
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web services</a>-related
+	    resource description.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#document">
+    <skos:prefLabel xml:lang="en">document</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Any data that can be represented in a digital
+form. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#ueb" shape="rect">[UeB Glossary]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#electronicDataInterchangeEDI">
+    <skos:prefLabel xml:lang="en">electronic data interchange (EDI)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The automated exchange of any predefined and structured
+data for business among information systems of two or more
+organizations. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#ISOIEC14662" shape="rect">[ISO/IEC 14662]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#domain">
+    <skos:prefLabel xml:lang="en">domain</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A domain is an identified set of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agents</a> and/or
+	      resources that is subject to the constraints of one of
+	      more <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#policy" title="" shape="rect">policies</a>.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#encryption">
+    <skos:prefLabel xml:lang="en">encryption</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Cryptographic transformation of data (called
+"plaintext") into
+	    a form (called "ciphertext") that conceals the data's
+original
+	    meaning to prevent it from being known or used. If the
+	    transformation is reversible, the corresponding reversal
+process
+	    is called "decryption", which is a transformation that
+restores
+	    encrypted data to its original state. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#endPoint">
+    <skos:prefLabel xml:lang="en">end point</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An association
+	    between a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#binding" title="" shape="rect">binding</a> and
+	    a network address,
+	    specified by a URI,
+	    that may be used to
+	    communicate with an
+	    instance of a
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a>. An end point
+	    indicates a specific
+	    location for accessing
+	    a service using a
+	    specific <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#protocol" title="" shape="rect">protocol</a> and
+	    data format. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSDReqs" shape="rect">[WSD Reqs]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#gateway">
+    <skos:prefLabel xml:lang="en">gateway</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An agent that terminates a
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">message</a> on an inbound
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#interface" title="" shape="rect">interface</a> with the
+intent
+	    of presenting it through an outbound interface as a new
+	    message. Unlike a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#proxy" title="" shape="rect">proxy</a>, a
+gateway receives
+	    messages as if it were the final receiver for the
+	    message. Due to possible mismatches between the inbound
+	    and outbound interfaces, a message may be modified and
+	    may have some or all of its meaning lost during the
+	    conversion process. For example, an HTTP PUT has no
+	    equivalent in SMTP.</p>
+        <p>Note: a gateway may or may
+	    not be a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP node</a>;
+	    however a gateway is never a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapintermediary" title="" shape="rect">SOAP intermediary</a>,
+	    since gateways terminate messages and SOAP
+	    intermediaries relay them instead. Being a gateway is
+	    typically a permanent role, whilst being a SOAP
+	    intermediary is message specific.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#idempotent">
+    <skos:prefLabel xml:lang="en">idempotent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Property of an interaction whose results and
+side-effects are the same whether it is done one or multiple
+times. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2616" shape="rect">[RFC 2616]</a></p>
+        <p><a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#safe" title="" shape="rect">Safe</a> interactions are
+inherently idempotent.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#identifier">
+    <skos:prefLabel xml:lang="en">identifier</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An identifier is an unambiguous name for a resource.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#initialSOAPSender">
+    <skos:prefLabel xml:lang="en">initial SOAP sender</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapsender" title="" shape="rect">SOAP
+	    sender</a> that originates a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP message</a> at the starting
+	    point of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessagepath" title="" shape="rect">SOAP message
+path</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#integrity">
+    <skos:prefLabel xml:lang="en">integrity</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Assuring information will not be accidentally or
+	    maliciously altered or destroyed. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#NSAG" shape="rect">[NSA Glossary]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#looseCoupling">
+    <skos:prefLabel xml:lang="en">loose coupling</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Coupling is the dependency
+	    between interacting systems. This dependency can be decomposed
+into real
+	    dependency and artificial dependency:</p>
+        <ol type="1">
+          <li>
+            <p>Real dependency is the set of features or
+		services that a system consumes from other
+systems. The real dependency always exists and cannot be reduced.</p>
+          </li>
+          <li>
+            <p>Artificial dependency is the set of factors that
+		a system has to comply with in order to consume the
+features or services provided by
+		other systems. Typical artificial dependency factors
+are language dependency,
+		platform dependency, API dependency, etc. Artificial
+dependency always exists, but it or its
+		cost can be reduced.</p>
+          </li>
+        </ol>
+        <p>Loose coupling describes the configuration in which
+	    artificial dependency has been reduced to the minimum.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#manageableService">
+    <skos:prefLabel xml:lang="en">manageable service</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a>
+	      becomes a manageable service with additional semantics,
+	      policy statements, and monitoring and control (or
+	      management) capabilities (exposed via a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#mgmti" title="" shape="rect">management interface</a>) all for the purpose of managing the service. 
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#management">
+    <skos:prefLabel xml:lang="en">management</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The utilization of the management capabilities by the
+management system in order to perform monitoring of
+values, tracking of states and control of entities in order to
+produce and maintain a stable operational environment.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#managementCapability">
+    <skos:prefLabel xml:lang="en">management capability</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Capabilities that a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a> has for the purposes of controlling or monitoring the service, and that can be exposed to a management system for the sole purpose of managing the service.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#managementInterface">
+    <skos:prefLabel xml:lang="en">management interface</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p><a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#interface" title="" shape="rect">Interface</a> through
+which the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#managementcapability" title="" shape="rect">management capabilities</a> of a service are exposed.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#managementPolicy">
+    <skos:prefLabel xml:lang="en">management policy</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p><a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#policy" title="" shape="rect">Policy</a> associated with
+a Web service solely for the purpose of describing the management
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#obligation" title="" shape="rect">obligations</a> and <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#permission" title="" shape="rect">permissions</a> for the service.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#managementSemantics">
+    <skos:prefLabel xml:lang="en">management semantics</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The management semantics of a service augment the
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#ssem" title="" shape="rect">semantics of a service</a> with
+management-specific semantics. These management semantics form the
+contract between the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#providerentity" title="" shape="rect">provider
+	    entity</a> and the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesterentity" title="" shape="rect">requester entity</a> that expresses the effects and requirements pertaining to the management and management policies for a service.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#message">
+    <skos:prefLabel xml:lang="en">message</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>A message is the basic unit of data sent from one
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web services</a><a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agent</a> to another in the context of Web services.</p>
+          </li>
+          <li>
+            <p>The basic unit of
+		communication between
+		a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a> and
+a
+		<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesteragent" title="" shape="rect">requester</a>: data to
+be
+		communicated to or
+		from a Web service as
+		a single logical
+		transmission. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSDReqs" shape="rect">[WSD Reqs]</a></p>
+          </li>
+          <li>
+            <p>See also <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP
+message</a>.</p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#messageCorrelation">
+    <skos:prefLabel xml:lang="en">message correlation</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Message correlation is the association of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">message</a> with a context. Message correlation
+	    ensures that the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesteragent" title="" shape="rect">requester agent</a> can match the reply with the request, especially when multiple replies may be possible.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#messageExchangePatternMEP">
+    <skos:prefLabel xml:lang="en">message exchange pattern (MEP)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>A Message Exchanage Pattern (MEP) is a template,
+		devoid of application semantics, that describes a
+		generic pattern for the exchange of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">messages</a> between <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agents</a>. It describes the
+		relationships (e.g., temporal, causal, sequential, etc.) of multiple
+		messages exchanged in conformance with the pattern, as
+		well as the normal and abnormal termination of any
+		message exchange conforming to the pattern.</p>
+          </li>
+          <li>
+            <p>See <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmep" title="" shape="rect">SOAP message
+		exchange pattern (MEP)</a>.</p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#messageReceiver">
+    <skos:prefLabel xml:lang="en">message receiver</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A message receiver is an <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agent</a> that receives a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">message</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#messageReliability">
+    <skos:prefLabel xml:lang="en">message reliability</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Message reliability is the degree of certainty that a
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">message</a> will be delivered and that
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#msender" title="" shape="rect">sender</a> and <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#mr" title="" shape="rect">receiver</a> will both have the same understanding of the delivery status.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#messageSender">
+    <skos:prefLabel xml:lang="en">message sender</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A message sender is the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agent</a> that transmits a
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">message</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#messageTransport">
+    <skos:prefLabel xml:lang="en">message transport</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A message transport is a mechanism that may be used by
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agents</a> to deliver <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">messages</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#non-repudiation">
+    <skos:prefLabel xml:lang="en">non-repudiation</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Method by which the sender of data is provided with
+	    proof of delivery and the recipient is assured of the
+	    sender's identity, so that neither can later deny having
+	    processed the data. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#INFOSECG" shape="rect">[INFOSEC Glossary]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#obligation">
+    <skos:prefLabel xml:lang="en">obligation</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      An obligation is a kind of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#policy" title="" shape="rect">policy</a> that prescribes actions and/or states of an agent and/or resource.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#operation">
+    <skos:prefLabel xml:lang="en">operation</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A set of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">messages</a>
+	    related to a single
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a>
+action. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSDReqs" shape="rect">[WSD Reqs]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#orchestration">
+    <skos:prefLabel xml:lang="en">orchestration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      An orchestration defines the sequence and conditions in
+	      which one <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a> invokes other Web services in
+	      order to realize some useful function. I.e., an
+	      orchestration is the pattern of interactions that a Web
+	      service agent must follow in order to achieve its goal.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#permission">
+    <skos:prefLabel xml:lang="en">permission</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A permission is a kind of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#policy" title="" shape="rect">policy</a> that prescribes the
+	      allowed actions and states of an agent and/or resource.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#permissionGuard">
+    <skos:prefLabel xml:lang="en">permission guard</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A permission guard is a mechanism deployed on behalf of
+	      an owner to enforce <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#permission" title="" shape="rect">permission</a> policies.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#personOrOrganization">
+    <skos:prefLabel xml:lang="en">person or organization</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A person or organization may be the owner of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agents</a> that provide or request <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web services</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#policy">
+    <skos:prefLabel xml:lang="en">policy</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A policy is a constraint on the behavior of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agents</a> or <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#poo" title="" shape="rect">person
+or organization</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#policyGuard">
+    <skos:prefLabel xml:lang="en">policy guard</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A policy guard is a mechanism that enforces one or more
+	      <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#policy" title="" shape="rect">policies</a>. It is deployed
+	      on behalf of an owner.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#principal">
+    <skos:prefLabel xml:lang="en">principal</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#systementity" title="" shape="rect">system entity</a>
+	    whose identity can be authenticated. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#X811" shape="rect">[X.811]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#privacyPolicy">
+    <skos:prefLabel xml:lang="en">privacy policy</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A set of rules and practices that specify or regulate
+	    how a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#poo" title="" shape="rect">person or organization</a> collects, processes
+	    (uses) and discloses another party's
+personal data as a result of
+	    an interaction.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#providerAgent">
+    <skos:prefLabel xml:lang="en">provider agent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      An <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agent</a> that is capable
+	      of and empowered to perform the actions associated with
+	      a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a> on behalf of
+	      its owner — the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#providerentity" title="" shape="rect">provider
+	      entity</a>.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#providerEntity">
+    <skos:prefLabel xml:lang="en">provider entity</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      The <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#poo" title="" shape="rect">person or organization</a>
+	      that is providing a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a>.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#protocol">
+    <skos:prefLabel xml:lang="en">protocol</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A set of formal rules describing how to transmit data,
+especially across a network. Low level protocols define the electrical
+and physical standards to be observed, bit- and byte-ordering and the
+transmission and error detection and correction of the bit
+stream. High level protocols deal with the data formatting, including
+the syntax of messages, the terminal to computer dialogue, character
+sets, sequencing of messages etc. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#foldoc" shape="rect">[FOLDOC]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#proxy">
+    <skos:prefLabel xml:lang="en">proxy</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agent</a> that relays a
+message between a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesteragent" title="" shape="rect">requester agent</a> and
+	    a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#provideragent" title="" shape="rect">provider agent</a>,
+appearing to the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a> to be
+the
+	    requester.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#qualityOfService">
+    <skos:prefLabel xml:lang="en">quality of service</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      Quality of Service is an <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#obligation" title="" shape="rect">obligation</a> accepted and
+	      advertised by a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#providerentity" title="" shape="rect">provider entity</a> to service consumers.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#referenceArchitecture">
+    <skos:prefLabel xml:lang="en">reference architecture</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A reference architecture is the generalized
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#architecture" title="" shape="rect">architecture</a> of several end systems that share one or
+	    more common domains. The reference architecture defines
+	    the infrastructure common to the end systems and the
+	    interfaces of components that will be included in the
+	    end systems. The reference architecture is then
+	    instantiated to create a software architecture of a
+	    specific system. The definition of the reference
+	    architecture facilitates deriving and extending new
+	    software architectures for classes of systems. A
+	    reference architecture, therefore, plays a dual role
+	    with regard to specific target software
+	    architectures. First, it generalizes and extracts common
+	    functions and configurations.  Second, it provides a
+	    base for instantiating target systems that use that
+	    common base more reliably and cost effectively. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RA" shape="rect">[Ref Arch]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#registry">
+    <skos:prefLabel xml:lang="en">registry</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Authoritative, centrally controlled store of
+	    information.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#requesterAgent">
+    <skos:prefLabel xml:lang="en">requester agent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A software <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#agent" title="" shape="rect">agent</a> that
+	      wishes to interact with a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#provideragent" title="" shape="rect">provider agent</a> in order to
+	      request that a task be performed on behalf of its owner
+	      — the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesterentity" title="" shape="rect">requester entity</a>.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#requesterEntity">
+    <skos:prefLabel xml:lang="en">requester entity</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      The <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#poo" title="" shape="rect">person or organization</a>
+	      that wishes to use a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#providerentity" title="" shape="rect">provider entity</a>'s
+	      <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a>.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#safe">
+    <skos:prefLabel xml:lang="en">safe</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Property of an interaction which does not have any
+significance of taking an action
+	    other than retrieval of information. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2616" shape="rect">[RFC 2616]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityAdministration">
+    <skos:prefLabel xml:lang="en">security administration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Configuring, securing and/or deploying of systems or
+applications enabling a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securitydomain" title="" shape="rect">security
+domain</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityArchitecture">
+    <skos:prefLabel xml:lang="en">security architecture</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A plan and set of principles for an administrative
+domain and
+	    its <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securitydomain" title="" shape="rect">security
+domains</a> that
+	    describe the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securityservice" title="" shape="rect">security
+services</a> that a
+	    system is required to provide to meet the needs of its
+users,
+	    the system elements required to implement the services,
+and
+	    the performance levels required in the elements to deal
+with
+	    the threat environment. A complete security architecture
+for a
+	    system addresses administrative security, communication
+	    security, computer security, emanations security,
+personnel
+	    security, and physical security, and prescribes security
+	    policies for each. A complete security architecture needs
+to
+	    deal with both intentional, intelligent threats and
+accidental
+	    threats. A security architecture should explicitly evolve
+over
+	    time as an integral part of its administrative domain's
+	    evolution. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityAuditing">
+    <skos:prefLabel xml:lang="en">security auditing</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a> that reliably
+and securely records
+	      security-related events producing an audit trail
+	      enabling the reconstruction and examination of a
+	      sequence of events. Security events could include
+	      authentication events, policy enforcement decisions, and
+	      others. The resulting audit trail may be used to detect
+	      attacks, confirm compliance with policy, deter abuse, or
+	      other purposes.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityDomain">
+    <skos:prefLabel xml:lang="en">security domain</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An environment or
+	    context that is defined by <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securitymodel" title="" shape="rect">security models</a>
+	    and a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securityarch" title="" shape="rect">security
+architecture</a>, including a set of resources and
+	    set of system entities that are <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#authorization" title="" shape="rect">authorized</a> to <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#access" title="" shape="rect">access</a> the
+	    resources. One or more security domains may reside in a
+	    single administrative domain. The traits defining a given
+	    security domain typically evolve over time. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityMechanism">
+    <skos:prefLabel xml:lang="en">security mechanism</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A process (or a device incorporating such a process)
+	      that can be used in a system to implement a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securityservice" title="" shape="rect">security service</a> that is
+	      provided by or within the system.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityModel">
+    <skos:prefLabel xml:lang="en">security model</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      A schematic description of a set of entities and
+	      relationships by which a specified set of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securityservice" title="" shape="rect">security services</a> are
+	      provided by or within a system. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityPolicy">
+    <skos:prefLabel xml:lang="en">security policy</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A set of rules and practices that specify or regulate
+how a
+	    system or organization provides <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securityservice" title="" shape="rect">security services</a> to protect
+	    resources. Security policies are components of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securityarch" title="" shape="rect">security
+	    architectures</a>. Significant portions of security
+policies are
+	    implemented via security services, using <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securitypolicyexpr" title="" shape="rect">security policy
+	    expressions</a>. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityPolicyExpression">
+    <skos:prefLabel xml:lang="en">security policy expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A mapping of
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#principal" title="" shape="rect">principal</a> identities
+and/or attributes thereof with
+	    allowable actions. Security policy expressions are often
+	    essentially access control lists. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#STG" shape="rect">[STG]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#securityService">
+    <skos:prefLabel xml:lang="en">security service</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A processing or
+	    communication <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a>
+that is provided by a
+	    system to give a specific kind of protection to resources,
+	    where said resources may reside with said system or reside
+	    with other systems, for example, an authentication service
+or a
+	    PKI-based document attribution and authentication
+service. A
+	    security service is a superset of AAA services. Security
+	    services typically implement portions of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securitypolicy" title="" shape="rect">security policies</a> and
+	    are implemented via <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#securitymechanism" title="" shape="rect">security mechanisms</a>. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#service">
+    <skos:prefLabel xml:lang="en">service</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>A service is an abstract resource that represents a
+		capability of
+		performing tasks that form a coherent functionality
+		from the point of view of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#providerentity" title="" shape="rect">providers entities</a> and
+		<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesterentity" title="" shape="rect">requesters
+		entities</a>. To be used, a service must be realized by a
+		concrete <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#provideragent" title="" shape="rect">provider agent</a>.</p>
+          </li>
+          <li>
+            <p>WSDL service: A collection of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#endpoint" title="" shape="rect">end points</a>. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSDReqs" shape="rect">[WSD Reqs]</a></p>
+          </li>
+          <li>
+            <p>See <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web
+service</a>.</p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#serviceDescription">
+    <skos:prefLabel xml:lang="en">service description</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A service description is a set of documents that
+describe the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#interface" title="" shape="rect">interface</a> to and
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#ssem" title="" shape="rect">semantics</a> of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#serviceInterface">
+    <skos:prefLabel xml:lang="en">service interface</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>A service interface is the abstract boundary that a
+		<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a> exposes. It
+		defines the types of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">messages</a> and the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#mep" title="" shape="rect">message
+		exchange patterns</a> that are involved in interacting with the service, together with any conditions implied by those messages.</p>
+          </li>
+          <li>
+            <p>A logical grouping of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#operation" title="" shape="rect">operations</a>. An interface
+		represents an abstract service type, independent of
+		transmission <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#protocol" title="" shape="rect">protocol</a> and data format.
+		<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSDReqs" shape="rect">[WSD Reqs]</a></p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#serviceIntermediary">
+    <skos:prefLabel xml:lang="en">service intermediary</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <ol type="1">
+          <li>
+            <p>A service intermediary is a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice" title="" shape="rect">Web service</a> whose main
+		role is to transform <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">messages</a> in a value-added
+		way. (From a messaging point of view, an intermediary
+		processes messages en route from one agent to
+		another.) Specifically, we say that a service
+		intermediary is a service whose outgoing messages are
+		equivalent to its incoming messages in some
+		application-defined sense.</p>
+          </li>
+          <li>
+            <p>See <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapintermediary" title="" shape="rect">SOAP
+intermediary</a>.</p>
+          </li>
+        </ol>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#serviceProvider">
+    <skos:prefLabel xml:lang="en">service provider</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>See <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#provideragent" title="" shape="rect">provider
+	    agent</a> and <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#providerentity" title="" shape="rect">provider entity</a>. See also
+	    the <a href="http://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#wordonspr" shape="rect">discussion about
+service provider</a> in <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSA" shape="rect">[WS Arch]</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#serviceRequester">
+    <skos:prefLabel xml:lang="en">service requester</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>See <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesteragent" title="" shape="rect">requester
+	    agent</a> and <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesterentity" title="" shape="rect">requester entity</a>.  See also
+	    the <a href="http://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#wordonspr" shape="rect">discussion about
+service requester</a> in <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSA" shape="rect">[WS Arch]</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#serviceRole">
+    <skos:prefLabel xml:lang="en">service role</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An abstract set of tasks which is identified to be
+relevant by a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#poo" title="" shape="rect">person or organization</a>
+offering a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a>. Service roles
+are also associated with particular aspects of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#message" title="" shape="rect">messages</a> exchanged with a service.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#serviceSemantics">
+    <skos:prefLabel xml:lang="en">service semantics</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The semantics of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">service</a> is the behavior expected
+	    when interacting with the service. The semantics expresses
+	    a contract (not necessarily a legal contract) between the
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#providerentity" title="" shape="rect">provider entity</a> and the
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#requesterentity" title="" shape="rect">requester
+	    entity</a>. It expresses
+	    the effect of invoking the service. A service semantics
+	    may be formally described in a machine readable form,
+	    identified but not formally defined, or informally defined
+	    via an out of band agreement between the provider and
+	    the requester entity.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#service-orientedArchitecture">
+    <skos:prefLabel xml:lang="en">service-oriented architecture</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A set of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#component" title="" shape="rect">components</a>
+which can be invoked, and whose <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#interface" title="" shape="rect">interface</a> descriptions can be published and
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#discovery" title="" shape="rect">discovered</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#session">
+    <skos:prefLabel xml:lang="en">session</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A lasting interaction between <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#systementity" title="" shape="rect">system entities</a>, often
+	    involving a user, typified by the maintenance of some
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#state" title="" shape="rect">state</a> of the interaction
+	    for the duration of the interaction. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#WSIAG" shape="rect">[WSIA Glossary]</a></p>
+        <p>Such an interaction may not be limited to a single
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#connection" title="" shape="rect">connection</a> between
+	    the system entities.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAP">
+    <skos:prefLabel xml:lang="en">SOAP</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The formal set of
+	    conventions governing the format and processing rules of
+	    a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP message</a>. These
+conventions include the interactions among
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP nodes</a>
+	    generating and accepting SOAP messages for
+	    the purpose of exchanging information along a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessagepath" title="" shape="rect">SOAP
+	    message path</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPApplication">
+    <skos:prefLabel xml:lang="en">SOAP application</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A software entity that produces, consumes or
+	    otherwise acts upon <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP
+messages</a> in a manner
+	    conforming to the SOAP processing model.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPBinding">
+    <skos:prefLabel xml:lang="en">SOAP binding</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The formal set of
+	    rules for carrying a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP
+message</a> within or on top of
+	    another protocol (underlying protocol) for the purpose
+	    of exchange. Examples of SOAP bindings include carrying
+	    a SOAP message within an HTTP entity-body, or over a
+	    TCP stream.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPBody">
+    <skos:prefLabel xml:lang="en">SOAP body</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A collection of zero or
+	    more <em>element information items</em> targeted at an
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#usoapreceiver" title="" shape="rect">ultimate SOAP
+receiver</a> in the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessagepath" title="" shape="rect">SOAP message
+path</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPEnvelope">
+    <skos:prefLabel xml:lang="en">SOAP envelope</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The outermost
+	    <em>element information item</em> of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP message</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPFault">
+    <skos:prefLabel xml:lang="en">SOAP fault</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A SOAP
+	    <em>element information item</em>
+	    which contains fault information generated by a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP
+	    node</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPFeature">
+    <skos:prefLabel xml:lang="en">SOAP feature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An extension of the SOAP messaging framework typically
+	    associated with the exchange of messages between
+	    communicating <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP
+nodes</a>. Examples of features
+	    include "reliability", "security", "correlation",
+	    "routing", and the concept of message exchange
+	    patterns.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPHeader">
+    <skos:prefLabel xml:lang="en">SOAP header</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A collection of zero
+	    or more <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapheaderblock" title="" shape="rect">SOAP header
+blocks</a> each of which might be targeted
+	    at any SOAP
+	    receiver within the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessagepath" title="" shape="rect">SOAP
+message path</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPHeaderBlock">
+    <skos:prefLabel xml:lang="en">SOAP header block</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An
+	    <em>element information item</em> used to delimit
+	    data that logically constitutes a single computational
+	    unit within the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapheader" title="" shape="rect">SOAP
+header</a>. The type of a SOAP header block is
+	    identified by the fully qualified name of the header block
+	    <em>element information item</em>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPIntermediary">
+    <skos:prefLabel xml:lang="en">SOAP intermediary</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A SOAP intermediary
+	    is both a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapreceiver" title="" shape="rect">SOAP
+receiver</a> and a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapsender" title="" shape="rect">SOAP
+sender</a> and is targetable
+	    from within a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP
+message</a>. It processes the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapheaderblock" title="" shape="rect">SOAP header
+	    blocks</a> targeted at it and acts to forward a SOAP
+message
+	    towards an <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#usoapreceiver" title="" shape="rect">ultimate SOAP
+receiver</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPMessage">
+    <skos:prefLabel xml:lang="en">SOAP message</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>
+	      The basic unit of communication between <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP
+	    nodes</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPMessageExchangePatternMEP">
+    <skos:prefLabel xml:lang="en">SOAP message exchange pattern (MEP)</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A template for the exchange of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP messages</a>
+	    between <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP nodes</a>
+enabled by one or more underlying
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapbinding" title="" shape="rect">SOAP protocol
+bindings</a>. A SOAP
+	    MEP is an example of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapfeature" title="" shape="rect">SOAP
+feature</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPMessagePath">
+    <skos:prefLabel xml:lang="en">SOAP message path</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The set of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP
+	    nodes</a> through which a single <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP
+	    message</a> passes. This includes the initial
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapsender" title="" shape="rect">SOAP sender</a>,
+	    zero or more <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapintermediary" title="" shape="rect">SOAP
+intermediaries</a>, and an <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#usoapreceiver" title="" shape="rect">ultimate
+SOAP
+	    receiver</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPNode">
+    <skos:prefLabel xml:lang="en">SOAP node</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>The embodiment of
+	    the processing logic necessary to transmit, receive,
+	    process and/or relay a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP
+message</a>, according
+	    to the set of conventions defined by this recommendation.
+	    A SOAP node is responsible for
+	    enforcing the rules that govern the exchange of
+	    SOAP
+	    messages. It accesses the services
+	    provided by the underlying protocols through one or
+	    more <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapbinding" title="" shape="rect">SOAP
+	    bindings</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPReceiver">
+    <skos:prefLabel xml:lang="en">SOAP receiver</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP node</a> that accepts a
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP message</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPRole">
+    <skos:prefLabel xml:lang="en">SOAP role</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP node</a>'s
+expected function in
+	    processing a message. A SOAP node can act in multiple
+	    roles.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#sOAPSender">
+    <skos:prefLabel xml:lang="en">SOAP sender</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapnode" title="" shape="rect">SOAP node</a> that transmits
+a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP message</a>.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#state">
+    <skos:prefLabel xml:lang="en">state</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>A set of <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#attribute" title="" shape="rect">attributes</a>
+	    representing the properties of a <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#component" title="" shape="rect">component</a> at some point in
+	    time.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#synchronous">
+    <skos:prefLabel xml:lang="en">synchronous</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An interaction is said to be synchronous when the
+participating agents must
+	    be available to receive and process the associated
+messages from the time
+	    the interaction is initiated until all messages are
+actually received or
+	    some failure condition is determined. The exact meaning
+	    of "available to receive the message" depends on the
+characteristics of the
+	    participating agents (including the transfer protocol it
+uses); it may, but
+	    does not necessarily, imply tight time synchronization,
+blocking a thread,
+	    etc.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#systemEntity">
+    <skos:prefLabel xml:lang="en">system entity</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>An active element of a computer/network system. For
+	    example, an automated process or set of processes, a
+	    subsystem, a person or group of persons that
+	    incorporates a distinct set of functionality. <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#RFC2828" shape="rect">[RFC 2828]</a></p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#transaction">
+    <skos:prefLabel xml:lang="en">transaction</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>Transaction is a feature of the
+architecture that
+	    supports the coordination of results or operations on
+state in a multi-step
+	    interaction. The fundamental characteristic of a transaction is the
+ability to join
+	    multiple actions into the same unit of work, such that the
+actions either
+	    succeed or fail as a unit.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#ultimateSOAPReceiver">
+    <skos:prefLabel xml:lang="en">ultimate SOAP receiver</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p> The <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapreceiver" title="" shape="rect">SOAP
+	    receiver</a> that is a final destination of a
+<a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapmessage" title="" shape="rect">SOAP message</a>. It is responsible
+for
+	    processing the contents of the <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapbody" title="" shape="rect">SOAP body</a> and any <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapheaderblock" title="" shape="rect">SOAP
+	    header blocks</a> targeted at it. In some
+circumstances, a
+	    SOAP message might not reach an ultimate SOAP receiver,
+for
+	    example because of a problem at a
+	    <a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#soapintermediary" title="" shape="rect">SOAP
+intermediary</a>. An
+	    ultimate SOAP receiver cannot also be a SOAP
+	    intermediary for the same SOAP message.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#usageAuditing">
+    <skos:prefLabel xml:lang="en">usage auditing</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p><a href="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#service" title="" shape="rect">Service</a> that reliably
+and securely records usage-related events producing an audit trail
+enabling the reconstruction and examination of a sequence of events.
+Usage events could include resource allocation events and resource
+freeing events.</p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/ws-gloss#webService">
+    <skos:prefLabel xml:lang="en">web service</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">
+      <div>
+        <p>There are many things that might be called "Web
+services" in the world at large. However, for the purpose of this
+Working Group and this architecture, and without prejudice toward
+other definitions, we will use the following definition:</p>
+        <p>
+	      A Web service is a software system designed to support
+interoperable machine-to-machine interaction over a network. It has an
+interface described in a machine-processable format (specifically
+WSDL). Other systems interact with the Web service in a manner
+prescribed by its description using SOAP-messages, typically conveyed
+using HTTP with an XML serialization in conjunction with other
+Web-related standards.
+	    </p>
+      </div>
+    </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/"/>
+  </skos:Concept>
+</rdf:RDF>

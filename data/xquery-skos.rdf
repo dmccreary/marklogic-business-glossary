@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" xmlns:rec="http://www.w3.org/2001/02pd/rec54#" xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:glos="http://www.w3.org/2003/03/glossary-project/schema#">
+<rdf:Description rdf:about="">
+  <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231" />
+</rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/TR/xquery/">
+    <dc:date>2007-01-23</dc:date>
+    <dc:title>XQuery 1.0: An XML Query Language</dc:title>
+    <doc:version>http://www.w3.org/TR/2007/REC-xquery-20070123/</doc:version>
+    <rec:editor rdf:parseType="Resource">
+      <contact:mailbox rdf:resource="mailto:scott_boag@us.ibm.com"/>
+      <contact:lastName>WG)</contact:lastName>
+      <contact:firstName>Scott Boag (XSL</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:lastName>WG)</contact:lastName>
+      <contact:firstName>Don Chamberlin (XML Query</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:mailbox rdf:resource="mailto:mff@research.att.com"/>
+      <contact:lastName>WG)</contact:lastName>
+      <contact:firstName>Mary F. Fernández (XML Query</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:mailbox rdf:resource="mailto:dana.florescu@oracle.com"/>
+      <contact:lastName>WG)</contact:lastName>
+      <contact:firstName>Daniela Florescu (XML Query</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:lastName>WG)</contact:lastName>
+      <contact:firstName>Jonathan Robie (XML Query</contact:firstName>
+    </rec:editor>
+    <rec:editor rdf:parseType="Resource">
+      <contact:mailbox rdf:resource="mailto:simeon@us.ibm.com"/>
+      <contact:lastName>WG)</contact:lastName>
+      <contact:firstName>Jérôme Siméon (XML Query</contact:firstName>
+    </rec:editor>
+  </rdf:Description>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#dataModel">
+    <skos:prefLabel xml:lang="en">data model</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">XQuery operates on the abstract, logical structure of an XML document, rather than its surface syntax. This logical structure, known as the data model, is defined in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#implementation-defined">
+    <skos:prefLabel xml:lang="en">implementation-defined</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Implementation-defined indicates an aspect that may differ between implementations, but must be specified by the implementor for each particular implementation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#implementation-dependent">
+    <skos:prefLabel xml:lang="en">implementation-dependent</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Implementation-dependent indicates an aspect that may differ between implementations, is not specified by this or any W3C specification, and is not required to be specified by the implementor for any particular implementation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#value">
+    <skos:prefLabel xml:lang="en">value</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">In the data model, a value is always a sequence.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#sequence">
+    <skos:prefLabel xml:lang="en">sequence</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A sequence is an ordered collection of zero or more items.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#item">
+    <skos:prefLabel xml:lang="en">item</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An item is either an atomic value or a node.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#atomicValue">
+    <skos:prefLabel xml:lang="en">atomic value</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An atomic value is a value in the value space of an atomic type, as defined in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#node">
+    <skos:prefLabel xml:lang="en">node</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A node is an instance of one of the node kinds defined in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#singleton">
+    <skos:prefLabel xml:lang="en">singleton</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A sequence containing exactly one item is called a singleton.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#emptySequence">
+    <skos:prefLabel xml:lang="en">empty sequence</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A sequence containing zero items is called an empty sequence.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#xDMInstance">
+    <skos:prefLabel xml:lang="en">XDM instance</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The term XDM instance is used, synonymously with the term value, to denote an unconstrained sequence of nodes and/or atomic values in the data model.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#qName">
+    <skos:prefLabel xml:lang="en">qName</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Lexically, a QName consists of an optional namespace prefix and a local name. If the namespace prefix is present, it is separated from the local name by a colon.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#expandedQName">
+    <skos:prefLabel xml:lang="en">expanded qName</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An expanded QName consists of an optional namespace URI and a local name. An expanded QName also retains its original namespace prefix (if any), to facilitate casting the expanded QName into a string.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#in-scopeNamespaces">
+    <skos:prefLabel xml:lang="en">in-scope namespaces</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The in-scope namespaces property of an element node is a set of namespace bindings, each of which associates a namespace prefix with a URI, thus defining the set of namespace prefixes that are available for interpreting QNames within the scope of the element. For a given element, one namespace binding may have an empty prefix; the URI of this namespace binding is the default namespace within the scope of the element.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#uRI">
+    <skos:prefLabel xml:lang="en">URI</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Within this specification, the term URI refers to a Universal Resource Identifier as defined in and extended in with the new name IRI.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#expressionContext">
+    <skos:prefLabel xml:lang="en">expression context</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The expression context for a given expression consists of all the information that can affect the result of the expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticContext">
+    <skos:prefLabel xml:lang="en">static context</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The static context of an expression is the information that is available during static analysis of the expression, prior to its evaluation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#xPath1.0CompatibilityMode.">
+    <skos:prefLabel xml:lang="en">xPath 1.0 compatibility mode.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">XPath 1.0 compatibility mode.This component must be set by all host languages that include XPath 2.0 as a subset, indicating whether rules for compatibility with XPath 1.0 are in effect. XQuery sets the value of this component to false.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticallyKnownNamespaces.">
+    <skos:prefLabel xml:lang="en">statically known namespaces.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Statically known namespaces. This is a set of (prefix, URI) pairs that define all the namespaces that are known during static processing of a given expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#defaultElement/typeNamespace.">
+    <skos:prefLabel xml:lang="en">default element/type namespace.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Default element/type namespace. This is a namespace URI or "none". The namespace URI, if present, is used for any unprefixed QName appearing in a position where an element or type name is expected.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#defaultFunctionNamespace.">
+    <skos:prefLabel xml:lang="en">default function namespace.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Default function namespace. This is a namespace URI or "none". The namespace URI, if present, is used for any unprefixed QName appearing in a position where a function name is expected.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#in-scopeSchemaDefinitions.">
+    <skos:prefLabel xml:lang="en">in-scope schema definitions.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">In-scope schema definitions. This is a generic term for all the element declarations, attribute declarations, and schema type definitions that are in scope during processing of an expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#in-scopeSchemaTypes.">
+    <skos:prefLabel xml:lang="en">in-scope schema types.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">In-scope schema types. Each schema type definition is identified either by an expanded QName (for a named type) or by an implementation-dependent type identifier (for an anonymous type). The in-scope schema types include the predefined schema types described in . If the Schema Import Feature is supported, in-scope schema types also include all type definitions found in imported schemas.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#in-scopeElementDeclarations.">
+    <skos:prefLabel xml:lang="en">in-scope element declarations.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">In-scope element declarations. Each element declaration is identified either by an expanded QName (for a top-level element declaration) or by an implementation-dependent element identifier (for a local element declaration). If the Schema Import Feature is supported, in-scope element declarations include all element declarations found in imported schemas.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#substitutionGroups">
+    <skos:prefLabel xml:lang="en">substitution groups</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Substitution groups are defined in Part 1, Section 2.2.2.2. Informally, the substitution group headed by a given element (called the head element) consists of the set of elements that can be substituted for the head element without affecting the outcome of schema validation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#in-scopeAttributeDeclarations.">
+    <skos:prefLabel xml:lang="en">in-scope attribute declarations.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">In-scope attribute declarations. Each attribute declaration is identified either by an expanded QName (for a top-level attribute declaration) or by an implementation-dependent attribute identifier (for a local attribute declaration). If the Schema Import Feature is supported, in-scope attribute declarations include all attribute declarations found in imported schemas.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#in-scopeVariables.">
+    <skos:prefLabel xml:lang="en">in-scope variables.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">In-scope variables. This is a set of (expanded QName, type) pairs. It defines the set of variables that are available for reference within an expression. The expanded QName is the name of the variable, and the type is the static type of the variable.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#contextItemStaticType.">
+    <skos:prefLabel xml:lang="en">context item static type.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Context item static type. This component defines the static type of the context item within the scope of a given expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#functionSignatures.">
+    <skos:prefLabel xml:lang="en">function signatures.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Function signatures. This component defines the set of functions that are available to be called from within an expression. Each function is uniquely identified by its expanded QName and its arity (number of parameters).</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticallyKnownCollations.">
+    <skos:prefLabel xml:lang="en">statically known collations.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Statically known collations. This is an implementation-defined set of (URI, collation) pairs. It defines the names of the collations that are available for use in processing queries and expressions.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#collation">
+    <skos:prefLabel xml:lang="en">collation</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A collation is a specification of the manner in which strings and URIs are compared and, by extension, ordered. For a more complete definition of collation, see .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#defaultCollation.">
+    <skos:prefLabel xml:lang="en">default collation.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Default collation. This identifies one of the collations in statically known collations as the collation to be used by functions and operators for comparing and ordering values of type xs:string and xs:anyURI (and types derived from them) when no explicit collation is specified.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#constructionMode.">
+    <skos:prefLabel xml:lang="en">construction mode.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Construction mode. The construction mode governs the behavior of element and document node constructors. If construction mode is preserve, the type of a constructed element node is xs:anyType, and all attribute and element nodes copied during node construction retain their original types. If construction mode is strip, the type of a constructed element node is xs:untyped; all element nodes copied during node construction receive the type xs:untyped, and all attribute nodes copied during node construction receive the type xs:untypedAtomic.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#orderingMode.">
+    <skos:prefLabel xml:lang="en">ordering mode.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Ordering mode. Ordering mode, which has the value ordered or unordered, affects the ordering of the result sequence returned by certain path expressions, union, intersect, and except expressions, and FLWOR expressions that have no order by clause.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#defaultOrderForEmptySequences.">
+    <skos:prefLabel xml:lang="en">default order for empty sequences.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Default order for empty sequences. This component controls the processing of empty sequences and NaN values as ordering keys in an order by clause in a FLWOR expression, as described in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#boundary-spacePolicy.">
+    <skos:prefLabel xml:lang="en">boundary-space policy.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Boundary-space policy. This component controls the processing of boundary whitespace by direct element constructors, as described in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#copy-namespacesMode.">
+    <skos:prefLabel xml:lang="en">copy-namespaces mode.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Copy-namespaces mode. This component controls the namespace bindings that are assigned when an existing element node is copied by an element constructor, as described in . Its value consists of two parts: preserve or no-preserve, and inherit or no-inherit.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#baseURI.">
+    <skos:prefLabel xml:lang="en">base URI.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Base URI. This is an absolute URI, used when necessary in the resolution of relative URIs (for example, by the fn:resolve-uri function.)</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticallyKnownDocuments.">
+    <skos:prefLabel xml:lang="en">statically known documents.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Statically known documents. This is a mapping from strings onto types. The string represents the absolute URI of a resource that is potentially available using the fn:doc function. The type is the static type of a call to fn:doc with the given URI as its literal argument.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticallyKnownCollections.">
+    <skos:prefLabel xml:lang="en">statically known collections.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Statically known collections. This is a mapping from strings onto types. The string represents the absolute URI of a resource that is potentially available using the fn:collection function. The type is the type of the sequence of nodes that would result from calling the fn:collection function with this URI as its argument.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticallyKnownDefaultCollectionType.">
+    <skos:prefLabel xml:lang="en">statically known default collection type.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Statically known default collection type. This is the type of the sequence of nodes that would result from calling the fn:collection function with no arguments.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#dynamicContext">
+    <skos:prefLabel xml:lang="en">dynamic context</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The dynamic context of an expression is defined as information that is available at the time the expression is evaluated.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#focus">
+    <skos:prefLabel xml:lang="en">focus</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The first three components of the dynamic context (context item, context position, and context size) are called the focus of the expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#contextItem">
+    <skos:prefLabel xml:lang="en">context item</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The context item is the item currently being processed. An item is either an atomic value or a node.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#contextNode">
+    <skos:prefLabel xml:lang="en">context node</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">When the context item is a node, it can also be referred to as the context node.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#contextPosition">
+    <skos:prefLabel xml:lang="en">context position</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The context position is the position of the context item within the sequence of items currently being processed.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#contextSize">
+    <skos:prefLabel xml:lang="en">context size</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The context size is the number of items in the sequence of items currently being processed.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#variableValues">
+    <skos:prefLabel xml:lang="en">variable values</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Variable values. This is a set of (expanded QName, value) pairs. It contains the same expanded QNames as the in-scope variables in the static context for the expression. The expanded QName is the name of the variable and the value is the dynamic value of the variable, which includes its dynamic type.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#functionImplementations">
+    <skos:prefLabel xml:lang="en">function implementations</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Function implementations. Each function in function signatures has a function implementation that enables the function to map instances of its parameter types into an instance of its result type. For a user-defined function, the function implementation is an XQuery expression. For a built-in function or external function, the function implementation is implementation-dependent.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#currentDateTime.">
+    <skos:prefLabel xml:lang="en">current dateTime.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Current dateTime. This information represents an implementation-dependent point in time during the processing of a query, and includes an explicit timezone. It can be retrieved by the fn:current-dateTime function. If invoked multiple times during the execution of a query, this function always returns the same result.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#implicitTimezone.">
+    <skos:prefLabel xml:lang="en">implicit timezone.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Implicit timezone. This is the timezone to be used when a date, time, or dateTime value that does not have a timezone is used in a comparison or arithmetic operation. The implicit timezone is an implementation-defined value of type xs:dayTimeDuration. See for the range of legal values of a timezone.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#availableDocuments.">
+    <skos:prefLabel xml:lang="en">available documents.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Available documents. This is a mapping of strings onto document nodes. The string represents the absolute URI of a resource. The document node is the root of a tree that represents that resource using the data model. The document node is returned by the fn:doc function when applied to that URI.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#availableCollections.">
+    <skos:prefLabel xml:lang="en">available collections.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Available collections. This is a mapping of strings onto sequences of nodes. The string represents the absolute URI of a resource. The sequence of nodes represents the result of the fn:collection function when that URI is supplied as the argument.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#defaultCollection.">
+    <skos:prefLabel xml:lang="en">default collection.</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Default collection. This is the sequence of nodes that would result from calling the fn:collection function with no arguments.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#typeAnnotation">
+    <skos:prefLabel xml:lang="en">type annotation</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Each element node and attribute node in an XDM instance has a type annotation (referred to in as its type-name property.) The type annotation of a node is a schema type that describes the relationship between the string value of the node and its typed value.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticAnalysisPhase">
+    <skos:prefLabel xml:lang="en">static analysis phase</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The static analysis phase depends on the expression itself and on the static context. The static analysis phase does not depend on input data (other than schemas).</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticType">
+    <skos:prefLabel xml:lang="en">static type</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The static type of an expression is a type such that, when the expression is evaluated, the resulting value will always conform to the static type.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#dynamicEvaluationPhase">
+    <skos:prefLabel xml:lang="en">dynamic evaluation phase</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The dynamic evaluation phase is the phase during which the value of an expression is computed.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#dynamicType">
+    <skos:prefLabel xml:lang="en">dynamic type</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A dynamic type is associated with each value as it is computed. The dynamic type of a value may be more specific than the static type of the expression that computed it (for example, the static type of an expression might be xs:integer*, denoting a sequence of zero or more integers, but at evaluation time its value may have the dynamic type xs:integer, denoting exactly one integer.)</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#serialization">
+    <skos:prefLabel xml:lang="en">serialization</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Serialization is the process of converting an XDM instance into a sequence of octets (step DM4 in Figure 1.)</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#dataModelSchema">
+    <skos:prefLabel xml:lang="en">data model schema</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">For a given node in an XDM instance, the data model schema is defined as the schema from which the type annotation of that node was derived.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticError">
+    <skos:prefLabel xml:lang="en">static error</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A static error is an error that must be detected during the static analysis phase. A syntax error is an example of a static error.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#dynamicError">
+    <skos:prefLabel xml:lang="en">dynamic error</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A dynamic error is an error that must be detected during the dynamic evaluation phase and may be detected during the static analysis phase. Numeric overflow is an example of a dynamic error.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#typeError">
+    <skos:prefLabel xml:lang="en">type error</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A type error may be raised during the static analysis phase or the dynamic evaluation phase. During the static analysis phase, a type error occurs when the static type of an expression does not match the expected type of the context in which the expression occurs. During the dynamic evaluation phase, a type error occurs when the dynamic type of a value does not match the expected type of the context in which the value occurs.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#warnings">
+    <skos:prefLabel xml:lang="en">warnings</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">In addition to static errors, dynamic errors, and type errors, an XQuery implementation may raise warnings, either during the static analysis phase or the dynamic evaluation phase. The circumstances in which warnings are raised, and the ways in which warnings are handled, are implementation-defined.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#errorValues">
+    <skos:prefLabel xml:lang="en">error values</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">In addition to its identifying QName, a dynamic error may also carry a descriptive string and one or more additional values called error values.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#reverseDocumentOrder">
+    <skos:prefLabel xml:lang="en">reverse document order</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The node ordering that is the reverse of document order is called reverse document order.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#documentOrder">
+    <skos:prefLabel xml:lang="en">document order</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Informally, document order is the order in which nodes appear in the XML serialization of a document.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#stable">
+    <skos:prefLabel xml:lang="en">stable</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Document order is stable, which means that the relative order of two nodes will not change during the processing of a given query, even if this order is implementation-dependent.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#atomization">
+    <skos:prefLabel xml:lang="en">atomization</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Atomization of a sequence is defined as the result of invoking the fn:data function on the sequence, as defined in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#effectiveBooleanValue">
+    <skos:prefLabel xml:lang="en">effective boolean value</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The effective boolean value of a value is defined as the result of applying the fn:boolean function to the value, as defined in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#sequenceType">
+    <skos:prefLabel xml:lang="en">sequence type</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A sequence type is a type that can be expressed using the SequenceType syntax. Sequence types are used whenever it is necessary to refer to a type in an XQuery expression. The term sequence type suggests that this syntax is used to describe the type of an XQuery value, which is always a sequence.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#schemaType">
+    <skos:prefLabel xml:lang="en">schema type</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A schema type is a type that is (or could be) defined using the facilities of (including the built-in types of ).</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#typedValue">
+    <skos:prefLabel xml:lang="en">typed value</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The typed value of a node is a sequence of atomic values and can be extracted by applying the fn:data function to the node.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#stringValue">
+    <skos:prefLabel xml:lang="en">string value</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The string value of a node is a string and can be extracted by applying the fn:string function to the node.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#sequenceTypeMatching">
+    <skos:prefLabel xml:lang="en">sequenceType matching</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">During evaluation of an expression, it is sometimes necessary to determine whether a value with a known dynamic type "matches" an expected sequence type. This process is known as SequenceType matching.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#subtypeSubstitution">
+    <skos:prefLabel xml:lang="en">subtype substitution</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The use of a value whose dynamic type is derived from an expected type is known as subtype substitution.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#query">
+    <skos:prefLabel xml:lang="en">query</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A query consists of one or more modules.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#primaryExpressions">
+    <skos:prefLabel xml:lang="en">primary expressions</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Primary expressions are the basic primitives of the language. They include literals, variable references, context item expressions, constructors, and function calls. A primary expression may also be created by enclosing any expression in parentheses, which is sometimes helpful in controlling the precedence of operators.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#literal">
+    <skos:prefLabel xml:lang="en">literal</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A literal is a direct syntactic representation of an atomic value.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#predefinedEntityReference">
+    <skos:prefLabel xml:lang="en">predefined entity reference</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A predefined entity reference is a short sequence of characters, beginning with an ampersand, that represents a single character that might otherwise have syntactic significance.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#characterReference">
+    <skos:prefLabel xml:lang="en">character reference</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A character reference is an XML-style reference to a character, identified by its decimal or hexadecimal code point.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#variableReference">
+    <skos:prefLabel xml:lang="en">variable reference</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A variable reference is a QName preceded by a $-sign.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#built-inFunctions">
+    <skos:prefLabel xml:lang="en">built-in functions</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The built-in functions supported by XQuery are defined in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#pathExpression">
+    <skos:prefLabel xml:lang="en">path expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A path expression can be used to locate nodes within trees. A path expression consists of a series of one or more steps, separated by "/" or "//", and optionally beginning with "/" or "//".</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#step">
+    <skos:prefLabel xml:lang="en">step</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A step is a part of a path expression that generates a sequence of items and then filters the sequence by zero or more predicates. The value of the step consists of those items that satisfy the predicates, working from left to right. A step may be either an axis step or a filter expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#axisStep">
+    <skos:prefLabel xml:lang="en">axis step</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An axis step returns a sequence of nodes that are reachable from the context node via a specified axis. Such a step has two parts: an axis, which defines the "direction of movement" for the step, and a node test, which selects nodes based on their kind, name, and/or type annotation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#principalNodeKind">
+    <skos:prefLabel xml:lang="en">principal node kind</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Every axis has a principal node kind. If an axis can contain elements, then the principal node kind is element; otherwise, it is the kind of nodes that the axis can contain.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#nodeTest">
+    <skos:prefLabel xml:lang="en">node test</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A node test is a condition that must be true for each node selected by a step.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#nameTest">
+    <skos:prefLabel xml:lang="en">name test</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A node test that consists only of a QName or a Wildcard is called a name test.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#kindTest">
+    <skos:prefLabel xml:lang="en">kind test</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An alternative form of a node test called a kind test can select nodes based on their kind, name, and type annotation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#predicate">
+    <skos:prefLabel xml:lang="en">predicate</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A predicate consists of an expression, called a predicate expression, enclosed in square brackets. A predicate serves to filter a sequence, retaining some items and discarding others.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#numericPredicate">
+    <skos:prefLabel xml:lang="en">numeric predicate</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A predicate whose predicate expression returns a numeric type is called a numeric predicate.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#commaOperator">
+    <skos:prefLabel xml:lang="en">comma operator</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">One way to construct a sequence is by using the comma operator, which evaluates each of its operands and concatenates the resulting sequences, in order, into a single result sequence.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#filterExpression">
+    <skos:prefLabel xml:lang="en">filter expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A filter expression consists simply of a primary expression followed by zero or more predicates. The result of the filter expression consists of the items returned by the primary expression, filtered by applying each predicate in turn, working from left to right.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#directElementConstructor">
+    <skos:prefLabel xml:lang="en">direct element constructor</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A direct element constructor is a form of element constructor in which the name of the constructed element is a constant.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#namespaceDeclarationAttribute">
+    <skos:prefLabel xml:lang="en">namespace declaration attribute</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A namespace declaration attribute is used inside a direct element constructor. Its purpose is to bind a namespace prefix or to set the default element/type namespace for the constructed element node, including its attributes.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#namespace-sensitive">
+    <skos:prefLabel xml:lang="en">namespace-sensitive</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A value is namespace-sensitive if it includes an item whose dynamic type is xs:QName or xs:NOTATION or is derived by restriction from xs:QName or xs:NOTATION.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#boundaryWhitespace">
+    <skos:prefLabel xml:lang="en">boundary whitespace</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Boundary whitespace is a sequence of consecutive whitespace characters within the content of a direct element constructor, that is delimited at each end either by the start or end of the content, or by a DirectConstructor, or by an EnclosedExpr. For this purpose, characters generated by character references such as &amp;#x20; or by CdataSections are not considered to be whitespace characters.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#nameExpression">
+    <skos:prefLabel xml:lang="en">name expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">When an expression is used to specify the name of a constructed node, that expression is called the name expression of the constructor.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#contentExpression">
+    <skos:prefLabel xml:lang="en">content expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The final part of a computed constructor is an expression enclosed in braces, called the content expression of the constructor, that generates the content of the node.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#computedElementConstructor">
+    <skos:prefLabel xml:lang="en">computed element constructor</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A computed element constructor creates an element node, allowing both the name and the content of the node to be computed.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#bindingSequence">
+    <skos:prefLabel xml:lang="en">binding sequence</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The value of the expression associated with a variable in a for clause is called the binding sequence for that variable.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#effectiveCase">
+    <skos:prefLabel xml:lang="en">effective case</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The effective case in a typeswitch expression is the first case clause such that the value of the operand expression matches the SequenceType in the case clause, using the rules of SequenceType matching.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#constructorFunction">
+    <skos:prefLabel xml:lang="en">constructor function</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The constructor function for a given type is used to convert instances of other atomic types into the given type. The semantics of the constructor function call T($arg) are defined to be equivalent to the expression (($arg) cast as T?).</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#extensionExpression">
+    <skos:prefLabel xml:lang="en">extension expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An extension expression is an expression whose semantics are implementation-defined.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#pragma">
+    <skos:prefLabel xml:lang="en">pragma</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A pragma is denoted by the delimiters (# and #), and consists of an identifying QName followed by implementation-defined content.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#module">
+    <skos:prefLabel xml:lang="en">module</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A module is a fragment of XQuery code that conforms to the Module grammar and can independently undergo the static analysis phase described in . Each module is either a main module or a library module.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#mainModule">
+    <skos:prefLabel xml:lang="en">main module</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A main module consists of a Prolog followed by a Query Body.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#libraryModule">
+    <skos:prefLabel xml:lang="en">library module</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A module that does not contain a Query Body is called a library module. A library module consists of a module declaration followed by a Prolog.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#prolog">
+    <skos:prefLabel xml:lang="en">prolog</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A Prolog is a series of declarations and imports that define the processing environment for the module that contains the Prolog.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#setters">
+    <skos:prefLabel xml:lang="en">setters</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Setters are declarations that set the value of some property that affects query processing, such as construction mode, ordering mode, or default collation.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#targetNamespace">
+    <skos:prefLabel xml:lang="en">target namespace</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Each imported schema or module is identified by its target namespace, which is the namespace of the objects (such as elements or functions) that are defined by the schema or module.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#queryBody">
+    <skos:prefLabel xml:lang="en">query body</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The Query Body, if present, consists of an expression that defines the result of the query.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#versionDeclaration">
+    <skos:prefLabel xml:lang="en">version declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">Any module may contain a version declaration. If present, the version declaration occurs at the beginning of the module and identifies the applicable XQuery syntax and semantics for the module.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#encodingDeclaration">
+    <skos:prefLabel xml:lang="en">encoding declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">If present, a version declaration may optionally include an encoding declaration. The value of the string literal following the keyword encoding is an encoding name, and must conform to the definition of EncName specified in . The purpose of an encoding declaration is to allow the writer of a query to provide a string that indicates how the query is encoded, such as "UTF-8", "UTF-16", or "US-ASCII".</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#moduleDeclaration">
+    <skos:prefLabel xml:lang="en">module declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A module declaration serves to identify a module as a library module. A module declaration begins with the keyword module and contains a namespace prefix and a URILiteral.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#boundary-spaceDeclaration">
+    <skos:prefLabel xml:lang="en">boundary-space declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A boundary-space declaration sets the boundary-space policy in the static context, overriding any implementation-defined default. Boundary-space policy controls whether boundary whitespace is preserved by element constructors during processing of the query.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#defaultCollationDeclaration">
+    <skos:prefLabel xml:lang="en">default collation declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A default collation declaration sets the value of the default collation in the static context, overriding any implementation-defined default.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#baseURIDeclaration">
+    <skos:prefLabel xml:lang="en">base URI declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A base URI declaration specifies the base URI property of the static context. The base URI property is used when resolving relative URIs within a module.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#constructionDeclaration">
+    <skos:prefLabel xml:lang="en">construction declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A construction declaration sets the construction mode in the static context, overriding any implementation-defined default.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#orderingModeDeclaration">
+    <skos:prefLabel xml:lang="en">ordering mode declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An ordering mode declaration sets the ordering mode in the static context, overriding any implementation-defined default.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#emptyOrderDeclaration">
+    <skos:prefLabel xml:lang="en">empty order declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An empty order declaration sets the default order for empty sequences in the static context, overriding any implementation-defined default. This declaration controls the processing of empty sequences and NaN values as ordering keys in an order by clause in a FLWOR expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#copy-namespacesDeclaration">
+    <skos:prefLabel xml:lang="en">copy-namespaces declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A copy-namespaces declaration sets the value of copy-namespaces mode in the static context, overriding any implementation-defined default. Copy-namespaces mode controls the namespace bindings that are assigned when an existing element node is copied by an element constructor or document constructor.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#schemaImport">
+    <skos:prefLabel xml:lang="en">schema import</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A schema import imports the element declarations, attribute declarations, and type definitions from a schema into the in-scope schema definitions.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#moduleImport">
+    <skos:prefLabel xml:lang="en">module import</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A module import imports the function declarations and variable declarations from one or more library modules into the function signatures and in-scope variables of the importing module.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#directlyDepends">
+    <skos:prefLabel xml:lang="en">directly depends</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A module M1directly depends on another module M2 (different from M1) if a variable or function declared in M1depends on a variable or function declared in M2.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#namespaceDeclaration">
+    <skos:prefLabel xml:lang="en">namespace declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A namespace declaration declares a namespace prefix and associates it with a namespace URI, adding the (prefix, URI) pair to the set of statically known namespaces.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#initializingExpression">
+    <skos:prefLabel xml:lang="en">initializing expression</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">If a variable declaration includes an expression, the expression is called an initializing expression.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#depends">
+    <skos:prefLabel xml:lang="en">depends</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A variable $xdepends on a variable $y or a function f2 if a reference to $y or f2 appears in the initializing expression of $x, or if there exists a variable $z or a function f3 such that $xdepends on $z or f3 and $z or f3depends on $y or f2.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#depends">
+    <skos:prefLabel xml:lang="en">depends</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A function f1depends on a variable $y or a function f2 if a reference to $y or f2 appears in the body of f1, or if there exists a variable $z or a function f3 such that f1depends on $z or f3 and $z or f3depends on $y or f2.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#user-definedFunction">
+    <skos:prefLabel xml:lang="en">user-defined function</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">For a user-defined function, the function declaration includes an expression called the function body that defines how the result of the function is computed from its parameters.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#externalFunctions">
+    <skos:prefLabel xml:lang="en">external functions</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">External functions are functions that are implemented outside the query environment.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#optionDeclaration">
+    <skos:prefLabel xml:lang="en">option declaration</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">An option declaration declares an option that affects the behavior of a particular implementation. Each option consists of an identifying QName and a StringLiteral.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#mUST">
+    <skos:prefLabel xml:lang="en">MUST</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">MUST means that the item is an absolute requirement of the specification.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#mAY">
+    <skos:prefLabel xml:lang="en">MAY</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">MAY means that an item is truly optional.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#sHOULD">
+    <skos:prefLabel xml:lang="en">SHOULD</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">SHOULD means that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#schemaImportFeature">
+    <skos:prefLabel xml:lang="en">schema import feature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The Schema Import Feature permits the query Prolog to contain a schema import.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#schemaValidationFeature">
+    <skos:prefLabel xml:lang="en">schema validation feature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The Schema Validation Feature permits a query to contain a validate expression (see .)</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticTypingFeature">
+    <skos:prefLabel xml:lang="en">static typing feature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The Static Typing Feature provides support for the static semantics defined in , and requires implementations to detect and report type errors during the static analysis phase.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#staticTypingExtension">
+    <skos:prefLabel xml:lang="en">static typing extension</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A static typing extension is an implementation-defined type inference rule that infers a more precise static type than that inferred by the type inference rules in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#optionalAxes">
+    <skos:prefLabel xml:lang="en">optional axes</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">The following axes are designated as optional axes: ancestor, ancestor-or-self, following, following-sibling, preceding, and preceding-sibling.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#fullAxisFeature">
+    <skos:prefLabel xml:lang="en">full axis feature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A conforming XQuery implementation that supports the Full Axis FeatureMUST support all the optional axes.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#moduleFeature">
+    <skos:prefLabel xml:lang="en">module feature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A conforming XQuery implementation that supports the Module Feature allows a query Prolog to contain a Module Import and allows library modules to be created.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.w3.org/2003/03/glossary-project/data/glossaries/xquery#serializationFeature">
+    <skos:prefLabel xml:lang="en">serialization feature</skos:prefLabel>
+    <skos:definition xml:lang="en" rdf:parseType="Literal">A conforming XQuery implementation that supports the Serialization FeatureMUST provide means for serializing the result of a query, as specified in .</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-xquery-20070123/"/>
+  </skos:Concept>
+</rdf:RDF>
