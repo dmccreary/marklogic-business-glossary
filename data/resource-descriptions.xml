@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource-descriptions>
+   <resource>
+      <uri>/views/list-concepts.xqy</uri>
+      <name>List Concepts</name>
+      <description>Bullet listing of concepts</description>
+   </resource>
+</resource-descriptions>

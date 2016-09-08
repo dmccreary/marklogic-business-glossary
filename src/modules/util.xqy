@@ -86,3 +86,46 @@ Count = {count($uris) -1 }<br/>
 </table>
 </div>
 };
+
+(: functions for database or disk-based modules are here :)
+declare function util:get-listing($path as xs:string, $end-filter as xs:string?)
+{
+  let $module-database := xdmp:modules-database()
+  return
+    if ($module-database != 0 ) then
+      utl:get-uris($module-database, $path, $end-filter)
+    else
+      utl:get-files($path, $end-filter)
+};
+
+declare function util:get-uris($module-db-id as xs:unsignedLong, $path as xs:string, $end-filter as xs:string?)
+{
+  let $qs := "cts:uri-match('" || $path || '/*' || $end-filter || "')"
+  let $options :=
+    <options xmlns="xdmp:eval">
+      <database>{$module-db-id}</database>
+    </options>
+  let $uris := xdmp:eval($qs, (), $options)
+  for $uri in $uris
+    let $properties := xdmp:eval("xdmp:document-properties('" || $uri || "')", (), $options)
+    return
+      <entry>
+        <uri>{$uri}</uri>
+        <description/>
+        <last-modified>{$properties//prop:last-modified/text()}</last-modified>
+      </entry>
+};
+
+declare function util:get-files( $path as xs:string, $end-filter as xs:string)
+{
+  let $dir := xdmp:filesystem-directory(xdmp:modules-root() || $path )/dir:entry[dir:filename/fn:ends-with(., $end-filter)]
+  for $d in $dir
+  return
+    <entry>
+      <uri>{$path || "/" || $d/dir:filename}</uri>
+      <description></description>
+      <last-modified>{$d/dir:last-modified/text()}</last-modified>
+    </entry>
+};
+
+
