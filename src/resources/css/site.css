@@ -1,0 +1,10 @@
+/* Bootstrap site specific override rules */
+table thead tr th {text-align: center; background-color:silver}
+table tbody tr td.number {text-align: right;}
+/* background-color: lavender; */
+.container-fluid {padding: 10px;}
+.header {padding:10px;}
+.footer {text-align: left; padding:10px;}
+.title-in-header {font-size: 20pt; color: gray; padding: 0 20px;}
+.title-in-footer {font-size: 10pt; color: silver; padding: 0 20px;}
+.field-label {color:gray;}
