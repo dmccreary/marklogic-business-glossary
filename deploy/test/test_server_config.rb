@@ -72,7 +72,7 @@ describe ServerConfig do
           :logger => @logger
         })
       r = @s.execute_query %Q{xdmp:host-name(xdmp:host())}
-      r.body = parse_json(r.body)
+      r.body = parse_body(r.body)
       @properties['ml.bootstrap-host'] = r.body
 
       @s.bootstrap.must_equal true
@@ -188,6 +188,24 @@ describe ServerConfig do
 
   end
 
+  # issue #591
+  describe "override properties from command" do
+
+    before do
+      ARGV << "--ml.dummy-port=8888"
+      @properties = ServerConfig.properties(File.expand_path("../data/ml7-properties/", __FILE__))
+    end
+
+    it "should load valid properites from a command" do
+      @properties['ml.dummy-port'].must_equal '8888'
+      @properties['ml.dummy2-port'].must_equal '8888'
+    end
+
+    after do
+      ARGV.shift
+      ARGV.shift
+    end
+  end
 
   def with_stdin
     stdin = $stdin             # remember $stdin

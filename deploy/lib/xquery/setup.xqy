@@ -4012,7 +4012,10 @@ declare function setup:create-scheduled-task(
         $task/gr:task-period,
         $task/gr:task-start-time,
         admin:database-get-id($admin-config, $task/gr:task-database/@name),
-        admin:database-get-id($admin-config, $task/gr:task-modules/@name),
+        if ($task/gr:task-modules/@name eq "filesystem") then
+          0
+        else
+          admin:database-get-id($admin-config, $task/gr:task-modules/@name),
         setup:get-user-id($task/gr:task-user/@name),
         $task/gr:task-host/@name/xdmp:host(.),
         $task/gr:task-priority)
@@ -4023,7 +4026,10 @@ declare function setup:create-scheduled-task(
         $task/gr:task-period,
         $task/gr:task-minute,
         admin:database-get-id($admin-config, $task/gr:task-database/@name),
-        admin:database-get-id($admin-config, $task/gr:task-modules/@name),
+        if ($task/gr:task-modules/@name eq "filesystem") then
+          0
+        else
+          admin:database-get-id($admin-config, $task/gr:task-modules/@name),
         setup:get-user-id($task/gr:task-user/@name),
         $task/gr:task-host/@name/xdmp:host(.),
         $task/gr:task-priority)
@@ -4033,7 +4039,10 @@ declare function setup:create-scheduled-task(
         $task/gr:task-root,
         $task/gr:task-period,
         admin:database-get-id($admin-config, $task/gr:task-database/@name),
-        admin:database-get-id($admin-config, $task/gr:task-modules/@name),
+        if ($task/gr:task-modules/@name eq "filesystem") then
+          0
+        else
+          admin:database-get-id($admin-config, $task/gr:task-modules/@name),
         setup:get-user-id($task/gr:task-user/@name),
         $task/gr:task-host/@name/xdmp:host(.),
         $task/gr:task-priority)
@@ -4045,7 +4054,10 @@ declare function setup:create-scheduled-task(
         $task/gr:task-month-day,
         $task/gr:task-start-time,
         admin:database-get-id($admin-config, $task/gr:task-database/@name),
-        admin:database-get-id($admin-config, $task/gr:task-modules/@name),
+        if ($task/gr:task-modules/@name eq "filesystem") then
+          0
+        else
+          admin:database-get-id($admin-config, $task/gr:task-modules/@name),
         setup:get-user-id($task/gr:task-user/@name),
         $task/gr:task-host/@name/xdmp:host(.),
         $task/gr:task-priority)
@@ -4055,7 +4067,10 @@ declare function setup:create-scheduled-task(
         $task/gr:task-root,
         $task/gr:task-start,
         admin:database-get-id($admin-config, $task/gr:task-database/@name),
-        admin:database-get-id($admin-config, $task/gr:task-modules/@name),
+        if ($task/gr:task-modules/@name eq "filesystem") then
+          0
+        else
+          admin:database-get-id($admin-config, $task/gr:task-modules/@name),
         setup:get-user-id($task/gr:task-user/@name),
         $task/gr:task-host/@name/xdmp:host(.),
         $task/gr:task-priority)
@@ -4067,7 +4082,10 @@ declare function setup:create-scheduled-task(
         $task/gr:task-days/gr:task-day,
         $task/gr:task-start-time,
         admin:database-get-id($admin-config, $task/gr:task-database/@name),
-        admin:database-get-id($admin-config, $task/gr:task-modules/@name),
+        if ($task/gr:task-modules/@name eq "filesystem") then
+          0
+        else
+          admin:database-get-id($admin-config, $task/gr:task-modules/@name),
         setup:get-user-id($task/gr:task-user/@name),
         $task/gr:task-host/@name/xdmp:host(.),
         $task/gr:task-priority)
@@ -4102,12 +4120,17 @@ declare function setup:get-scheduled-task(
     admin:group-get-scheduled-tasks(
       $admin-config,
       $group-id)
+  let $modules-db :=
+    if ($task/gr:task-modules/@name eq "filesystem") then
+      0
+    else
+      admin:database-get-id($admin-config, $task/gr:task-modules/@name)
   return
     $tasks[gr:task-path = $task/gr:task-path and
            gr:task-root = $task/gr:task-root and
            gr:task-type = $task/gr:task-type and
            gr:task-database = admin:database-get-id($admin-config, $task/gr:task-database/@name) and
-           gr:task-modules = admin:database-get-id($admin-config, $task/gr:task-modules/@name) and
+           gr:task-modules = $modules-db and
            gr:task-user = xdmp:user($task/gr:task-user/@name)]
           [if ($task/gr:task-period) then gr:task-period = $task/gr:task-period else fn:true()]
            (:[if ($task/gr:task-period) then gr:task-period = $task/gr:task-period else fn:true()]:)
@@ -4744,7 +4767,25 @@ declare function setup:create-amps($import-config)
     if ($existing-amps/sec:amp[sec:namespace = $amp/sec:namespace and
                                    sec:local-name = $amp/sec:local-name and
                                    sec:document-uri = $amp/(sec:doc-uri, sec:document-uri) and
-                                   sec:db-name = $amp/sec:db-name]) then ()
+                                   sec:db-name = $amp/sec:db-name]) then
+    (
+      xdmp:eval(
+        'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
+         declare variable $amp external;
+         declare variable $db := if($amp/sec:db-name = "filesystem") then 0 else xdmp:database($amp/sec:db-name);
+         sec:amp-set-roles(
+           $amp/sec:namespace,
+           $amp/sec:local-name,
+           $amp/(sec:doc-uri, sec:document-uri)[1],
+           $db,
+           $amp/sec:role-name
+        )',
+        (xs:QName("amp"), $amp),
+        <options xmlns="xdmp:eval">
+          <database>{xdmp:security-database()}</database>
+        </options>
+      )
+    )
     else
     (
       xdmp:eval(
