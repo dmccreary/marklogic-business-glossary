@@ -1,51 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<concepts xmlns="http://www.w3.org/2004/02/skos/core#">
-    <concept>
+<Concepts xmlns="http://www.w3.org/2004/02/skos/core#">
+    <Concept>
         <prefLabel>Business Glossary</prefLabel>
         <altLabel>Business Vocabulary</altLabel>
-        <definition>A collection of terms and their definitions using within a business context.</definition>
-    </concept>
-    <concept>
+        <definition>A collection of terms and their definitions using within a business
+            context.</definition>
+    </Concept>
+    <Concept>
         <prefLabel>Simple Knowledge Organization System</prefLabel>
         <abbreviation>SKOS</abbreviation>
-        <definition>A W3C standard for representing business vocabularies, controlled vocabularies, taxonomies and thesauri.</definition>
-    </concept>
-    <concept>
+        <definition>A W3C standard for representing business vocabularies, controlled vocabularies,
+            taxonomies and thesauri.</definition>
+    </Concept>
+    <Concept>
         <prefLabel>Taxonomy</prefLabel>
         <definition>A scheme of classification of items usually in a hierarchial structure where
-        broader terms are higher in a tree structure.</definition>
-    </concept>
-    <concept>
+            broader terms are higher in a tree structure.</definition>
+    </Concept>
+    <Concept>
         <prefLabel>Thesaurus</prefLabel>
         <definition>Lists of words in groups of synonyms and related concepts.</definition>
-    </concept>
-    <concept>
+    </Concept>
+    <Concept>
         <prefLabel>Ontology</prefLabel>
-        <definition>A formal naming and definition of the types, properties, and interrelationships 
+        <definition>A formal naming and definition of the types, properties, and interrelationships
             of the entities that really or fundamentally exist for a particular domain of discourse.
-            Ontologies frequently contain rules that govern taxonomies.
-        </definition>
-    </concept>
-    <concept>
-        <term-name>Not Only SQL</term-name>
+            Ontologies frequently contain rules that govern taxonomies. </definition>
+    </Concept>
+    <Concept>
+        <prefLabel>Not Only SQL</prefLabel>
         <abbreviation>NoSQL</abbreviation>
-        <definition>A classification of six database architectures that include relational,    
-            analytical, key-value, column-family, graph and document databases.
-        </definition>
-    </concept>
-    <concept>
-        <term-name>Database Management System</term-name>
-        <definition>A database management system is software application that manages collections of data in a consistent way.
-        </definition>
-    </concept>
-    <concept>
-        <term-name>Doument Store</term-name>
-        <alternate-term>Document Database</alternate-term>
-        <alternate-term>Document-Oriented Database</alternate-term>
-        <definition>A document-oriented database, or document store, 
-            is a database architecture designed for storing, retrieving, and managing document-oriented information, also known as semi-structured data.
-        </definition>
+        <definition>A classification of six database architectures that include relational,
+            analytical, key-value, column-family, graph and document databases. </definition>
+    </Concept>
+    <Concept>
+        <prefLabel>Database Management System</prefLabel>
+        <definition>A database management system is software application that manages collections of
+            data in a consistent way. </definition>
+        <broader>Software Application</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Doument Store</prefLabel>
+        <alternateLabel>Document Database</alternateLabel>
+        <alternateLabel>Document-Oriented Database</alternateLabel>
+        <definition>A document-oriented database, or document store, is a database architecture
+            designed for storing, retrieving, and managing document-oriented information, also known
+            as semi-structured data. </definition>
         <broader>Database Management System</broader>
-    </concept>
-    
-</concepts>
+    </Concept>
+    <Concept>
+        <prefLabel>ISO/IEC 11179 Metadata Registry</prefLabel>
+        <definition>The International Standard ISO/IEC 11179 on metadata registries addresses the
+            semantics of data, the representation of data, and the registration of the descriptions of data.
+            ISO/IEC 11179 specifies the kind and quality of metadata necessary to describe data, and it
+            specifies the management and administration of that metadata in a metadata registry (MDR). </definition>
+        <broader>Metadata Registry</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Metadata Registry</prefLabel>
+        <definition>A metadata registry is a central location in an organization where metadata definitions are stored and maintained in a controlled method.</definition>
+        <source>https://en.wikipedia.org/wiki/Metadata_registry</source>
+        <broader>Software Application</broader>
+        <see-also>Metadata Repository</see-also>
+    </Concept>
+    <Concept>
+        <prefLabel>Metadata Repository</prefLabel>
+        <definition>A metadata repository is a database where metadata is stored without a focus on deduplication.</definition>
+        <broader>Software Application</broader>
+        <see-also>Metadata Registry</see-also>
+    </Concept>
+    <Concept>
+        <prefLabel>Software Application</prefLabel>
+        <definition>A software application is a software program that is used by user or agents to solve business problems.</definition>
+        <broader>Thing</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Thing</prefLabel>
+        <definition>The root concept in a taxonomy or upper ontology.</definition>
+    </Concept>
+    </Concepts>

@@ -4,6 +4,12 @@ import module namespace style = "http://danmccreary.com/style" at "/modules/styl
 declare namespace rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
 
+declare function local:insert-document($uri as xs:string, $doc as element()) {
+ if (doc-available($uri))
+  then ()
+  else xdmp:document-insert($uri, $doc, xdmp:default-permissions(), ('glossary-concept', 'w3c'))
+};
+
 (:
 
 <skos:Concept
@@ -17,7 +23,21 @@ declare namespace skos="http://www.w3.org/2004/02/skos/core#";
   
 let $title := 'Split SKOS Concepts into Files'
 
-let $uri := xdmp:get-request-field('uri', '/inputs/rdf-glossaries/xforms-skos.rdf')
+let $uri := xdmp:get-request-field('uri')
+
+return
+  if (not($uri))
+     then
+        <error>
+          <message>uri is a required parameter.</message>
+        </error>
+   else
+
+let $uri-tokens := tokenize($uri, '/')
+(: the full file name with the -skos.rdf extension is the last token :)
+let $full-file-name := $uri-tokens[last()]
+let $glossary-dir-name := substring-before($full-file-name, '-skos.rdf')
+
 let $rdf-doc := doc($uri)/rdf:RDF
 
 let $concepts := $rdf-doc/skos:Concept
@@ -29,9 +49,21 @@ let $content :=
        URI: {$uri}<br/>
        {count($concepts)} concepts inserted.
        {for $concept in $concepts
+        let $full-concept-uri := $concept/@rdf:about/string()
+        let $concept-uri-suffix := substring-after($full-concept-uri, 'http://www.w3.org/2003/03/glossary-project/data/glossaries/')
+        let $replace-hash-with-forward-slash := replace($concept-uri-suffix, '#', '/')
+        let $replace-comman-with-dash := replace($replace-hash-with-forward-slash, ',', '-')
+        
+        let $uri := '/glossary/w3c/' || $replace-comman-with-dash || '.xml'
+        
+        (: async insert for performance :)
+        let $insert := xdmp:spawn-function(function() {local:insert-document($uri, $concept)},
+           <options xmlns="xdmp:eval">
+            <transaction-mode>update-auto-commit</transaction-mode>
+          </options>)
         return
            <div>
-              {$concept/skos:prefLabel/text()}
+              Concept: {$concept/skos:prefLabel/text()} - URI: {$uri}
            </div>
        }
     </div>                                           
