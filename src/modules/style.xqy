@@ -28,13 +28,44 @@ return
 };
 
 declare function style:header() as element() {
-<div class="header">
-   <a href="/index.xqy"><img src="/resources/images/marklogic-logo-small.png"/></a>
-   <span class="title-in-header">MarkLogic Business Glossary Manager</span>
-   <label>Search:</label>
-   <input id="search" type="search"/>
-   <span class="current-user"><a href="/forms/current-user.xqy">{xdmp:get-current-user()}</a></span>
-</div>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="/index.xqy"><img style="max-width:100px; margin-top: -8px;" 
+                src="/resources/images/marklogic-logo-small.png" alt="MarkLogic Logo"/></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/index.xqy">Home</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-form navbar-center">
+                <!-- Main Searchbar -->
+                    <form class="navbar-form" role="search" action="/search/search-glossary-service.xqy">
+                        <div class="input-group">
+                            <input type="search" class="form-control" size="50" placeholder="Search Glossary" name="q"/>
+                            <input type="hidden"  name="debug" value="false"/>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">Search</button>
+                                </div>
+                        </div>
+                    </form>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li><a style="margin-top: 7px;" href="/search/advanced-search-form.xqy">Advanced Search</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">User: {xdmp:get-current-user()}</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
 };
 
 declare function style:footer() as element() {
@@ -90,6 +121,60 @@ return
      
     {if ($start < ($total-count - $page-length))
        then <a href="{xdmp:get-request-path()}?start={$start + $page-length}" class="btn btn-primary pull-right">Next</a>
+       else ()
+    }
+</div>
+};
+
+(: display the previous to next with page counters between
+call it like this:
+   style:prev-next-pagination-links($start, $page-length, $total-count)
+:)
+declare function style:prev-next-pagination-links(
+   $start as xs:nonNegativeInteger,
+   $page-length as xs:nonNegativeInteger,
+   $total-count as xs:nonNegativeInteger,
+   $query as xs:string) as element() {
+
+(: convert from document number to page numbers :)
+let $current-page := round($start div $page-length) + 1
+let $last-page := round($total-count div $page-length)
+let $query-parameter :=
+   if (exists($query))
+     then '&amp;q=' || $query
+     else ()
+
+(: used to calculate the page min and maxs :)
+let $page-number-min := max( ($current-page - 5, 1) )
+let $page-number-max :=
+   if ($last-page < 10)
+      then $last-page
+      else if ($current-page < 5)
+        then 10
+        else $current-page + 5
+
+return
+<div class="prev-next-pagination-links">
+    {if ($start >= $page-length)
+       then <a href="{xdmp:get-request-path()}?start={$start - $page-length}{$query-parameter}" class="btn btn-primary">Previous</a>
+       (: disable and make gray but keep for spacing :)
+       else <a href="{xdmp:get-request-path()}?start={$start - $page-length}{$query-parameter}" class="btn btn-primary disabled opacity">Previous</a>
+    }
+
+    <span class="prev-next-page-links">
+
+      {for $page in ($page-number-min to $page-number-max)
+       return
+         if ($page = $current-page)
+            then
+            <a  class="btn btn-link link-text-black prev-next-page-link" href="{xdmp:get-request-path()}?start={(($page - 1) * $page-length) + 1}{$query-parameter}">{$page}</a>
+            else
+            <a class="btn btn-link prev-next-page-link" href="{xdmp:get-request-path()}?start={(($page - 1) * $page-length) + 1}{$query-parameter}">{$page}</a>
+       }
+     </span>
+
+    {if ($start < ($total-count - $page-length))
+       then <a href="{xdmp:get-request-path()}?start={$start + $page-length}{$query-parameter}" class="btn btn-primary pull-right">Next</a>
        else ()
     }
 </div>
