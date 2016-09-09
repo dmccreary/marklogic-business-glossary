@@ -119,7 +119,7 @@ let $content :=
       {
       for $result at $count in $search-results/search:result
         let $uri := $result/@uri/string()
-        let $concept := doc($uri)/rdf:RDF
+        let $concept := doc($uri)/skos:Concept
         let $prefLabel := $concept/skos:prefLabel/text()
         let $altLabel := $concept/skos:altLabel/text()
         let $definition := $concept/skos:definition/text()
@@ -128,20 +128,20 @@ let $content :=
         <div class="glossary-hit">
 
           <div class="skos-concept">
-            <span class="green-uri">{$uri}</span><br/>
-            <span class="field-label">Preferred Label:</span> {$prefLabel}<br/>
-            <span class="field-label">Definition:</span> {$definition}<br/>
+            {'' (:<span class="green-uri">{$uri}</span><br/>:) }
+            <span class="field-label">Business Term: </span> <b>{$prefLabel}</b><br/>
+            {'' (:<span class="field-label">Definition:</span> {$definition}<br/>:) }
             {if ($altLabel)
                then
                  <div>
-                    <span class="field-label">Alternate Label:</span> {$altLabel}
+                    <span class="field-label">Alternate Label: </span> {$altLabel}
                  </div>
                else ()
             }
             {if ($broader)
                then
                  <div>
-                    <span class="field-label">Broader:</span> {$broader}
+                    <span class="field-label">Broader: </span> {$broader}
                  </div>
                else ()
             }

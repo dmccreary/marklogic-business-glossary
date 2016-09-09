@@ -8,3 +8,5 @@ table tbody tr td.number {text-align: right;}
 .title-in-header {font-size: 20pt; color: gray; padding: 0 20px;}
 .title-in-footer {font-size: 10pt; color: silver; padding: 0 20px;}
 .field-label {color:gray;}
+.highlight {color: blue; background-color:khaki;}
+.glossary-hit {padding:10px;}
