@@ -3,18 +3,16 @@ import module namespace style = "http://danmccreary.com/style" at "/modules/styl
 
 let $title := 'Table Template'
 
-let $items := cts:uri-match('/inputs/glossary-inputs/*-skos.rdf')
+let $items := cts:uri-match('/inputs/rdf-glossaries/*-skos.rdf')
 
 let $content :=
 <div class="content">
+  <h4>{$title}</h4>
   <table class="table table-striped table-bordered table-hover table-condensed">
     <thead>
       <tr>
          <th>#</th>
-         <th>Type</th>
-         <th>Source System</th>
-         <th>Source Table</th>
-         <th>Document Count</th>
+         <th>URI</th>
       </tr>
       </thead>
     <tbody>{
@@ -29,4 +27,4 @@ let $content :=
    Elapsed Time: {xdmp:elapsed-time() div xs:dayTimeDuration('PT1S') } seconds.
 </div>
 
-return style:assmeble-page($title, $content)
+return style:assemble-page($title, $content)
