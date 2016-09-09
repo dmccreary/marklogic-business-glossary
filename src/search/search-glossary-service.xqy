@@ -67,7 +67,7 @@ let $options :=
     </operator>
   </options>
 
-let $search-results := search:search($q, $options)
+let $search-results := search:search($q, $options, $start, $page-length)
 
 (:
 <search:response total="1234"
@@ -126,8 +126,9 @@ let $content :=
         let $broader := $concept/skos:broader/text()
         return
         <div class="glossary-hit">
-
+          
           <div class="skos-concept">
+            {$count + $start - 1}. &nbsp;
             {'' (:<span class="green-uri">{$uri}</span><br/>:) }
             <span class="field-label">Business Term: </span> <b>{$prefLabel}</b><br/>
             {'' (:<span class="field-label">Definition:</span> {$definition}<br/>:) }
@@ -159,7 +160,7 @@ let $content :=
              let $para-num := substring-after(tokenize($path, '/')[last()], '*:')
             :)
             let $definition-indicator := ends-with($path, 'definition')
-            let $representation-term-indicator := ends-with($path, 'representation-term')
+            let $preferred-label-indicator := ends-with($path, 'prefLabel')
           return
             <div class="match">
             {
@@ -169,7 +170,7 @@ let $content :=
               ()
             }
             {
-            if ($representation-term-indicator) then
+            if ($preferred-label-indicator) then
               ()
             else
               for $text-or-highlight in $match/node()
@@ -183,10 +184,12 @@ let $content :=
           }
           </div>
         }
+          <div class="green-url"><a href="/views/view-xml.xqy?uri={$uri}">{$uri}</a></div>
           <div class="button-actions">
             <span class="field-label">Actions:</span>
             <a class="btn btn-info" role="button" href="/views/view-glossary-concept.xqy?uri={$uri}">View Details</a>
-            <a class="btn btn-info" role="button"  href="/views/view-xml.xqy?uri={$uri}">View XML</a>
+            <a class="btn btn-info" role="button" href="/forms/edit-glossary-term.xqy?uri={$uri}">Edit</a>
+            <a class="btn btn-info" role="button" href="/forms/add-to-term-list.xqy?uri={$uri}">Add to Term List</a>
          </div>
        </div>
       }

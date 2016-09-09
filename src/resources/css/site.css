@@ -7,6 +7,9 @@ table tbody tr td.number {text-align: right;}
 .footer {text-align: left; padding:10px;}
 .title-in-header {font-size: 20pt; color: gray; padding: 0 20px;}
 .title-in-footer {font-size: 10pt; color: silver; padding: 0 20px;}
-.field-label {color:gray;}
-.highlight {color: blue; background-color:khaki;}
+.field-label {color:gray; padding-right: 2px;}
+.highlight {color: blue; background-color:khaki; padding: 2px;}
 .glossary-hit {padding:10px;}
+.button-actions * {padding: 0 3px;}
+a.btn-info {margin-left: 4px;}
+a.green-url {color:green;}
