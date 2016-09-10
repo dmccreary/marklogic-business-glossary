@@ -10,11 +10,11 @@ return
        <b>{$prefLabel}</b>
        {if ($children)
           then
+             <ol>{
              for $child in $children
              return
-             <ol>
-               {local:view-taxonomy($concepts, $child/skos:prefLabel)}
-             </ol>
+               local:view-taxonomy($concepts, $child/skos:prefLabel)
+            }</ol>
             else ()
         }
    </li>
