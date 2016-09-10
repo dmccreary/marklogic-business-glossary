@@ -3,29 +3,44 @@
     <Concept>
         <prefLabel>Business Glossary</prefLabel>
         <altLabel>Business Vocabulary</altLabel>
-        <definition>A collection of terms and their definitions using within a business
-            context.</definition>
+        <altLabel>Business Terminology</altLabel>
+        <altLabel>Glossary</altLabel>
+        <altLabel>Organization Glossary</altLabel>
+        <altLabel>Project Glossary</altLabel>
+        <altLabel>Dictionary</altLabel>
+        <definition>A collection of terms or concepts used to communicate and govern the organization's business. Business
+            Glossarys store concepts as terms and definitions and relationships between those terms.</definition>
+        <broader>Software Application</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Dictionary</prefLabel>
+        <definition>A collecton of words and pharses with their defintions.  Some terms in a dictionary may have multiple defintions.</definition>
+        <broader>Business Glossary</broader>
     </Concept>
     <Concept>
         <prefLabel>Simple Knowledge Organization System</prefLabel>
         <abbreviation>SKOS</abbreviation>
         <definition>A W3C standard for representing business vocabularies, controlled vocabularies,
             taxonomies and thesauri.</definition>
+        <broader>Business Glossary</broader>
     </Concept>
     <Concept>
         <prefLabel>Taxonomy</prefLabel>
         <definition>A scheme of classification of items usually in a hierarchial structure where
             broader terms are higher in a tree structure.</definition>
+        <broader>Software Application</broader>
     </Concept>
     <Concept>
         <prefLabel>Thesaurus</prefLabel>
-        <definition>Lists of words in groups of synonyms and related concepts.</definition>
+        <definition>A collection of words with their synonyms and related concepts.</definition>
+        <broader>Software Application</broader>
     </Concept>
     <Concept>
         <prefLabel>Ontology</prefLabel>
         <definition>A formal naming and definition of the types, properties, and interrelationships
             of the entities that really or fundamentally exist for a particular domain of discourse.
             Ontologies frequently contain rules that govern taxonomies. </definition>
+        <broader>Software Application</broader>
     </Concept>
     <Concept>
         <prefLabel>Not Only SQL</prefLabel>
