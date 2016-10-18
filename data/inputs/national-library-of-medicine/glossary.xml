@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concepts>
+   <desc>National Library of Medicine Glossary of Terms</desc>
+   <source>https://www.nlm.nih.gov/research/umls/new_users/glossary.html</source>
+   <concept>
+      <prefLabel>Atom</prefLabel>
+      <definition>The smallest unit of naming in a source, viz, a specific string with specific code
+         values and identifiers from a specific source. As such, they can be thought of as
+         representing a single meaning with a source Atoms are the unitsof terminology that come
+         from sources and form the building blocks of the concepts in the
+         Metathesaurus.</definition>
+   </concept>
+   <concept>
+      <prefLabel>AUI</prefLabel>
+      <definition> Atom Unique Identifier. An identifier for the atom in the UMLS. It is the primary
+         key to the concepts table.</definition>
+   </concept>
+
+
+   <concept>
+      <prefLabel>Cluster</prefLabel>
+      <definition> A cluster is data in the Metathesaurus grouped by the same type of identifier
+         (CUI, CODE, SDUI, SCUI). Users can search for and view Metathesaurus data using clusters in
+         the MetamorphoSys RRF Browser.</definition>
+   </concept>
+   <concept>
+      <prefLabel>>Code</prefLabel>
+      <definition> A short value (typically numeric but often also including letters) used to
+         identify a particular member of a particular group of objects (such as atoms, strings or
+         concepts). In all capitals, or when referring to atoms, CODE refers to the value of the
+         field in the Metathesaurus, and is what the Metathesaurus perceives as the most useful
+         identifier that each source assigns to its atoms. In some special cases, the CODE values
+         are assigned by the NLM. In that case, the values are preceded with MTH.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Concept </prefLabel>
+      <definition> The fundamental unit of meaning in the Metathesaurus. A concept represents a
+         single meaning and contains all atoms from any source that express that meaning in any way,
+         whether formal or casual, verbose or abbreviated. All of the atoms within a concept are
+         synonymous. Each concept is assigned at least one semantic type. Every concept is assigned
+         a Concept Unique Identifier, or CUI, which uniquely identifies that single
+         meaning.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Concept Name </prefLabel>
+      <definition> A string chosen to represent the concept as a whole. The name is selected from
+         the atoms belonging to the concept according to a simple priority list (the term whose
+         source/term type is highest on the list is chosen, with a special procedure for choosing
+         between two source/term type values that are identical.) The priority list may be altered
+         by users as they wish, thus changing the concept names.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Context </prefLabel>
+      <definition> The indicators of meaning of a term that are not explicitly expressed in the term
+         itself. Such indicators may include an appearance in a hierarchy, the siblings in that
+         hierarchy, the intention of the source providers for the use of the source, or be implicit
+         in an anaphoric or elliptical expression. In the Metathesaurus, the hierarchical contexts
+         of parent, child, and sibling are represented explicitly.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Co-occurrence </prefLabel>
+      <definition> The simultaneous appearance of two different Metathesaurus concepts with
+         representatives from the same source appear in the same piece of information, whether
+         journal article, abstract, or other publication or database. It is a co-occurrence because
+         two different concepts are occurring together in a third-party source. The frequency with
+         which two concepts co-occur may be used as an indication of their relatedness. The
+         Metathesaurus includes the co-occurrence frequencies of concepts in certain databases. The
+         most notable of the co-occurrences are the MEDLINE co-occurrences, which represent
+         co-occurrences of MeSH descriptors in MEDLINE citations.</definition>
+   </concept>
+   <concept>
+      <prefLabel>CUI </prefLabel>
+      <definition> The Concept Unique Identifier for a Metathesaurus concept to which strings with
+         the same meaning are linked. One of the principles of the Metathesaurus is that meanings
+         should be preserved over time regardless of what terms (atoms) are used to express those
+         meanings. The CUI is an identifier that uniquely represents a meaning and (ideally) over
+         time the meaning of a CUI does not change. As sources are updated and as Metathesaurus
+         editors discover errors or find that the meanings of terms have shifted over time, the
+         meaning corresponding to a CUI may be altered (merged or split) or may disappear. In such
+         cases, the changes in the meaning of the CUIs involved are tracked in the CUI history
+         table, so that any CUI from any previous release of the Metathesaurus may always be mapped
+         to the equivalent concept in the current Metathesaurus (if any) or may be identified as
+         having been deleted (in which case the closest similar concept will often be
+         specified).</definition>
+   </concept>
+   <concept>
+      <prefLabel>Content View </prefLabel>
+      <definition> A specific subset of the Metathesaurus which includes specific entities within
+         the Metathesaurus identified as potentially useful in a particular setting for a defined
+         purpose. For example the Natural Language Processing Content View identifies terms that are
+         useful for Natural Language Processing.</definition>
+   </concept>
+   <concept>
+      <prefLabel>CVF </prefLabel>
+      <definition> Content View Flag, a binary tag used to identify in which of the content views of
+         the Metathesaurus an entity (relationship, attribute, or atom) is a member.</definition>
+   </concept>
+
+
+   <concept>
+      <prefLabel>Filters </prefLabel>
+      <definition> An function in MetamorphoSys that, when enabled, removes information. For
+         example, when the "Languages to Remove" filter is set to exclude French, all French
+         language terms are removed.</definition>
+   </concept>
+
+
+   <concept>
+      <prefLabel>Hierarchy </prefLabel>
+      <definition> A graded series, often described as a tree. These source-asserted multi-level
+         organization of a source vocabulary may be different between vocabularies designed for
+         different purposes.</definition>
+   </concept>
+
+
+   <concept>
+      <prefLabel>Knowledge Sources </prefLabel>
+      <definition> The three main parts of the UMLS: The Metathesaurus, Semantic Network, and the
+         Specialist Lexicon, with is associated Lexical Tools.</definition>
+   </concept>
+
+   <concept>
+      <prefLabel>Lexical Variants </prefLabel>
+      <definition> Different forms of a word or phrase. Types of variant include verb tenses,
+         singular and plural forms, and variations in punctuation, capitalization, and word order.
+         For example treats, treating, and treated are all language variants of the verb "treat".
+      </definition>
+   </concept>
+   <concept>
+      <prefLabel>Lexical Tools </prefLabel>
+      <definition> A suite of computer programs that can be used in a variety of ways to process
+         text. The Lexical Tools make use of the Specialist Lexicon, one of the three Knowledge
+         Sources of the UMLS.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Lexicon </prefLabel>
+      <definition> An collection, usually alphabetical, of the words in a language and information
+         about them (e.g., their definitions).</definition>
+   </concept>
+   <concept>
+      <prefLabel>Log file </prefLabel>
+      <definition> A file containing information about the processing of a computer program. Both
+         MetamorphoSys and the MRCXT Builder produce log files.</definition>
+   </concept>
+   <concept>
+      <prefLabel>LUI </prefLabel>
+      <definition> Lexical Unique Identifier. The unique identifier of a term in the Metathesaurus.
+         Terms are different from strings in that they group together strings that are lexical
+         variants of one another. For example, the strings 'Eye', 'eye', and 'eyes' all have
+         different SUIs, but share the same LUI. LUIs are not generally maintained over time, as
+         their generation depends on the algorithms used in the Lexical Variant Generator program,
+         which may change from time to time.</definition>
+   </concept>
+
+   <concept>
+      <prefLabel>Machine readable files </prefLabel>
+      <definition> Files that are formatted in such a way that they are easily imported into a
+         computer program or database.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Mapping </prefLabel>
+      <definition> A mapping provides links from entities in one source to entities in another
+         terminology. Entities may be terms, codes, concepts, descriptors or
+         expressions.</definition>
+   </concept>
+   <concept>
+      <prefLabel>MetamorphoSys </prefLabel>
+      <definition> The program distributed with the UMLS used to install, customize, and view
+         Metathesaurus data.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Metathesaurus </prefLabel>
+      <definition> One of the three UMLS Knowledge Sources; a collection of multiple vocabularies,
+         code sets, and standards.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Morphology </prefLabel>
+      <definition> Word formation information such as inflection, derivation, and
+         compounding.</definition>
+   </concept>
+
+   <concept>
+      <prefLabel>Orthography </prefLabel>
+      <definition> The aspect of grammar study that deals with letters and spelling. </definition>
+   </concept>
+
+   <concept>
+      <prefLabel>Pipe-delimited data </prefLabel>
+      <definition> A format for information in which data is separated into sections by a "|"
+         character. The UMLS knowledge source files are all delivered as Pipe-delimited
+         data.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Precedence </prefLabel>
+      <definition> Priority; status in order of importance. The Metathesaurus provides a precedence
+         ranking of its constituents sources and their term types, which is used to determine which
+         term is the Preferred Term.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Preferred term </prefLabel>
+      <definition> The string preferred in a source or in the Metathesaurus as the name of a
+         concept, lexical variant, or string.</definition>
+   </concept>
+
+   <concept>
+      <prefLabel>Raw data/Raw data view </prefLabel>
+      <definition> The data files of the UMLS in machine readable format (normally pipe-delimited
+         data) before being altered with a computer application. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Root Source Abbreviation (RSAB) </prefLabel>
+      <definition>An NLM-assigned source abbreviation stripped of its version information. For
+         example, the RSAB for 2012 version of the Current Procedural Terminology is CPT. The
+         purpose of the stripped source is to have a source value that can be preserved across
+         versions of the metathesaurus. CPT will identify CPT2011 in one version and CPT2012 in a
+         later version, for example.</definition>
+   </concept>
+   <concept>
+      <prefLabel>RxNorm </prefLabel>
+      <definition> A standardized nomenclature for clinical drugs produced by the National Library
+         of Medicine. </definition>
+   </concept>
+
+   <concept>
+      <prefLabel>SCUI </prefLabel>
+      <definition> Source Concept Unique Identifier. The source-asserted unique identifier for each
+         source concept.</definition>
+   </concept>
+   <concept>
+      <prefLabel>SDUI</prefLabel>
+      <definition> SourceDescriptor Unique Identifier. The source-asserted unique identifier for
+         each source descriptor.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Semantic Groups </prefLabel>
+      <definition> A small set of groups into which all semantic types are aggregated. Semantic
+         groups provide a very broad view of Metathesaurus concepts through their assigned semantic
+         types. Semantic groups are not included in the UMLS distribution but can be accessed
+         through the Semantic Network Website
+         [http://semanticnetwork.nlm.nih.gov/SemGroups/].</definition>
+   </concept>
+   <concept>
+      <prefLabel>Semantic Network </prefLabel>
+      <definition> One of the three UMLS Knowledge Sources; it provides a broad categorization of
+         all concepts represented in the UMLS Metathesaurus.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Semantic relationships </prefLabel>
+      <definition> Links between categories (semantic types) in the Semantic Network, the most basic
+         relationship is 'isa', for example "Amphibian isa Animal." The relationships can be thought
+         of as naming relationships which may potentially exist between members of those
+         categories.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Semantic Type </prefLabel>
+      <definition> One of the broad categories (for example, "Clinical Drug" or "Disease or
+         Syndrome") described in the UMLS Semantic Network. One or more semantic types is assigned
+         to each Metathesaurus concept.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Source </prefLabel>
+      <definition> A terminology intended for use in computer systems, and controlled and maintained
+         by an authority, the source provider. In some cases, the source may be a portion of a
+         richer source of information, with the keys to that information provided by the names in
+         the source. The Metathesaurus collects many source terminologies and integrates them into a
+         unified concept structure.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Source Concept </prefLabel>
+      <definition> A source concept is a source asserted-collection of atoms that are considered to
+         be synonymous.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Source Descriptor </prefLabel>
+      <definition> A source descriptor is a source asserted-collection of concepts (or atoms if
+         there is no concept level organization) that are considered to be closely related (but not
+         necessarily synonymous).</definition>
+   </concept>
+   <concept>
+      <prefLabel>Source transparency </prefLabel>
+      <definition> The idea that one should be able to extract vocabularies and code sets from the
+         UMLS Metathesaurus and from that data, reproduce the original vocabulary or code
+         set.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Source vocabularies </prefLabel>
+      <definition> see Source. The vocabularies, code sets, and data standards that are contained in
+         the UMLS Metathesaurus. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Specialist Lexicon </prefLabel>
+      <definition> One of the three UMLS Knowledge Sources; an English lexicon containing common and
+         biomedical terms with their syntactic, morphological, and orthographic
+         information.</definition>
+   </concept>
+   <concept>
+      <prefLabel>String </prefLabel>
+      <definition> A particular sequence of characters forming a word or phrase in a particular
+         language (e.g., English or Spanish). The character set used as the basis for this sequence
+         is UNICODE UTF-8. Any difference in upper or lower case, word order, punctuation, or other
+         form would indicate a separate string. In the Metathesaurus, when the same sequence occurs
+         in different languages, each is considered to be a separate string and receives a different
+         string identifier (SUI). Thus, "Color", "color" and "Colors" are 3 separate English
+         Strings, and the Spanish word "color" is a fourth.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Subset </prefLabel>
+      <definition> A portion (or set) of the data in the UMLS Metathesaurus. MetamorphoSys may be
+         used to generate customized subsets.</definition>
+   </concept>
+   <concept>
+      <prefLabel>SUI </prefLabel>
+      <definition> The unique identifier for each unique string in the Metathesaurus. Strings that
+         differ in any way, e.g., by upper or lower case, will have different SUIs.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Suppressibilty </prefLabel>
+      <definition> In the UMLS Metathesaurus terms can be marked as "suppressible", these terms can
+         then be removed from the subset. These terms are most often identified as suppressible
+         because of ambiguity in meaning or lack of face validity.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Synonym </prefLabel>
+      <definition> A string which can be substituted for another in every expression without
+         changing the meaning of the expression. In practice, the Metathesaurus considers atoms
+         synonymous if it is thought that the vast majority of experts in the field would not
+         consider any differences between the objects to which they refer to be of
+         significance.</definition>
+   </concept>
+   <concept>
+      <prefLabel>Syntax </prefLabel>
+      <definition> The way linguistic elements (words) are used together to form constituents
+         (phrases or clauses).</definition>
+   </concept>
+
+   <concept>
+      <prefLabel>Term </prefLabel>
+      <definition> A word or collection of words comprising an expression. In the Metathesaurus, a
+         term is the class of all strings that are lexical variants (made singular and normalized to
+         case) of each other. (Eye, eye, eyes = 1 term). . Thus, "Color", "color" and "Colors" would
+         be 3 Strings in the same Term, whereas "Hue" would be a separate term in the same concept.
+         Terms, as recognized computationally in the UMLS environment, are assigned a unique
+         identifier (LUI).</definition>
+   </concept>
+   <concept>
+      <prefLabel>Term type </prefLabel>
+      <definition> A value indicating the kind of role an atom plays in its source. Examples include
+         PT for "preferred term," SY for "synonym," and MH for "main heading." Term types are often
+         not assigned by a source, but are assigned in Metathesaurus production, in which case they
+         are usually generic across sources. In some cases, term types may be assigned by the
+         source, are-specific to that particular source.</definition>
+   </concept>
+
+   <concept>
+      <prefLabel>UMLS Terminology Services (UTS) </prefLabel>
+      <definition> A computer application that provides internet access to the Knowledge Sources and
+         other related resources made available by developers using the UMLS. The UTS replaces the
+         UMLS Knowledge Source Server (UMLSKS) with new features and improved access to UMLS and
+         other NLM terminology resources.</definition>
+   </concept>
+
+   <concept>
+      <prefLabel>Versioned Source Abbreviation (VSAB) </prefLabel>
+      <definition> A NLM-assigned source abbreviation with accompanying version information. For
+         example, the VSAB for the 2012 version of the Current Procedural Terminology is
+         CPT2012.</definition>
+   </concept>
+
+</concepts>

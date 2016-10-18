@@ -30,7 +30,7 @@ return
 
 let $title := 'View Freemind as XML'
 
-let $uri := xdmp:get-request-field('uri', '/inputs/taxonomies/Modern-Metadata-Management-freemind.xml')
+let $uri := xdmp:get-request-field('uri', '/inputs/taxonomies/Data-Hubs.xml')
 
 return
    if (not(doc-available($uri)))

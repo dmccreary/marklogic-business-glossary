@@ -95,7 +95,7 @@ let $content :=
   <div class="col-md-10">
     {if ($search-results) then
       <div class="search-results">
-        <h4>Search Results</h4>
+        <h4>{$title} Search Results</h4>
         
         { if ($start gt 1)
         then
