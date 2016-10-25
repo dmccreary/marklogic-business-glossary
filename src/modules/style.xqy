@@ -34,8 +34,8 @@ declare function style:header() as element() {
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                 </button>
-                <a class="navbar-brand" href="/index.xqy"><img style="max-width:100px; margin-top: -8px;" 
-                src="/resources/images/marklogic-logo-small.png" alt="MarkLogic Logo"/></a>
+                <a class="navbar-brand" href="/index.xqy"><img 
+                src="/resources/images/marklogic.png" alt="MarkLogic Logo"/></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -44,7 +44,8 @@ declare function style:header() as element() {
 
                 <ul class="nav navbar-nav navbar-form navbar-center">
                 <!-- Main Searchbar -->
-                    <form class="navbar-form" role="search" action="/search/search-glossary-service.xqy">
+                  <li>
+                     <form class="navbar-form" role="search" action="/search/search-glossary-service.xqy">
                         <div class="input-group">
                             <input type="search" class="form-control" size="50" placeholder="Search Glossary" name="q"/>
                             <input type="hidden"  name="debug" value="false"/>
@@ -52,14 +53,9 @@ declare function style:header() as element() {
                                     <button class="btn btn-default" type="submit">Search</button>
                                 </div>
                         </div>
-                    </form>
-                </ul>
-
-                <ul class="nav navbar-nav">
-                    <li><a style="margin-top: 7px;" href="/search/advanced-search-form.xqy">Advanced Search</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
+                     </form>
+                    </li>
+                    <li><a href="/search/advanced-search-form.xqy">Advanced Search</a></li>
                     <li><a href="#">User: {xdmp:get-current-user()}</a></li>
                 </ul>
 
