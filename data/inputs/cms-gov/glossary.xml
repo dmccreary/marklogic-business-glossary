@@ -1,796 +1,787 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glossary-terms class="cms-glossary">
-    <source>https://www.healthcare.gov/glossary/</source>
+    <source>https://www.healthcare.gov/</source>
     <see-also>https://www.cms.gov/apps/acronyms/</see-also>
     <base-uri>https://www.cms.gov/apps/glossary</base-uri>
     <concept>
-        <a href="/glossary/accountable-care-organization/">Accountable Care Organization</a>
+        <a href="/accountable-care-organization/">Accountable Care Organization</a>
     </concept>
     <concept>
-        <a href="/glossary/accreditation/">Accreditation</a>
+        <a href="/accreditation/">Accreditation</a>
     </concept>
     <concept>
-        <a href="/glossary/actuarial-value/">Actuarial Value</a>
+        <a href="/actuarial-value/">Actuarial Value</a>
     </concept>
     <concept>
-        <a href="/glossary/adjusted-gross-income-agi/">Adjusted Gross Income (AGI)</a>
+        <a href="/adjusted-gross-income-agi/">Adjusted Gross Income (AGI)</a>
     </concept>
     <concept>
-        <a href="/glossary/advanced-premium-tax-credit/">Advance Premium Tax Credit (APTC)</a>
+        <a href="/advanced-premium-tax-credit/">Advance Premium Tax Credit (APTC)</a>
     </concept>
     <concept>
-        <a href="/glossary/affordable-care-act/">Affordable Care Act (ACA)</a>
+        <a href="/affordable-care-act/">Affordable Care Act (ACA)</a>
     </concept>
     <concept>
-        <a href="/glossary/affordable-coverage/">Affordable coverage</a>
+        <a href="/affordable-coverage/">Affordable coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/agent/">Agent</a>
+        <a href="/agent/">Agent</a>
     </concept>
     <concept>
-        <a href="/glossary/alimony/">Alimony</a>
+        <a href="/alimony/">Alimony</a>
     </concept>
     <concept>
-        <a href="/glossary/allowed-amount/">Allowed Amount</a>
+        <a href="/allowed-amount/">Allowed Amount</a>
     </concept>
     <concept>
-        <a href="/glossary/annual-deductible-combined/">Annual Deductible Combined</a>
+        <a href="/annual-deductible-combined/">Annual Deductible Combined</a>
     </concept>
     <concept>
-        <a href="/glossary/annual-limit/">Annual Limit</a>
+        <a href="/annual-limit/">Annual Limit</a>
     </concept>
     <concept>
-        <a href="/glossary/appeal/">Appeal</a>
+        <a href="/appeal/">Appeal</a>
     </concept>
     <concept>
-        <a href="/glossary/application-id/">Application ID</a>
+        <a href="/application-id/">Application ID</a>
     </concept>
     <concept>
-        <a href="/glossary/attest-attestation/">Attest/Attestation</a>
+        <a href="/attest-attestation/">Attest/Attestation</a>
     </concept>
     <concept>
-        <a href="/glossary/authorized-representative/">Authorized Representative</a>
+        <a href="/authorized-representative/">Authorized Representative</a>
     </concept>
     <concept>
-        <a href="/glossary/balance-billing/">Balance Billing</a>
+        <a href="/balance-billing/">Balance Billing</a>
     </concept>
     <concept>
-        <a href="/glossary/benefit-year/">Benefit Year</a>
+        <a href="/benefit-year/">Benefit Year</a>
     </concept>
     <concept>
-        <a href="/glossary/benefits/">Benefits</a>
+        <a href="/benefits/">Benefits</a>
     </concept>
     <concept>
-        <a href="/glossary/biosimilar-biological-products/">Biosimilar Biological Products</a>
+        <a href="/biosimilar-biological-products/">Biosimilar Biological Products</a>
     </concept>
     <concept>
-        <a href="/glossary/brand-name-drugs/">Brand Name (Drugs)</a>
+        <a href="/brand-name-drugs/">Brand Name (Drugs)</a>
     </concept>
     <concept>
-        <a href="/glossary/broker/">Broker</a>
+        <a href="/broker/">Broker</a>
     </concept>
     <concept>
-        <a href="/glossary/bronze-health-plan/">Bronze Health Plan</a>
+        <a href="/bronze-health-plan/">Bronze Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/cobra/">COBRA</a>
+        <a href="/cobra/">COBRA</a>
     </concept>
     <concept>
-        <a href="/glossary/cancelled-debts/">Cancelled Debts</a>
+        <a href="/cancelled-debts/">Cancelled Debts</a>
     </concept>
     <concept>
-        <a href="/glossary/capital-gains/">Capital Gains</a>
+        <a href="/capital-gains/">Capital Gains</a>
     </concept>
     <concept>
-        <a href="/glossary/care-coordination/">Care Coordination</a>
+        <a href="/care-coordination/">Care Coordination</a>
     </concept>
     <concept>
-        <a href="/glossary/catastrophic-health-plan/">Catastrophic Health Plan</a>
+        <a href="/catastrophic-health-plan/">Catastrophic Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/centers-for-medicare-and-medicaid-services/">Centers for Medicare &amp;
+        <a href="/centers-for-medicare-and-medicaid-services/">Centers for Medicare &amp;
             Medicaid Services (CMS)</a>
     </concept>
     <concept>
-        <a href="/glossary/certified-applicant-counselor/">Certified Application Counselor</a>
+        <a href="/certified-applicant-counselor/">Certified Application Counselor</a>
     </concept>
     <concept>
-        <a href="/glossary/childrens-health-insurance-program-chip/">Children's Health Insurance
+        <a href="/childrens-health-insurance-program-chip/">Children's Health Insurance
             Program (CHIP)</a>
     </concept>
     <concept>
-        <a href="/glossary/chronic-disease-management/">Chronic Disease Management</a>
+        <a href="/chronic-disease-management/">Chronic Disease Management</a>
     </concept>
     <concept>
-        <a href="/glossary/claim/">Claim</a>
+        <a href="/claim/">Claim</a>
     </concept>
     <concept>
-        <a href="/glossary/co-op/">Co-op</a>
+        <a href="/co-op/">Co-op</a>
     </concept>
     <concept>
-        <a href="/glossary/co-insurance/">Coinsurance</a>
+        <a href="/co-insurance/">Coinsurance</a>
     </concept>
     <concept>
-        <a href="/glossary/community-rating/">Community Rating</a>
+        <a href="/community-rating/">Community Rating</a>
     </concept>
     <concept>
-        <a href="/glossary/competitive-bidding/">Competitive Bidding</a>
+        <a href="/competitive-bidding/">Competitive Bidding</a>
     </concept>
     <concept>
-        <a href="/glossary/complications-of-pregnancy/">Complication of Pregnancy</a>
+        <a href="/complications-of-pregnancy/">Complication of Pregnancy</a>
     </concept>
     <concept>
-        <a href="/glossary/conversion/">Conversion</a>
+        <a href="/conversion/">Conversion</a>
     </concept>
     <concept>
-        <a href="/glossary/coordination-of-benefits/">Coordination of Benefits</a>
+        <a href="/coordination-of-benefits/">Coordination of Benefits</a>
     </concept>
     <concept>
-        <a href="/glossary/co-payment/">Copayment</a>
+        <a href="/co-payment/">Copayment</a>
     </concept>
     <concept>
-        <a href="/glossary/cost-sharing/">Cost Sharing</a>
+        <a href="/cost-sharing/">Cost Sharing</a>
     </concept>
     <concept>
-        <a href="/glossary/cost-sharing-reduction/">Cost Sharing Reduction (CSR)</a>
+        <a href="/cost-sharing-reduction/">Cost Sharing Reduction (CSR)</a>
     </concept>
     <concept>
-        <a href="/glossary/court-awards/">Court Awards</a>
+        <a href="/court-awards/">Court Awards</a>
     </concept>
     <concept>
-        <a href="/glossary/creditable-coverage/">Creditable Coverage</a>
+        <a href="/creditable-coverage/">Creditable Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/data-matching-issue/">Data Matching Issue (Inconsistency)</a>
+        <a href="/data-matching-issue/">Data Matching Issue (Inconsistency)</a>
     </concept>
     <concept>
-        <a href="/glossary/deductible/">Deductible</a>
+        <a href="/deductible/">Deductible</a>
     </concept>
     <concept>
-        <a href="/glossary/dental-coverage/">Dental Coverage</a>
+        <a href="/dental-coverage/">Dental Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/department-of-health-and-human-services-hhs/">Department of Health and
+        <a href="/department-of-health-and-human-services-hhs/">Department of Health and
             Human Services (HHS)</a>
     </concept>
     <concept>
-        <a href="/glossary/dependent/">Dependent</a>
+        <a href="/dependent/">Dependent</a>
     </concept>
     <concept>
-        <a href="/glossary/dependent-coverage/">Dependent Coverage</a>
+        <a href="/dependent-coverage/">Dependent Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/disability/">Disability</a>
+        <a href="/disability/">Disability</a>
     </concept>
     <concept>
-        <a href="/glossary/dividend/">Dividend</a>
+        <a href="/dividend/">Dividend</a>
     </concept>
     <concept>
-        <a href="/glossary/domestic-partnership/">Domestic Partnership</a>
+        <a href="/domestic-partnership/">Domestic Partnership</a>
     </concept>
     <concept>
-        <a href="/glossary/donut-hole-medicare-prescription-drug/">Donut Hole, Medicare Prescription
+        <a href="/donut-hole-medicare-prescription-drug/">Donut Hole, Medicare Prescription
             Drug</a>
     </concept>
     <concept>
-        <a href="/glossary/drug-list/">Drug List</a>
+        <a href="/drug-list/">Drug List</a>
     </concept>
     <concept>
-        <a href="/glossary/durable-medical-quipment-DME/">Durable Medical Equipment (DME)</a>
+        <a href="/durable-medical-quipment-DME/">Durable Medical Equipment (DME)</a>
     </concept>
     <concept>
-        <a href="/glossary/early-and-periodic-screening-diagnostic-and-treatment-services-EPSDT/"
+        <a href="/early-and-periodic-screening-diagnostic-and-treatment-services-EPSDT/"
             >Early and Periodic Screening, Diagnostic, and Treatment Services (EPSDT)</a>
     </concept>
     <concept>
-        <a href="/glossary/eligibility-assessment/">Eligibility Assessment</a>
+        <a href="/eligibility-assessment/">Eligibility Assessment</a>
     </concept>
     <concept>
-        <a href="/glossary/eligible-immigration-status/">Eligible Immigration Status</a>
+        <a href="/eligible-immigration-status/">Eligible Immigration Status</a>
     </concept>
     <concept>
-        <a href="/glossary/emergency-medical-condition/">Emergency Medical Condition</a>
+        <a href="/emergency-medical-condition/">Emergency Medical Condition</a>
     </concept>
     <concept>
-        <a href="/glossary/emergency-medical-transportation/">Emergency Medical Transportation</a>
+        <a href="/emergency-medical-transportation/">Emergency Medical Transportation</a>
     </concept>
     <concept>
-        <a href="/glossary/emergency-room-care/">Emergency Room Care</a>
+        <a href="/emergency-room-care/">Emergency Room Care</a>
     </concept>
     <concept>
-        <a href="/glossary/emergency-services/">Emergency Services</a>
+        <a href="/emergency-services/">Emergency Services</a>
     </concept>
     <concept>
-        <a href="/glossary/employer-shared-responsibility-payment/">Employer Shared Responsibility
+        <a href="/employer-shared-responsibility-payment/">Employer Shared Responsibility
             Payment (ESRP)</a>
     </concept>
     <concept>
-        <a href="/glossary/employer-or-union-retiree-plans/">Employer or Union Retiree Plans</a>
+        <a href="/employer-or-union-retiree-plans/">Employer or Union Retiree Plans</a>
     </concept>
     <concept>
-        <a href="/glossary/essential-health-benefits/">Essential Health Benefits</a>
+        <a href="/essential-health-benefits/">Essential Health Benefits</a>
     </concept>
     <concept>
-        <a href="/glossary/exchange/">Exchange</a>
+        <a href="/exchange/">Exchange</a>
     </concept>
     <concept>
-        <a href="/glossary/excluded-services/">Excluded Services</a>
+        <a href="/excluded-services/">Excluded Services</a>
     </concept>
     <concept>
-        <a href="/glossary/exclusive-provider-organization-EPO-plan/">Exclusive Provider
+        <a href="/exclusive-provider-organization-EPO-plan/">Exclusive Provider
             Organization (EPO) Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/exemption/">Exemption</a>
+        <a href="/exemption/">Exemption</a>
     </concept>
     <concept>
-        <a href="/glossary/exemption-certificate-number-ecn/">Exemption Certificate Number (ECN)</a>
+        <a href="/exemption-certificate-number-ecn/">Exemption Certificate Number (ECN)</a>
     </concept>
     <concept>
-        <a href="/glossary/external-review/">External Review</a>
+        <a href="/external-review/">External Review</a>
     </concept>
     <concept>
-        <a href="/glossary/family-and-medical-leave-act-FMLA/">Family and Medical Leave Act
+        <a href="/family-and-medical-leave-act-FMLA/">Family and Medical Leave Act
             (FMLA)</a>
     </concept>
     <concept>
-        <a href="/glossary/federal-poverty-level-FPL/">Federal Poverty Level (FPL)</a>
+        <a href="/federal-poverty-level-FPL/">Federal Poverty Level (FPL)</a>
     </concept>
     <concept>
-        <a href="/glossary/federally-qualified-health-center-FQHC/">Federally Qualified Health
+        <a href="/federally-qualified-health-center-FQHC/">Federally Qualified Health
             Center (FQHC)</a>
     </concept>
     <concept>
-        <a href="/glossary/federally-recognized-tribe/">Federally Recognized Tribe</a>
+        <a href="/federally-recognized-tribe/">Federally Recognized Tribe</a>
     </concept>
     <concept>
-        <a href="/glossary/fee/">Fee</a>
+        <a href="/fee/">Fee</a>
     </concept>
     <concept>
-        <a href="/glossary/fee-for-service/">Fee For Service</a>
+        <a href="/fee-for-service/">Fee For Service</a>
     </concept>
     <concept>
-        <a href="/glossary/flexible-benefits-plan/">Flexible Benefits Plan</a>
+        <a href="/flexible-benefits-plan/">Flexible Benefits Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/flexible-spending-account-FSA/">Flexible Spending Account (FSA)</a>
+        <a href="/flexible-spending-account-FSA/">Flexible Spending Account (FSA)</a>
     </concept>
     <concept>
-        <a href="/glossary/formulary/">Formulary</a>
+        <a href="/formulary/">Formulary</a>
     </concept>
     <concept>
-        <a href="/glossary/full-time-employee/">Full-Time Employee (FTE)</a>
+        <a href="/full-time-employee/">Full-Time Employee (FTE)</a>
     </concept>
     <concept>
-        <a href="/glossary/fully-insured-job-based-plan/">Fully Insured Job-based Plan</a>
+        <a href="/fully-insured-job-based-plan/">Fully Insured Job-based Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/generic-drugs/">Generic Drugs</a>
+        <a href="/generic-drugs/">Generic Drugs</a>
     </concept>
     <concept>
-        <a href="/glossary/gold-health-plan/">Gold Health Plan</a>
+        <a href="/gold-health-plan/">Gold Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/grace-period/">Grace Period</a>
+        <a href="/grace-period/">Grace Period</a>
     </concept>
     <concept>
-        <a href="/glossary/grandfathered/">Grandfathered</a>
+        <a href="/grandfathered/">Grandfathered</a>
     </concept>
     <concept>
-        <a href="/glossary/grandfathered-health-plan/">Grandfathered Health Plan</a>
+        <a href="/grandfathered-health-plan/">Grandfathered Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/grievance/">Grievance</a>
+        <a href="/grievance/">Grievance</a>
     </concept>
     <concept>
-        <a href="/glossary/group-health-plan/">Group Health Plan</a>
+        <a href="/group-health-plan/">Group Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/guaranteed-issue/">Guaranteed Issue</a>
+        <a href="/guaranteed-issue/">Guaranteed Issue</a>
     </concept>
     <concept>
-        <a href="/glossary/guaranteed-renewal/">Guaranteed Renewal</a>
+        <a href="/guaranteed-renewal/">Guaranteed Renewal</a>
     </concept>
     <concept>
-        <a href="/glossary/HIPAA-eligible-individual/">HIPAA Eligible Individual</a>
+        <a href="/HIPAA-eligible-individual/">HIPAA Eligible Individual</a>
     </concept>
     <concept>
-        <a href="/glossary/habilitative-habilitation-services/">Habilitative/Habilitation
+        <a href="/habilitative-habilitation-services/">Habilitative/Habilitation
             Services</a>
     </concept>
     <concept>
-        <a href="/glossary/hardship-exemption/">Hardship Exemption</a>
+        <a href="/hardship-exemption/">Hardship Exemption</a>
     </concept>
     <concept>
-        <a href="/glossary/health-care-workforce-incentive/">Health Care Workforce Incentive</a>
+        <a href="/health-care-workforce-incentive/">Health Care Workforce Incentive</a>
     </concept>
     <concept>
-        <a href="/glossary/health-coverage/">Health Coverage</a>
+        <a href="/health-coverage/">Health Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/health-insurance/">Health Insurance</a>
+        <a href="/health-insurance/">Health Insurance</a>
     </concept>
     <concept>
-        <a href="/glossary/health-insurance-marketplace-glossary/">Health Insurance Marketplace</a>
+        <a href="/health-insurance-marketplace-glossary/">Health Insurance Marketplace</a>
     </concept>
     <concept>
-        <a href="/glossary/health-maintenance-organization-HMO/">Health Maintenance Organization
+        <a href="/health-maintenance-organization-HMO/">Health Maintenance Organization
             (HMO)</a>
     </concept>
     <concept>
-        <a href="/glossary/health-plan-categories/">Health Plan Categories</a>
+        <a href="/health-plan-categories/">Health Plan Categories</a>
     </concept>
     <concept>
-        <a href="/glossary/health-reimbursement-account-HRA/">Health Reimbursement Account (HRA)</a>
+        <a href="/health-reimbursement-account-HRA/">Health Reimbursement Account (HRA)</a>
     </concept>
     <concept>
-        <a href="/glossary/health-savings-account-HSA/">Health Savings Account (HSA)</a>
+        <a href="/health-savings-account-HSA/">Health Savings Account (HSA)</a>
     </concept>
     <concept>
-        <a href="/glossary/health-status/">Health Status</a>
+        <a href="/health-status/">Health Status</a>
     </concept>
     <concept>
-        <a href="/glossary/high-deductible-health-plan/">High Deductible Health Plan (HDHP)</a>
+        <a href="/high-deductible-health-plan/">High Deductible Health Plan (HDHP)</a>
     </concept>
     <concept>
-        <a href="/glossary/high-cost-excise-tax/">High-Cost Excise Tax</a>
+        <a href="/high-cost-excise-tax/">High-Cost Excise Tax</a>
     </concept>
     <concept>
-        <a href="/glossary/high-risk-pool-plan-state/">High-Risk Pool Plan (State)</a>
+        <a href="/high-risk-pool-plan-state/">High-Risk Pool Plan (State)</a>
     </concept>
     <concept>
-        <a href="/glossary/home-health-care/">Home Health Care</a>
+        <a href="/home-health-care/">Home Health Care</a>
     </concept>
     <concept>
-        <a href="/glossary/home-and-community-based-services-HCBS/">Home and Community-Based
+        <a href="/home-and-community-based-services-HCBS/">Home and Community-Based
             Services (HCBS)</a>
     </concept>
     <concept>
-        <a href="/glossary/hospice-services/">Hospice Services</a>
+        <a href="/hospice-services/">Hospice Services</a>
     </concept>
     <concept>
-        <a href="/glossary/hospital-outpatient-care/">Hospital Outpatient Care</a>
+        <a href="/hospital-outpatient-care/">Hospital Outpatient Care</a>
     </concept>
     <concept>
-        <a href="/glossary/hospital-readmissions/">Hospital Readmissions</a>
+        <a href="/hospital-readmissions/">Hospital Readmissions</a>
     </concept>
     <concept>
-        <a href="/glossary/hospitalization/">Hospitalization</a>
+        <a href="/hospitalization/">Hospitalization</a>
     </concept>
     <concept>
-        <a href="/glossary/household/">Household</a>
+        <a href="/household/">Household</a>
     </concept>
     <concept>
-        <a href="/glossary/in-person-assistance-personnel-program/">In Person Assistance Personnel
+        <a href="/in-person-assistance-personnel-program/">In Person Assistance Personnel
             Program</a>
     </concept>
     <concept>
-        <a href="/glossary/in-network-coinsurance/">In-network Coinsurance</a>
+        <a href="/in-network-coinsurance/">In-network Coinsurance</a>
     </concept>
     <concept>
-        <a href="/glossary/in-network-co-payment/">In-network Copayment</a>
+        <a href="/in-network-co-payment/">In-network Copayment</a>
     </concept>
     <concept>
-        <a href="/glossary/inconsistency/">Inconsistency (Data Matching Issue)</a>
+        <a href="/inconsistency/">Inconsistency (Data Matching Issue)</a>
     </concept>
     <concept>
-        <a href="/glossary/individual-health-insurance-policy/">Individual Health Insurance
+        <a href="/individual-health-insurance-policy/">Individual Health Insurance
             Policy</a>
     </concept>
     <concept>
-        <a href="/glossary/inpatient-care/">Inpatient Care</a>
+        <a href="/inpatient-care/">Inpatient Care</a>
     </concept>
     <concept>
-        <a href="/glossary/insurance-co-op/">Insurance Co-Op</a>
+        <a href="/insurance-co-op/">Insurance Co-Op</a>
     </concept>
     <concept>
-        <a href="/glossary/interest/">Interest</a>
+        <a href="/interest/">Interest</a>
     </concept>
     <concept>
-        <a href="/glossary/investment-income/">Investment Income</a>
+        <a href="/investment-income/">Investment Income</a>
     </concept>
     <concept>
-        <a href="/glossary/job-based-health-plan/">Job-based Health Plan</a>
+        <a href="/job-based-health-plan/">Job-based Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/large-group-health-plan/">Large Group Health Plan</a>
+        <a href="/large-group-health-plan/">Large Group Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/lawfully-present/">Lawfully Present</a>
+        <a href="/lawfully-present/">Lawfully Present</a>
     </concept>
     <concept>
-        <a href="/glossary/life-time-limit/">Lifetime Limit</a>
+        <a href="/life-time-limit/">Lifetime Limit</a>
     </concept>
     <concept>
-        <a href="/glossary/limited-cost-sharing-plan/">Limited cost sharing plan</a>
+        <a href="/limited-cost-sharing-plan/">Limited cost sharing plan</a>
     </concept>
     <concept>
-        <a href="/glossary/long-term-care/">Long-Term Care</a>
+        <a href="/long-term-care/">Long-Term Care</a>
     </concept>
     <concept>
-        <a href="/glossary/marketplace/">Marketplace</a>
+        <a href="/marketplace/">Marketplace</a>
     </concept>
     <concept>
-        <a href="/glossary/medicaid/">Medicaid</a>
+        <a href="/medicaid/">Medicaid</a>
     </concept>
     <concept>
-        <a href="/glossary/medical-loss-ratio-MLR/">Medical Loss Ratio (MLR)</a>
+        <a href="/medical-loss-ratio-MLR/">Medical Loss Ratio (MLR)</a>
     </concept>
     <concept>
-        <a href="/glossary/medical-underwriting/">Medical Underwriting</a>
+        <a href="/medical-underwriting/">Medical Underwriting</a>
     </concept>
     <concept>
-        <a href="/glossary/medically-necessary/">Medically Necessary</a>
+        <a href="/medically-necessary/">Medically Necessary</a>
     </concept>
     <concept>
-        <a href="/glossary/medicare/">Medicare</a>
+        <a href="/medicare/">Medicare</a>
     </concept>
     <concept>
-        <a href="/glossary/medicare-advantage-medicare-part-c/">Medicare Advantage (Medicare Part
+        <a href="/medicare-advantage-medicare-part-c/">Medicare Advantage (Medicare Part
             C)</a>
     </concept>
     <concept>
-        <a href="/glossary/medicare-hospital-insurance-tax/">Medicare Hospital Insurance Tax</a>
+        <a href="/medicare-hospital-insurance-tax/">Medicare Hospital Insurance Tax</a>
     </concept>
     <concept>
-        <a href="/glossary/medicare-part-d/">Medicare Part D</a>
+        <a href="/medicare-part-d/">Medicare Part D</a>
     </concept>
     <concept>
-        <a href="/glossary/medicare-prescription-drug-donut-hole/">Medicare Prescription Drug Donut
+        <a href="/medicare-prescription-drug-donut-hole/">Medicare Prescription Drug Donut
             Hole</a>
     </concept>
     <concept>
-        <a href="/glossary/member-survey-results/">Member Survey Results</a>
+        <a href="/member-survey-results/">Member Survey Results</a>
     </concept>
     <concept>
-        <a href="/glossary/minimum-essential-coverage/">Minimum Essential Coverage (MEC)</a>
+        <a href="/minimum-essential-coverage/">Minimum Essential Coverage (MEC)</a>
     </concept>
     <concept>
-        <a href="/glossary/minimum-value/">Minimum value</a>
+        <a href="/minimum-value/">Minimum value</a>
     </concept>
     <concept>
-        <a href="/glossary/modified-adjusted-gross-income-magi/">Modified Adjusted Gross Income
+        <a href="/modified-adjusted-gross-income-magi/">Modified Adjusted Gross Income
             (MAGI)</a>
     </concept>
     <concept>
-        <a href="/glossary/multi-employer-plan/">Multi-Employer Plan</a>
+        <a href="/multi-employer-plan/">Multi-Employer Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/multi-state-plan/">Multi-State Plan</a>
+        <a href="/multi-state-plan/">Multi-State Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/navigator/">Navigator</a>
+        <a href="/navigator/">Navigator</a>
     </concept>
     <concept>
-        <a href="/glossary/net-capital-gains/">Net Capital Gains</a>
+        <a href="/net-capital-gains/">Net Capital Gains</a>
     </concept>
     <concept>
-        <a href="/glossary/net-rental-income/">Net Rental Income</a>
+        <a href="/net-rental-income/">Net Rental Income</a>
     </concept>
     <concept>
-        <a href="/glossary/network/">Network</a>
+        <a href="/network/">Network</a>
     </concept>
     <concept>
-        <a href="/glossary/network-plan/">Network Plan</a>
+        <a href="/network-plan/">Network Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/new-plan/">New Plan</a>
+        <a href="/new-plan/">New Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/non-preferred-provider/">Non-preferred provider</a>
+        <a href="/non-preferred-provider/">Non-preferred provider</a>
     </concept>
     <concept>
-        <a href="/glossary/nondiscrimination/">Nondiscrimination</a>
+        <a href="/nondiscrimination/">Nondiscrimination</a>
     </concept>
     <concept>
-        <a href="/glossary/not-yet-accredited-health-plan/">Not Yet Accredited (Health Plan)</a>
+        <a href="/not-yet-accredited-health-plan/">Not Yet Accredited (Health Plan)</a>
     </concept>
     <concept>
-        <a href="/glossary/notice/">Notice</a>
+        <a href="/notice/">Notice</a>
     </concept>
     <concept>
-        <a href="/glossary/obamacare/">Obamacare</a>
+        <a href="/obamacare/">Obamacare</a>
     </concept>
     <concept>
-        <a href="/glossary/open-enrollment-period/">Open Enrollment Period </a>
+        <a href="/open-enrollment-period/">Open Enrollment Period </a>
     </concept>
     <concept>
-        <a href="/glossary/original-medicare/">Original Medicare</a>
+        <a href="/original-medicare/">Original Medicare</a>
     </concept>
     <concept>
-        <a href="/glossary/out-of-network-coinsurance/">Out-of-Network Coinsurance</a>
+        <a href="/out-of-network-coinsurance/">Out-of-Network Coinsurance</a>
     </concept>
     <concept>
-        <a href="/glossary/out-of-network-copayment/">Out-of-Network Copayment</a>
+        <a href="/out-of-network-copayment/">Out-of-Network Copayment</a>
     </concept>
     <concept>
-        <a href="/glossary/out-of-pocket-costs/">Out-of-Pocket Costs</a>
+        <a href="/out-of-pocket-costs/">Out-of-Pocket Costs</a>
     </concept>
     <concept>
-        <a href="/glossary/out-of-pocket-estimate/">Out-of-Pocket Estimate</a>
+        <a href="/out-of-pocket-estimate/">Out-of-Pocket Estimate</a>
     </concept>
     <concept>
-        <a href="/glossary/out-of-pocket-maximum-limit/">Out-of-pocket maximum/limit</a>
+        <a href="/out-of-pocket-maximum-limit/">Out-of-pocket maximum/limit</a>
     </concept>
     <concept>
-        <a href="/glossary/patient-protection-and-affordable-care-act/">Patient Protection and
+        <a href="/patient-protection-and-affordable-care-act/">Patient Protection and
             Affordable Care Act</a>
     </concept>
     <concept>
-        <a href="/glossary/patient-centered-outcomes-research/">Patient-Centered Outcomes
+        <a href="/patient-centered-outcomes-research/">Patient-Centered Outcomes
             Research</a>
     </concept>
     <concept>
-        <a href="/glossary/payment-bundling/">Payment Bundling</a>
+        <a href="/payment-bundling/">Payment Bundling</a>
     </concept>
     <concept>
-        <a href="/glossary/penalty/">Penalty</a>
+        <a href="/penalty/">Penalty</a>
     </concept>
     <concept>
-        <a href="/glossary/pension-retirement-benefit/">Pension (Retirement Benefit)</a>
+        <a href="/pension-retirement-benefit/">Pension (Retirement Benefit)</a>
     </concept>
     <concept>
-        <a href="/glossary/physician-services/">Physician Services</a>
+        <a href="/physician-services/">Physician Services</a>
     </concept>
     <concept>
-        <a href="/glossary/plan/">Plan</a>
+        <a href="/plan/">Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/plan-id/">Plan ID</a>
+        <a href="/plan-id/">Plan ID</a>
     </concept>
     <concept>
-        <a href="/glossary/plan-year/">Plan Year</a>
+        <a href="/plan-year/">Plan Year</a>
     </concept>
     <concept>
-        <a href="/glossary/platinum-health-plan/">Platinum Health Plan</a>
+        <a href="/platinum-health-plan/">Platinum Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/point-of-service-plan-POS-plan/">Point of Service (POS) Plans</a>
+        <a href="/point-of-service-plan-POS-plan/">Point of Service (POS) Plans</a>
     </concept>
     <concept>
-        <a href="/glossary/policy-year/">Policy Year</a>
+        <a href="/policy-year/">Policy Year</a>
     </concept>
     <concept>
-        <a href="/glossary/pre-existing-condition/">Pre-Existing Condition</a>
+        <a href="/pre-existing-condition/">Pre-Existing Condition</a>
     </concept>
     <concept>
-        <a href="/glossary/pre-existing-condition-job-based-coverage/">Pre-Existing Condition
+        <a href="/pre-existing-condition-job-based-coverage/">Pre-Existing Condition
             (Job-based Coverage)</a>
     </concept>
     <concept>
-        <a href="/glossary/pre-existing-condition-exclusion-period-individual-policy/">Pre-Existing
+        <a href="/pre-existing-condition-exclusion-period-individual-policy/">Pre-Existing
             Condition Exclusion Period (Individual Policy)</a>
     </concept>
     <concept>
-        <a href="/glossary/pre-existing-condition-exclusion-period-job-based-coverage/">Pre-Existing
+        <a href="/pre-existing-condition-exclusion-period-job-based-coverage/">Pre-Existing
             Condition Exclusion Period (Job-based Coverage)</a>
     </concept>
     <concept>
-        <a href="/glossary/pre-existing-condition-insurance-plan-PCIP/">Pre-existing Condition
+        <a href="/pre-existing-condition-insurance-plan-PCIP/">Pre-existing Condition
             Insurance Plan (PCIP)</a>
     </concept>
     <concept>
-        <a href="/glossary/preauthorization/">Preauthorization</a>
+        <a href="/preauthorization/">Preauthorization</a>
     </concept>
     <concept>
-        <a href="/glossary/preferred-provider/">Preferred Provider</a>
+        <a href="/preferred-provider/">Preferred Provider</a>
     </concept>
     <concept>
-        <a href="/glossary/preferred-provider-organization-PPO/">Preferred Provider Organization
+        <a href="/preferred-provider-organization-PPO/">Preferred Provider Organization
             (PPO)</a>
     </concept>
     <concept>
-        <a href="/glossary/premium/">Premium</a>
+        <a href="/premium/">Premium</a>
     </concept>
     <concept>
-        <a href="/glossary/premium-tax-credit/">Premium Tax Credit</a>
+        <a href="/premium-tax-credit/">Premium Tax Credit</a>
     </concept>
     <concept>
-        <a href="/glossary/prescription-drug-coverage/">Prescription Drug Coverage</a>
+        <a href="/prescription-drug-coverage/">Prescription Drug Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/prescription-drugs/">Prescription Drugs</a>
+        <a href="/prescription-drugs/">Prescription Drugs</a>
     </concept>
     <concept>
-        <a href="/glossary/prevention-glossary/">Prevention</a>
+        <a href="/prevention-glossary/">Prevention</a>
     </concept>
     <concept>
-        <a href="/glossary/preventive-services/">Preventive Services</a>
+        <a href="/preventive-services/">Preventive Services</a>
     </concept>
     <concept>
-        <a href="/glossary/primary-care/">Primary Care</a>
+        <a href="/primary-care/">Primary Care</a>
     </concept>
     <concept>
-        <a href="/glossary/primary-care-physician/">Primary Care Physician</a>
+        <a href="/primary-care-physician/">Primary Care Physician</a>
     </concept>
     <concept>
-        <a href="/glossary/primary-care-provider/">Primary Care Provider</a>
+        <a href="/primary-care-provider/">Primary Care Provider</a>
     </concept>
     <concept>
-        <a href="/glossary/prior-authorization/">Prior Authorization</a>
+        <a href="/prior-authorization/">Prior Authorization</a>
     </concept>
     <concept>
-        <a href="/glossary/public-health/">Public Health</a>
+        <a href="/public-health/">Public Health</a>
     </concept>
     <concept>
-        <a href="/glossary/qualified-health-plan/">Qualified Health Plan</a>
+        <a href="/qualified-health-plan/">Qualified Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/qualifying-health-coverage/">Qualifying Health Coverage</a>
+        <a href="/qualifying-health-coverage/">Qualifying Health Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/qualifying-life-event/">Qualifying Life Event (QLE)</a>
+        <a href="/qualifying-life-event/">Qualifying Life Event (QLE)</a>
     </concept>
     <concept>
-        <a href="/glossary/quality-ratings/">Quality Ratings (or 'star' ratings)</a>
+        <a href="/quality-ratings/">Quality Ratings (or 'star' ratings)</a>
     </concept>
     <concept>
-        <a href="/glossary/rate-review/">Rate Review</a>
+        <a href="/rate-review/">Rate Review</a>
     </concept>
     <concept>
-        <a href="/glossary/reconcile/">Reconcile</a>
+        <a href="/reconcile/">Reconcile</a>
     </concept>
     <concept>
-        <a href="/glossary/reconstructive-surgery/">Reconstructive Surgery</a>
+        <a href="/reconstructive-surgery/">Reconstructive Surgery</a>
     </concept>
     <concept>
-        <a href="/glossary/referral/">Referral</a>
+        <a href="/referral/">Referral</a>
     </concept>
     <concept>
-        <a href="/glossary/rehabilitative-rehabilitation-services/">Rehabilitative/Rehabilitation
+        <a href="/rehabilitative-rehabilitation-services/">Rehabilitative/Rehabilitation
             Services</a>
     </concept>
     <concept>
-        <a href="/glossary/reinsurance/">Reinsurance</a>
+        <a href="/reinsurance/">Reinsurance</a>
     </concept>
     <concept>
-        <a href="/glossary/rental-or-royalty-income/">Rental or Royalty Income</a>
+        <a href="/rental-or-royalty-income/">Rental or Royalty Income</a>
     </concept>
     <concept>
-        <a href="/glossary/rescission/">Rescission</a>
+        <a href="/rescission/">Rescission</a>
     </concept>
     <concept>
-        <a href="/glossary/retirement-benefit/">Retirement Benefit (Pension)</a>
+        <a href="/retirement-benefit/">Retirement Benefit (Pension)</a>
     </concept>
     <concept>
-        <a href="/glossary/rider-exclusionary-rider/">Rider (exclusionary rider)</a>
+        <a href="/rider-exclusionary-rider/">Rider (exclusionary rider)</a>
     </concept>
     <concept>
-        <a href="/glossary/risk-adjustment/">Risk Adjustment</a>
+        <a href="/risk-adjustment/">Risk Adjustment</a>
     </concept>
     <concept>
-        <a href="/glossary/same-sex-marriage/">Same-Sex Marriage</a>
+        <a href="/same-sex-marriage/">Same-Sex Marriage</a>
     </concept>
     <concept>
-        <a href="/glossary/second-lowest-cost-silver-plan-slcsp/">Second Lowest Cost Silver Plan
+        <a href="/second-lowest-cost-silver-plan-slcsp/">Second Lowest Cost Silver Plan
             (SLCSP)</a>
     </concept>
     <concept>
-        <a href="/glossary/self-employment-income/">Self-Employment Income</a>
+        <a href="/self-employment-income/">Self-Employment Income</a>
     </concept>
     <concept>
-        <a href="/glossary/self-employment-ledger/">Self-Employment Ledger</a>
+        <a href="/self-employment-ledger/">Self-Employment Ledger</a>
     </concept>
     <concept>
-        <a href="/glossary/self-insured-plan/">Self-Insured Plan</a>
+        <a href="/self-insured-plan/">Self-Insured Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/service-area/">Service Area</a>
+        <a href="/service-area/">Service Area</a>
     </concept>
     <concept>
-        <a href="/glossary/silver-health-plan/">Silver Health Plan</a>
+        <a href="/silver-health-plan/">Silver Health Plan</a>
     </concept>
     <concept>
-        <a href="/glossary/skilled-nursing-care/">Skilled Nursing Care</a>
+        <a href="/skilled-nursing-care/">Skilled Nursing Care</a>
     </concept>
     <concept>
-        <a href="/glossary/skilled-nursing-facility-care/">Skilled Nursing Facility Care</a>
+        <a href="/skilled-nursing-facility-care/">Skilled Nursing Facility Care</a>
     </concept>
     <concept>
-        <a href="/glossary/social-security/">Social Security</a>
+        <a href="/social-security/">Social Security</a>
     </concept>
     <concept>
-        <a href="/glossary/social-security-benefits/">Social Security Benefits</a>
+        <a href="/social-security-benefits/">Social Security Benefits</a>
     </concept>
     <concept>
-        <a href="/glossary/social-security-survivors-benefits/">Social Security Survivors
+        <a href="/social-security-survivors-benefits/">Social Security Survivors
             Benefits</a>
     </concept>
     <concept>
-        <a href="/glossary/special-enrollment-period/">Special Enrollment Period (SEP)</a>
+        <a href="/special-enrollment-period/">Special Enrollment Period (SEP)</a>
     </concept>
     <concept>
-        <a href="/glossary/special-health-care-need/">Special Health Care Need</a>
+        <a href="/special-health-care-need/">Special Health Care Need</a>
     </concept>
     <concept>
-        <a href="/glossary/specialist/">Specialist</a>
+        <a href="/specialist/">Specialist</a>
     </concept>
     <concept>
-        <a href="/glossary/spousal-abandonment/">Spousal Abandonment</a>
+        <a href="/spousal-abandonment/">Spousal Abandonment</a>
     </concept>
     <concept>
-        <a href="/glossary/stand-alone-dental-plan/">Stand-alone dental plan</a>
+        <a href="/stand-alone-dental-plan/">Stand-alone dental plan</a>
     </concept>
     <concept>
-        <a href="/glossary/state-continuation-coverage/">State Continuation Coverage</a>
+        <a href="/state-continuation-coverage/">State Continuation Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/state-health-insurance-assistance-program/">State Health Insurance
+        <a href="/state-health-insurance-assistance-program/">State Health Insurance
             Assistance Program (SHIP)</a>
     </concept>
     <concept>
-        <a href="/glossary/state-insurance-department/">State Insurance Department</a>
+        <a href="/state-insurance-department/">State Insurance Department</a>
     </concept>
     <concept>
-        <a href="/glossary/state-medical-assistance-office/">State Medical Assistance Office</a>
+        <a href="/state-medical-assistance-office/">State Medical Assistance Office</a>
     </concept>
     <concept>
-        <a href="/glossary/subsidized-coverage/">Subsidized Coverage</a>
+        <a href="/subsidized-coverage/">Subsidized Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/summary-of-benefits-and-coverage/">Summary of Benefits and Coverage
+        <a href="/summary-of-benefits-and-coverage/">Summary of Benefits and Coverage
             (SBC)</a>
     </concept>
     <concept>
-        <a href="/glossary/supplemental-security-income/">Supplemental Security Income (SSI)</a>
+        <a href="/supplemental-security-income/">Supplemental Security Income (SSI)</a>
     </concept>
     <concept>
-        <a href="/glossary/tricare/">TRICARE</a>
+        <a href="/tricare/">TRICARE</a>
     </concept>
     <concept>
-        <a href="/glossary/tty/">TTY</a>
+        <a href="/tty/">TTY</a>
     </concept>
     <concept>
-        <a href="/glossary/tax-household/">Tax Household</a>
+        <a href="/tax-household/">Tax Household</a>
     </concept>
     <concept>
-        <a href="/glossary/tax-filing-requirement/">Tax filing requirement (for dependents)</a>
+        <a href="/tax-filing-requirement/">Tax filing requirement (for dependents)</a>
     </concept>
     <concept>
-        <a href="/glossary/total-cost-estimate/">Total Cost Estimate (for health coverage)</a>
+        <a href="/total-cost-estimate/">Total Cost Estimate (for health coverage)</a>
     </concept>
     <concept>
-        <a href="/glossary/transgender-people/">Transgender People</a>
+        <a href="/transgender-people/">Transgender People</a>
     </concept>
     <concept>
-        <a href="/glossary/UCR-usual-customary-and-reasonable/">UCR (Usual, Customary, and
+        <a href="/UCR-usual-customary-and-reasonable/">UCR (Usual, Customary, and
             Reasonable)</a>
     </concept>
     <concept>
-        <a href="/glossary/uncompensated-care/">Uncompensated Care</a>
+        <a href="/uncompensated-care/">Uncompensated Care</a>
     </concept>
     <concept>
-        <a href="/glossary/urgent-care/">Urgent Care</a>
+        <a href="/urgent-care/">Urgent Care</a>
     </concept>
     <concept>
-        <a href="/glossary/value-based-purchasing-VBP/">Value-Based Purchasing (VBP)</a>
+        <a href="/value-based-purchasing-VBP/">Value-Based Purchasing (VBP)</a>
     </concept>
     <concept>
-        <a href="/glossary/vision-or-vision-coverage/">Vision Coverage</a>
+        <a href="/vision-or-vision-coverage/">Vision Coverage</a>
     </concept>
     <concept>
-        <a href="/glossary/waiting-period-job-based-coverage/">Waiting Period (Job-based
+        <a href="/waiting-period-job-based-coverage/">Waiting Period (Job-based
             coverage)</a>
     </concept>
     <concept>
-        <a href="/glossary/well-baby-and-well-child-visits/">Well-baby and Well-child Visits</a>
+        <a href="/well-baby-and-well-child-visits/">Well-baby and Well-child Visits</a>
     </concept>
     <concept>
-        <a href="/glossary/wellness-programs/">Wellness Programs</a>
+        <a href="/wellness-programs/">Wellness Programs</a>
     </concept>
     <concept>
-        <a href="/glossary/workers-compensation/">Worker's Compensation</a>
+        <a href="/workers-compensation/">Worker's Compensation</a>
     </concept>
     <concept>
-        <a href="/glossary/zero-cost-sharing-plan/">Zero cost sharing plan</a>
+        <a href="/zero-cost-sharing-plan/">Zero cost sharing plan</a>
     </concept>
-
-
-
-
-
-
-
-
-
 </glossary-terms>
