@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skos-concepts>
+<concepts xmlns="http://www.w3.org/2004/02/skos/core#">
    <source>CMS.gov Glossary</source>
    <source>https://www.healthcare.gov/</source>
    <see-also>https://www.cms.gov/apps/acronyms/</see-also>
@@ -6471,4 +6471,4 @@
       <definition>The first year in which a trust fund is unable to pay benefits when due because
          the assets of the fund are exhausted.</definition>
    </concept>
-</skos-concepts>
+</concepts>
