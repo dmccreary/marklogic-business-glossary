@@ -13,18 +13,12 @@ return
         <message>Error. {$uri} is a required parameter</message>
      </error> else 
 
-let $concepts := /skos:concepts/skos:concept
+let $concept := doc($uri)/skos:concept
 
 let $content := 
     <div class="content">
-       <ol>
-      {for $concept in $concepts
-       return
-       <li>
-          {$concept/skos:prefLabel/text()} - {$concept/skos:definition/text()}
-       </li>
-       }
-       </ol>
+       <span class="field-label">Preferred Label:</span> {$concept/skos:prefLabel/text()}<br/>
+       <span class="field-label">Definition:</span> {$concept/skos:definition/text()}<br/>
     </div>                                           
 
 return style:assemble-page($title, $content)

@@ -130,7 +130,7 @@ let $content :=
           <div class="skos-concept">
             {$count + $start - 1}. &nbsp;
             {'' (:<span class="green-uri">{$uri}</span><br/>:) }
-            <span class="field-label">Business Term: </span> <b>{$prefLabel}</b><br/>
+            <span class="field-label">Preferred Label: </span> <b>{$prefLabel}</b><br/>
             {'' (:<span class="field-label">Definition:</span> {$definition}<br/>:) }
             {if ($altLabel)
                then
@@ -187,7 +187,7 @@ let $content :=
           <div class="green-url"><a href="/views/view-xml.xqy?uri={$uri}">{$uri}</a></div>
           <div class="button-actions">
             <span class="field-label">Actions:</span>
-            <a class="btn btn-info" role="button" href="/views/view-glossary-concept.xqy?uri={$uri}">View Details</a>
+            <a class="btn btn-info" role="button" href="/views/view-concept.xqy?uri={$uri}">View Concept Details</a>
             <a class="btn btn-info" role="button" href="/forms/edit-glossary-term.xqy?uri={$uri}">Edit</a>
             <a class="btn btn-info" role="button" href="/forms/add-to-term-list.xqy?uri={$uri}">Add to Term List</a>
          </div>
