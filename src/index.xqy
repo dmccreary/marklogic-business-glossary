@@ -3,6 +3,7 @@ xquery version "1.0-ml";
 (: Site Landing Page :)
 
 import module namespace style="http://danmccreary.com/style" at "/modules/style.xqy";
+declare option xdmp:output "method=html";
 
 let $title := 'MarkLogic Business Glossary'
 
