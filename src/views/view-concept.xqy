@@ -24,8 +24,6 @@ let $concept := doc($uri)/skos:concept
 
 let $content := 
     <div class="content">
-<<<<<<< HEAD
-
        <div>
           <span class="field-label">Term: </span> {$concept/skos:prefLabel/text()}
        </div>
@@ -43,10 +41,6 @@ let $content :=
          </div> else ()
        }
 
-=======
-       <span class="field-label">Preferred Label:</span> {$concept/skos:prefLabel/text()}<br/>
-       <span class="field-label">Definition:</span> {$concept/skos:definition/text()}<br/>
->>>>>>> 30dac30d5c3a051b99a8a9aa7ae6e701513c50fa
     </div>                                           
 
 return style:assemble-page($title, $content)
