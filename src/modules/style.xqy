@@ -51,7 +51,7 @@ declare function style:header() as element() {
                      <form class="navbar-form" role="search" action="/search/search-glossary-service.xqy">
                         <div class="input-group">
                             <input type="search" class="form-control" size="50" placeholder="Search Glossary" name="q"/>
-                            <input type="hidden"  name="debug" value="false"/>
+                            <input id="autocomplete" type="hidden"  name="debug" value="false"/>
                                 <div class="input-group-btn">
                                     <button class="btn btn-default" type="submit">Search</button>
                                 </div>
