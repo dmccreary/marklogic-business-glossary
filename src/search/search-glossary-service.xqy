@@ -3,8 +3,9 @@ import module namespace search = "http://marklogic.com/appservices/search" at "/
 import module namespace style = "http://danmccreary.com/style" at "/modules/style.xqy";
 declare namespace rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
+declare option xdmp:output "method=html";
 
-let $title := "Business Glossary Search"
+let $title := "Glossary Search"
 
 let $q := xdmp:get-request-field('q')
 
@@ -119,8 +120,8 @@ let $content :=
       {
       for $result at $count in $search-results/search:result
         let $uri := $result/@uri/string()
-        let $concept := doc($uri)/skos:Concept
-        let $prefLabel := $concept/skos:prefLabel/text()
+        let $concept := doc($uri)/skos:concept
+        let $prefLabel := string($concept/skos:prefLabel)
         let $altLabel := $concept/skos:altLabel/text()
         let $definition := $concept/skos:definition/text()
         let $broader := $concept/skos:broader/text()
@@ -128,9 +129,10 @@ let $content :=
         <div class="glossary-hit">
           
           <div class="skos-concept">
-            {$count + $start - 1}. &nbsp;
+            {$count + $start - 1}.
             {'' (:<span class="green-uri">{$uri}</span><br/>:) }
-            <span class="field-label">Preferred Label: </span> <b>{$prefLabel}</b><br/>
+            <span class="field-label">Term: </span> <b>{$prefLabel}</b> <br/>
+            
             {'' (:<span class="field-label">Definition:</span> {$definition}<br/>:) }
             {if ($altLabel)
                then
@@ -187,7 +189,7 @@ let $content :=
           <div class="green-url"><a href="/views/view-xml.xqy?uri={$uri}">{$uri}</a></div>
           <div class="button-actions">
             <span class="field-label">Actions:</span>
-            <a class="btn btn-info" role="button" href="/views/view-concept.xqy?uri={$uri}">View Concept Details</a>
+            <a class="btn btn-info" role="button" href="/views/view-concept.xqy?uri={$uri}">View Details</a>
             <a class="btn btn-info" role="button" href="/forms/edit-glossary-term.xqy?uri={$uri}">Edit</a>
             <a class="btn btn-info" role="button" href="/forms/add-to-term-list.xqy?uri={$uri}">Add to Term List</a>
          </div>

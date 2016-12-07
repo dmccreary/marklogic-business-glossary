@@ -12,11 +12,9 @@
    </concept>
    <concept>
       <prefLabel>AUI</prefLabel>
-      <definition> Atom Unique Identifier. An identifier for the atom in the UMLS. It is the primary
+      <definition>Atom Unique Identifier. An identifier for the atom in the UMLS. It is the primary
          key to the concepts table.</definition>
    </concept>
-
-
    <concept>
       <prefLabel>Cluster</prefLabel>
       <definition> A cluster is data in the Metathesaurus grouped by the same type of identifier
@@ -69,7 +67,8 @@
          co-occurrences of MeSH descriptors in MEDLINE citations.</definition>
    </concept>
    <concept>
-      <prefLabel>CUI </prefLabel>
+      <prefLabel>Concept Unique Identifier</prefLabel>
+      <abbreviation>CUI</abbreviation>
       <definition> The Concept Unique Identifier for a Metathesaurus concept to which strings with
          the same meaning are linked. One of the principles of the Metathesaurus is that meanings
          should be preserved over time regardless of what terms (atoms) are used to express those
@@ -84,15 +83,16 @@
          specified).</definition>
    </concept>
    <concept>
-      <prefLabel>Content View </prefLabel>
+      <prefLabel>Content View</prefLabel>
       <definition> A specific subset of the Metathesaurus which includes specific entities within
          the Metathesaurus identified as potentially useful in a particular setting for a defined
          purpose. For example the Natural Language Processing Content View identifies terms that are
          useful for Natural Language Processing.</definition>
    </concept>
    <concept>
-      <prefLabel>CVF </prefLabel>
-      <definition> Content View Flag, a binary tag used to identify in which of the content views of
+      <prefLabel>Content View Flag</prefLabel>
+      <abbreviation>CVF</abbreviation>
+      <definition>Content View Flag, a binary tag used to identify in which of the content views of
          the Metathesaurus an entity (relationship, attribute, or atom) is a member.</definition>
    </concept>
 
@@ -115,7 +115,7 @@
 
    <concept>
       <prefLabel>Knowledge Sources </prefLabel>
-      <definition> The three main parts of the UMLS: The Metathesaurus, Semantic Network, and the
+      <definition>The three main parts of the UMLS: The Metathesaurus, Semantic Network, and the
          Specialist Lexicon, with is associated Lexical Tools.</definition>
    </concept>
 
@@ -133,7 +133,7 @@
          Sources of the UMLS.</definition>
    </concept>
    <concept>
-      <prefLabel>Lexicon </prefLabel>
+      <prefLabel>Lexicon</prefLabel>
       <definition> An collection, usually alphabetical, of the words in a language and information
          about them (e.g., their definitions).</definition>
    </concept>
@@ -207,6 +207,15 @@
       <definition> The data files of the UMLS in machine readable format (normally pipe-delimited
          data) before being altered with a computer application. </definition>
    </concept>
+   
+   <concept>
+      <prefLabel>Rich Release Format</prefLabel>
+      <abbreviation>RRF</abbreviation>
+      <definition>Rich Release Format is a file format used by the National Library of Medicine.  The files are a collection of relational files containing the UMLS Metathesaurus data. 
+         
+         </definition>
+   </concept>
+   
    <concept>
       <prefLabel>Root Source Abbreviation (RSAB) </prefLabel>
       <definition>An NLM-assigned source abbreviation stripped of its version information. For

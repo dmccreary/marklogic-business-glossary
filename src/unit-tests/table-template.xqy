@@ -1,5 +1,6 @@
 xquery version "1.0-ml";
 import module namespace style = "http://danmccreary.com/style" at "/modules/style.xqy";
+declare option xdmp:output "method=html";
 
 let $title := 'Table Template'
 
