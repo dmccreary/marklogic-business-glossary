@@ -192,6 +192,7 @@ let $content :=
             <a class="btn btn-info" role="button" href="/views/view-concept.xqy?uri={$uri}">View Details</a>
             <a class="btn btn-info" role="button" href="/forms/edit-glossary-term.xqy?uri={$uri}">Edit</a>
             <a class="btn btn-info" role="button" href="/forms/add-to-term-list.xqy?uri={$uri}">Add to Term List</a>
+            <a class="btn btn-info" role="button" href="/services/make-entity.xqy?uri={$uri}">Make Entity</a>
          </div>
        </div>
       }
