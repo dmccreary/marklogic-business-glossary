@@ -38,7 +38,7 @@ let $content :=
    <h4>{$title}</h4>
       <div class="row">
       <div class="col-md-12">
-      Total West Academic Custom Element Range Indexes  = {format-number($element-range-indexes-count, '#,###')}
+      Total Element Range Indexes  = {format-number($element-range-indexes-count, '#,###')}
          
          <table class="table table-striped table-bordered table-hover table-condensed">
             <thead>
