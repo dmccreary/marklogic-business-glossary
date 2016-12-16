@@ -40,7 +40,7 @@ let $content :=
             <span class="field-label">{$element-name}: </span>{$element/text()}
          </div> else ()
        }
-
+         <a href="/views/view-xml.xqy?uri={$uri}">View XML</a>
     </div>                                           
 
 return style:assemble-page($title, $content)
