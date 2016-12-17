@@ -40,6 +40,9 @@ let $content :=
             <span class="field-label">{$element-name}: </span>{$element/text()}
          </div> else ()
        }
+         <a class="btn btn-info" role="button" href="/services/make-entity.xqy?uri={$uri}">Make Entity</a><br/>
+         
+         <a class="btn btn-info" role="button" href="/services/make-property.xqy?uri={$uri}">Make Property</a><br/>
          <a href="/views/view-xml.xqy?uri={$uri}">View XML</a>
     </div>                                           
 

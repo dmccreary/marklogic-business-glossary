@@ -10,6 +10,7 @@ table tbody tr td.number {text-align: right;}
 .field-label {color:gray; padding-right: 2px;}
 .highlight {color: blue; background-color:khaki; padding: 2px;}
 
+.concept-div {padding:10px;}
 .glossary-hit {padding:10px;}
 .button-actions * {padding: 0 3px;}
 a.btn-info {margin-left: 4px;}
