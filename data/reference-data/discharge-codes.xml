@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codes>
+   <code-name>discharge-codes</code-name>
+   <source>https://www.resdac.org/cms-data/variables/patient-discharge-status-code</source>
+   <items>
+      <value>0</value>
+      <label>Unknown Value (but present in data)</label>
+   </items>
+   <items>
+      <value>01</value>
+      <label>Discharged to home/self care (routine charge).</label>
+   </items>
+   <items>
+      <value>02</value>
+      <label>Discharged/transferred to other short term general hospital for inpatient
+         care.</label>
+   </items>
+   <items>
+      <value>03</value>
+      <label>Discharged/transferred to skilled nursing facility (SNF) with Medicare certification
+         in anticipation of covered skilled care -- (For hospitals with an approved swing bed
+         arrangement, use Code 61 - swing bed. For reporting discharges/transfers to a
+         non-certified SNF, the hospital must use Code 04 - ICF.</label>
+   </items>
+   <items>
+      <value>04</value>
+      <label>Discharged/transferred to intermediate care facility (ICF).</label>
+   </items>
+   <items>
+      <value>05</value>
+      <label>Discharged/transferred to another type of institution for inpatient care (including
+         distinct parts). NOTE: Effective 1/2005, psychiatric hospital or psychiatric distinct
+         part unit of a hospital will no longer be identified by this code. New code is
+         '65'</label>
+   </items>
+   <items>
+      <value>06</value>
+      <label>Discharged/transferred to home care of organized home health service
+         organization.</label>
+   </items>
+   <items>
+      <value>07</value>
+      <label>Left against medical advice or discontinued care.</label>
+   </items>
+   <items>
+      <value>08</value>
+      <label>Discharged/transferred to home under care of a home IV drug therapy provider.
+         (discontinued effective 10/1/05)</label>
+   </items>
+   <items>
+      <value>09</value>
+      <label>Admitted as an inpatient to this hospital (effective 3/1/91). In situations where a
+         patient is admitted before midnight of the third day following the day of an outpatient
+         service, the outpatient services are considered inpatient.</label>
+   </items>
+   <items>
+      <value>20</value>
+      <label>Expired (did not recover - Christian Science patient).</label>
+   </items>
+   <items>
+      <value>21</value>
+      <label>Discharged/transferred to Court/Law Enforcement</label>
+   </items>
+   <items>
+      <value>30</value>
+      <label>Still patient</label>
+   </items>
+   <items>
+      <value>40</value>
+      <label>Expired at home (hospice claims only)</label>
+   </items>
+   <items>
+      <value>41</value>
+      <label>Expired in a medical facility such as hospital, SNF, ICF, or freestanding hospice.
+         (Hospice claims only)</label>
+   </items>
+   <items>
+      <value>42</value>
+      <label>Expired - place unknown (Hospice claims only)</label>
+   </items>
+   <items>
+      <value>43</value>
+      <label>Discharged/transferred to a federal hospital (eff. 10/1/03)</label>
+   </items>
+   <items>
+      <value>50</value>
+      <label>Hospice - home (eff. 10/96)</label>
+   </items>
+   <items>
+      <value>51</value>
+      <label>Hospice - medical facility (eff. 10/96)</label>
+   </items>
+   <items>
+      <value>61</value>
+      <label>Discharged/transferred within this institution to a hospital-based Medicare approved
+         swing bed (eff. 9/01)</label>
+   </items>
+   <items>
+      <value>62</value>
+      <label>Discharged/transferred to an inpatient rehabilitation facility including distinct
+         parts units of a hospital. (eff. 1/2002)</label>
+   </items>
+   <items>
+      <value>63</value>
+      <label>Discharged/transferred to a long term care hospitals. (eff. 1/2002)</label>
+   </items>
+   <items>
+      <value>64</value>
+      <label>Discharged/transferred to a nursing facility certified under Medicaid but not under
+         Medicare (eff. 10/2002)</label>
+   </items>
+   <items>
+      <value>65</value>
+      <label>Discharged/Transferred to a psychiatric hospital or psychiatric distinct unit of a
+         hospital (these types of hospitals were pulled from patient/discharge status code '05'
+         and given their own code). (eff. 1/2005).</label>
+   </items>
+   <items>
+      <value>66</value>
+      <label>Discharged/transferred to a Critical Access Hospital (CAH) (eff. 1/1/06)</label>
+   </items>
+   <items>
+      <value>69</value>
+      <label>Discharged/transferred to a designated disaster alternative care site (eff.
+         10/2013)</label>
+   </items>
+   <items>
+      <value>70</value>
+      <label>Discharged/transferred to another type of health care institution not defined
+         elsewhere in code list.</label>
+   </items>
+   <items>
+      <value>71</value>
+      <label>Discharged/transferred/referred to another institution for outpatient services as
+         specified by the discharge plan of care (eff. 9/01) (discontinued effective
+         10/1/05)</label>
+   </items>
+   <items>
+      <value>72</value>
+      <label>Discharged/transferred/referred to this institution for outpatient services as
+         specified by the discharge plan of care (eff. 9/01) (discontinued effective
+         10/1/05)</label>
+   </items>
+   <items>
+      <value>81</value>
+      <label>Discharged to home or self-care with a planned acute care hospital readmission (eff.
+         10/2013)</label>
+   </items>
+   <items>
+      <value>82</value>
+      <label>Discharged/transferred to a short term general hospital for inpatient care with a
+         planned acute care hospital inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>83</value>
+      <label>Discharged/transferred to a skilled nursing facility (SNF) with Medicare
+         certification with a planned acute care hospital inpatient readmission (eff.
+         10/2013)</label>
+   </items>
+   <items>
+      <value>84</value>
+      <label>Discharged/transferred to a facility that provides custodial or supportive care with
+         a planned acute care hospital inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>85</value>
+      <label>Discharged/transferred to a designated cancer center or children’s hospital with a
+         planned acute care hospital inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>86</value>
+      <label>Discharged/transferred to home under care of organized home health service
+         organization with a planned acute care hospital inpatient readmission (eff.
+         10/2013)</label>
+   </items>
+   <items>
+      <value>87</value>
+      <label>Discharged/transferred to court/law enforcement with a planned acute care hospital
+         inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>88</value>
+      <label>Discharged/transferred to a federal health care facility with a planned acute care
+         hospital inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>89</value>
+      <label>Discharged/transferred to a hospital-based Medicare approved swing bed with a
+         planned acute care hospital inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>90</value>
+      <label>Discharged/transferred to an inpatient rehabilitation facility (IRF) including
+         rehabilitation distinct part units of a hospital with a planned acute care hospital
+         inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>91</value>
+      <label>Discharged/transferred to a Medicare certified long term care hospital (LTCH) with a
+         planned acute care hospital inpatient readmission (eff. 10/2103)</label>
+   </items>
+   <items>
+      <value>92</value>
+      <label>Discharged/transferred to nursing facility certified under Medicaid but not
+         certified under Medicare with a planned acute care hospital inpatient readmission (eff.
+         10/2013)</label>
+   </items>
+   <items>
+      <value>93</value>
+      <label>Discharged/transferred to a psychiatric hospital/distinct part unit of a hospital
+         with a planned acute care hospital inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>94</value>
+      <label>Discharged/transferred to a critical access hospital (CAH) with a planned acute care
+         hospital inpatient readmission (eff. 10/2013)</label>
+   </items>
+   <items>
+      <value>95</value>
+      <label>Discharged/transferred to another type of health care institution not defined
+         elsewhere in this code list with a planned acute care hospital inpatient readmission
+         (eff. 10/2013)</label>
+   </items>
+</codes>
+

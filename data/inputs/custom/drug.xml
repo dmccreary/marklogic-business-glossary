@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concept xmlns="http://www.w3.org/2004/02/skos/core#">
+   <prefLabel>DRUG</prefLabel>
+   <definition>A drug is any substance other than food, that when inhaled, injected, smoked,
+      consumed, absorbed via a patch on the skin or dissolved under the tongue causes a
+      physiological change in the body.</definition>
+   <source>https://en.wikipedia.org/wiki/Drug</source>
+</concept>
