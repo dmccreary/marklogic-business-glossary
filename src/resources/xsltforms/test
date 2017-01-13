@@ -1,0 +1,231 @@
+<results>
+   <count>20</count>
+   <response version="2">
+      <query>marklogic</query>
+      <location>minneapolis, mn</location>
+      <clickedCategories/>
+      <paginationPayload/>
+      <radius>25</radius>
+      <dupefilter>true</dupefilter>
+      <highlight>false</highlight>
+      <start>1</start>
+      <end>10</end>
+      <pageNumber>0</pageNumber>
+      <totalresults>20</totalresults>
+      <results>
+         <result>
+            <jobtitle>Developer</jobtitle>
+            <company>XDuce</company>
+            <city>Minneapolis</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Minneapolis, MN</formattedLocation>
+            <source>XDuce</source>
+            <date>Tue, 13 Dec 2016 04:26:00 GMT</date>
+            <snippet>Marklogic and Talend skills are plus. Talend, Hadoop, Big Data
+               implementation experience....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=187150e3278aa8d4&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>187150e3278aa8d4</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Minneapolis, MN</formattedLocationFull>
+            <formattedRelativeTime>22 days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>Marklogic Developer</jobtitle>
+            <company>XDuce</company>
+            <city>Minneapolis</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Minneapolis, MN</formattedLocation>
+            <source>XDuce</source>
+            <date>Tue, 13 Dec 2016 04:26:00 GMT</date>
+            <snippet>Proven MarkLogic developer &amp;amp; solution design experience. MarkLogic
+               Security, Triples and Semantic experience is a plus....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=436605bac98ffc96&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>436605bac98ffc96</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Minneapolis, MN</formattedLocationFull>
+            <formattedRelativeTime>22 days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>XML Modeler- Eden Prairie, MN</jobtitle>
+            <company>UnitedHealth Group</company>
+            <city>Eden Prairie</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Eden Prairie, MN</formattedLocation>
+            <source>UnitedHealth Group</source>
+            <date>Thu, 24 Nov 2016 08:29:21 GMT</date>
+            <snippet>This role will also be integral in to the development of the MarkLogic
+               database schemas. UnitedHealth Group is a company that's on the rise....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=ad5e5b684ee1de46&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>ad5e5b684ee1de46</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Eden Prairie, MN</formattedLocationFull>
+            <formattedRelativeTime>30+ days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>Distributed Application Performance Tuner - MN or Telecommute</jobtitle>
+            <company>UnitedHealth Group</company>
+            <city>Eden Prairie</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Eden Prairie, MN</formattedLocation>
+            <source>UnitedHealth Group</source>
+            <date>Fri, 07 Oct 2016 23:56:43 GMT</date>
+            <snippet>Experience in Big Data using Hadoop, Elastic Search or MarkLogic. Combine
+               two of the fastest-growing fields on the planet with a culture of
+               performance,...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=76de262646ca9936&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>76de262646ca9936</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Eden Prairie, MN</formattedLocationFull>
+            <formattedRelativeTime>30+ days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>Associate Data Scientist - Eden Prairie, MN</jobtitle>
+            <company>UnitedHealth Group</company>
+            <city>Eden Prairie</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Eden Prairie, MN</formattedLocation>
+            <source>UnitedHealth Group</source>
+            <date>Wed, 07 Dec 2016 03:09:03 GMT</date>
+            <snippet>Associate Data Scientist, NoSQL, Marklogic, MongoDB, Cassandra, HBase, R,
+               Python, Data Science, computer science, IT, information technology, Hadoop,
+               Hive,...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=a1bcadd53a275002&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>a1bcadd53a275002</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Eden Prairie, MN</formattedLocationFull>
+            <formattedRelativeTime>28 days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>Technical Lead (U4)</jobtitle>
+            <company>XDuce</company>
+            <city>Minneapolis</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Minneapolis, MN</formattedLocation>
+            <source>XDuce</source>
+            <date>Thu, 20 Oct 2016 03:31:52 GMT</date>
+            <snippet>Proven MarkLogic developer &amp;amp; solution design experience. MarkLogic
+               Security, Triples and Semantic experience is a plus. Extensive database
+               experience....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=f700fd2bc2ac5efa&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>f700fd2bc2ac5efa</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Minneapolis, MN</formattedLocationFull>
+            <formattedRelativeTime>30+ days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>Delivery Manager - Eden Prairie, MN</jobtitle>
+            <company>UnitedHealth Group</company>
+            <city>Eden Prairie</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Eden Prairie, MN</formattedLocation>
+            <source>UnitedHealth Group</source>
+            <date>Thu, 22 Sep 2016 17:09:07 GMT</date>
+            <snippet>Experience with Talend, Hadoop, or MarkLogic. Your technology leadership can
+               help millions of people live healthier lives....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=e3b1d72de337ebd2&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>e3b1d72de337ebd2</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Eden Prairie, MN</formattedLocationFull>
+            <formattedRelativeTime>30+ days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>Sr IT Architecture Analyst - Minnetonka, MN</jobtitle>
+            <company>UnitedHealth Group</company>
+            <city>Minnetonka</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Minnetonka, MN</formattedLocation>
+            <source>UnitedHealth Group</source>
+            <date>Sat, 03 Dec 2016 08:56:51 GMT</date>
+            <snippet>2+ years of experience in Hadoop, MarkLogic, ElasticSearch, Machine Learning
+               technology stack (Python, R, Spark, etc..)....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=d3a113076c96be1b&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>d3a113076c96be1b</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Minnetonka, MN</formattedLocationFull>
+            <formattedRelativeTime>30+ days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>Senior Consultant</jobtitle>
+            <company>MarkLogic</company>
+            <city>Minneapolis</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Minneapolis, MN</formattedLocation>
+            <source>MarkLogic</source>
+            <date>Sun, 06 Nov 2016 07:50:11 GMT</date>
+            <snippet>Experience with MarkLogic. MarkLogic is a registered trademark of MarkLogic
+               Corporation in the United States and/or other countries....</snippet>
+            <url>http://www.indeed.com/viewjob?jk=c1799636458b40cf&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>c1799636458b40cf</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Minneapolis, MN</formattedLocationFull>
+            <formattedRelativeTime>30+ days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+         <result>
+            <jobtitle>Business Process Consultant - Minnetonka, MN Or Telecommute</jobtitle>
+            <company>UnitedHealth Group</company>
+            <city>Minnetonka</city>
+            <state>MN</state>
+            <country>US</country>
+            <formattedLocation>Minnetonka, MN</formattedLocation>
+            <source>UnitedHealth Group</source>
+            <date>Wed, 14 Dec 2016 03:31:39 GMT</date>
+            <snippet>Knowledge of NoSQL platforms (e.g., MongoDB, Hbase, MarkLogic etc.). Do you
+               want to Impact decisions to help people live healthier lives?...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=8a66f7d20b94faac&amp;qd=qmpKa_xLz-DuSwKcLlV9QN3shApS_68kjFgCQbdRA0f_10uLpyAIZ8RJBI92uFR_hdCMIK7Bt-zSas16rRPNxhOD07dex2ZyCBGli0YfdtqQhwggWUZEvHtN5OcDtAPb&amp;indpubnum=9301746836527425&amp;atk=1b5lr986la4i2f81</url>
+            <onmousedown>indeed_clk(this,'6881');</onmousedown>
+            <jobkey>8a66f7d20b94faac</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <indeedApply>false</indeedApply>
+            <formattedLocationFull>Minnetonka, MN</formattedLocationFull>
+            <formattedRelativeTime>21 days ago</formattedRelativeTime>
+            <stations/>
+         </result>
+      </results>
+   </response>
+</results>

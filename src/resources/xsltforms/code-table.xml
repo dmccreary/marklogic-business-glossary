@@ -1,0 +1,92 @@
+﻿<?xml-stylesheet href="xsltforms/xsltforms.xsl" type="text/xsl"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xf="http://www.w3.org/2002/xforms"
+    xmlns:ev="http://www.w3.org/2001/xml-events">
+    <head>
+        <title>Reference Code Editor</title>
+    	<meta name="description" content="Bookmarks management sample."/>
+    	<meta name="keywords" content="AJAX, Javascript, Web, XForms, XSLTForms, Exemples, Samples"/>
+        <xf:model>
+            <xf:instance>
+                <code-table xmlns="">
+                    <code-name>Code Table Name</code-name>
+                    <desc>A reference list for HIPAA Gender Codes</desc>
+                    <items>
+                        <item>
+                            <value>F</value>
+                            <label>Female</label>
+                            <desc>Female gender</desc>
+                        </item>
+                        
+                        <item>
+                            <value>M</value>
+                            <label>Male</label>
+                            <desc>Male gender</desc>
+                        </item>
+                        
+                        <item>
+                            <value>U</value>
+                            <label>Unknown</label>
+                            <desc>Unknown gender</desc>
+                        </item>
+                    </items>
+
+                </code-table>
+            </xf:instance>
+			<xf:submission id="save" method="post" show="new" replace="all" action="/unit-tests/view-post.xqy">
+				<xf:message level="modeless" ev:event="xforms-submit-error">Submit error.</xf:message>
+			</xf:submission>
+            
+        </xf:model>
+    </head>
+    <body>
+        <h3>Bookmarks</h3>
+        
+        <xf:input ref="code-name">
+            <xf:label>Code Table Name: </xf:label>
+        </xf:input>
+        <br/>
+        <xf:textarea ref="desc" class="big-textarea" style="width:500px; height:100px;">
+            <xf:label>Desc: </xf:label>
+        </xf:textarea>
+        <br/>
+        
+        <!-- TODO - put this in a Bootstrap table -->
+        <xf:repeat id="repeatItems" nodeset="items/item" appearance="compact">
+            <xf:input ref="value">
+                <xf:label>Value</xf:label>
+            </xf:input>
+            <xf:input ref="label">
+                <xf:label>Label</xf:label>
+            </xf:input>
+            <xf:input ref="desc">
+                <xf:label>Desc</xf:label>
+            </xf:input>
+            <xf:trigger>
+                <xf:label>X</xf:label>
+                
+                <xf:delete nodeset="." at="1" ev:event="DOMActivate" if="count(//item) > 1"/>
+            </xf:trigger>
+        </xf:repeat>
+        
+        <xf:trigger>
+            <xf:label>New Item</xf:label>
+            <xf:insert nodeset="items/item" at="index('repeatItems')"
+                position="after" ev:event="DOMActivate" />
+            <!-- todo, use a copy from template or use setvalue to make it zero -->
+        </xf:trigger>
+        <xf:trigger>
+            <xf:label>Delete Current Selected Item</xf:label>
+            <xf:delete nodeset="." at="1" ev:event="DOMActivate"
+                if="count(//item) > 1" />
+        </xf:trigger>
+		
+		<br/>
+        <xf:submit submission="save">
+			<xf:label>Save</xf:label>
+		</xf:submit>
+        
+
+    </body>
+</html>

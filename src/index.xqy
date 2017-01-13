@@ -20,6 +20,7 @@ let $content :=
       <a href="/services/index.xqy">List Services</a> Data services such as the autocomplete data service.<br/>
       <a href="/unit-tests/index.xqy">Unit Tests</a> Manual unit tests.<br/>
       <a href="/admin/index.xqy">Admin</a> Administrative tools such as viewing range indexes.<br/>
+      <a href="/resources/xsltforms/index.xqy">XSLTForms Demos</a> XForms demos.<br/>
 </div>
 
 return style:assemble-page($title, $content)

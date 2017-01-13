@@ -1,5 +1,6 @@
 xquery version "1.0-ml";
 import module namespace search = "http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
+
 import module namespace style = "http://danmccreary.com/style" at "/modules/style.xqy";
 declare namespace rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
@@ -51,6 +52,30 @@ let $options :=
         <cts:uri>/glossary/</cts:uri>
       </cts:directory-query>
     </additional-query>
+    <constraint name="Entity">
+      <range type="xs:string">
+        <facet-option>frequency-order</facet-option>
+        <facet-option>descending</facet-option>
+        <facet-option>limit=20</facet-option>
+        <element ns="http://www.w3.org/2004/02/skos/core#" name="entity"/>>
+      </range>
+    </constraint>
+    <constraint name="Property">
+      <range type="xs:string">
+        <facet-option>frequency-order</facet-option>
+        <facet-option>descending</facet-option>
+        <facet-option>limit=20</facet-option>
+        <element ns="http://www.w3.org/2004/02/skos/core#" name="property-of"/>>
+      </range>
+    </constraint>
+    <constraint name="Property">
+      <range type="xs:string">
+        <facet-option>frequency-order</facet-option>
+        <facet-option>descending</facet-option>
+        <facet-option>limit=20</facet-option>
+        <element ns="http://www.w3.org/2004/02/skos/core#" name="relationship"/>>
+      </range>
+    </constraint>
     <operator name="sort">
       <state name="relevance">
         <sort-order direction="descending">
@@ -93,6 +118,57 @@ return
 let $content :=
 <div class="content white-background">
   <div class="row">
+  <div class="col-md-2 col-left facets">
+  {
+    for $facet in $search-results/search:facet
+      let $facet-count := fn:count($facet/search:facet-value/@count)
+      let $facet-name := fn:data($facet/@name)
+    return
+      if ($facet-count > 0 ) then
+        <div>
+        <h4>{$facet-name}</h4>
+        {
+        let $facet-items :=
+          for $val in $facet/search:facet-value
+            let $print := if ($val/text()) then
+              $val/text()
+            else
+              'Unknown'
+        let $qtext := ($search-results/search:qtext)
+        let $this :=
+              if ( fn:matches($val/@name/string(), '\W') ) then (:are there any non-word characters :)
+                '"' || $val/@name/string() || '"' (:if so, quote it :)
+              else if ( $val/@name eq "" ) then (:blank?:)
+                '""'
+              else  (:apparently, just a single word:)
+                $val/@name/string()
+        let $this := $facet/@name || ':' || $this
+        let $selected := fn:matches($qtext, $this, 'i')
+        let $icon :=
+              if ( $selected ) then
+                <img src="/resources/images/red-x.png"/>
+              else
+                <img src="/resources/images/green-check.png"/>
+        let $link :=
+              if ( $selected ) then
+                search:remove-constraint($qtext, $this, $options)
+              else if ( string-length($qtext) gt 0 ) then
+                "(" || $qtext || ")" || " AND " || $this
+              else
+                $this
+        let $link := fn:encode-for-uri($link)
+        return
+            <div>{$icon}<a href="{xdmp:get-invoked-path()}?q={$link}">{fn:lower-case($print)}</a> ({$val/@count/string()})</div>
+        return (
+          <div>{$facet-items}</div>
+        )
+        }
+        </div>
+      else
+        <div>&#160;</div>
+      }
+  
+  </div>
   <div class="col-md-10">
     {if ($search-results) then
       <div class="search-results">

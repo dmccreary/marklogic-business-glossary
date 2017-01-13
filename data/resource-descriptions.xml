@@ -5,4 +5,33 @@
       <name>List Concepts</name>
       <description>Bullet listing of concepts</description>
    </resource>
+   
+   
+   <resource>
+      <uri>/views/list-entities.xqy</uri>
+      <name>List Entities</name>
+      <description>HTML page listing all entities and their properties and relationships.</description>
+   </resource>
+   
+   <resource>
+      <uri>/views/list-input-skos-glossaries.xqy</uri>
+      <name>List Sample W3C SKOS Glossaries</name>
+      <description>HTML table listing of sample glossaries from the W3C web site.  These glossaries
+      are related to W3C standards.</description>
+   </resource>
+   
+   <resource>
+      <uri>/views/list-reference-data.xqy</uri>
+      <name>List Sample W3C SKOS Glossaries</name>
+      <description>HTML table listing of sample glossaries from the W3C web site.  These glossaries
+         are related to W3C standards.</description>
+   </resource>
+   
+   <!--
+   <resource>
+      <uri>/views/list-concepts.xqy</uri>
+      <name>List Concepts</name>
+      <description>Bullet listing of concepts</description>
+   </resource>
+   -->
 </resource-descriptions>

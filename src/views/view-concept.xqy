@@ -1,5 +1,7 @@
 xquery version "1.0-ml";
 import module namespace style = "http://danmccreary.com/style" at "/modules/style.xqy";
+import module namespace se = "http://danmccreary.com/skos-to-entities" at "/modules/skos-to-entities.xqy";
+
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
 declare option xdmp:output "method=html";
 
@@ -21,11 +23,12 @@ return
      else 
 
 let $concept := doc($uri)/skos:concept
+let $prefLabel := $concept/skos:prefLabel/text()
 
 let $content := 
     <div class="content">
        <div>
-          <span class="field-label">Term: </span> {$concept/skos:prefLabel/text()}
+          <span class="field-label">Term: </span> {$prefLabel}
        </div>
        <div>
           <span class="field-label">Definition: </span> {$concept/skos:definition/text()}
@@ -37,9 +40,15 @@ let $content :=
        if ($element-name ne 'prefLabel' and $element-name ne 'definition')
          then
          <div>
-            <span class="field-label">{$element-name}: </span>{$element/text()}
+            <span class="field-label">{$element-name}: </span><a href="/views/view-concept.xqy?uri={se:prefLabel-to-uri($element/text())}">{$element/text()}</a>
          </div> else ()
        }
+       
+       {if ($concept/skos:entity = 'true')
+           then se:properites-html($prefLabel)
+           else ()
+       }
+       
          <a class="btn btn-info" role="button" href="/services/make-entity.xqy?uri={$uri}">Make Entity</a><br/>
          
          <a class="btn btn-info" role="button" href="/services/make-property.xqy?uri={$uri}">Make Property</a><br/>
