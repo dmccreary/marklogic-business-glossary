@@ -12,8 +12,14 @@ table tbody tr td.number {text-align: right;}
 
 .concept-div {padding:10px;}
 .glossary-hit {padding:10px;}
-.button-actions * {padding: 0 3px;}
+
+/* the buttons that make changes to the database */
+.action-buttons * {padding: 0 4px; margin: 2px 0;}
+
 a.btn-info {margin-left: 4px;}
 .green-url a {color:green;}
 
 .property-name {margin-left:15px;}
+
+.view-concept {border: blue 1px solid; margin:10px; padding:10px;border-radius: 7px;}
+.view-concept * {font-size: 16px;}

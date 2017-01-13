@@ -68,7 +68,7 @@ let $content :=
                         <td>{$index-scalar-type}</td>
                         <td class="number">{format-number(cts:count-aggregate($element-reference), '#,###')}</td>
                         <td class="number">{format-number(count(cts:element-values($qname)), '#,###')}</td>
-                        <td><a href="list-element-range-values.xqy?namespace={$namespace-uri/text()}&amp;localname={$localname/text()}">list values</a></td>
+                        <td><a href="list-element-range-values.xqy?localname={$localname/text()}&amp;namespace={xdmp:url-encode($namespace-uri/text())}">list values</a></td>
                         <td><a href="list-element-range-values-text.xqy?namespace={$namespace-uri/text()}&amp;localname={$localname/text()}">text</a></td>
                         
                         <td>
