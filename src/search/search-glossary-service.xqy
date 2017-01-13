@@ -187,7 +187,11 @@ let $content :=
         (concat('Page length: ', $page-length), <br/>)
       }
       
-        <span class="field-label">Total Count:</span> {format-number($count, '#,###')}<br/>
+        <span class="field-label">Found:</span> {format-number($count, '#,###')} of {format-number(xdmp:estimate(/skos:concept), '#,###')} 
+        concepts in
+        {xdmp:elapsed-time() div xs:dayTimeDuration('PT1S') } seconds.<br/>
+
+        
         <span class="field-label">Query:</span>"{$q}"<br/>
         <a href="{xdmp:get-request-path()}?debug=true&amp;q={$q}">View Debug</a><br/>
       {
@@ -263,7 +267,7 @@ let $content :=
           </div>
         }
           <div class="green-url"><a href="/views/view-xml.xqy?uri={$uri}">{$uri}</a></div>
-          <div class="button-actions">
+          <div class="action-buttons">
             <span class="field-label">Actions:</span>
             <a class="btn btn-info" role="button" href="/views/view-concept.xqy?uri={$uri}">View Details</a>
             <a class="btn btn-info" role="button" href="/forms/edit-glossary-term.xqy?uri={$uri}">Edit</a>

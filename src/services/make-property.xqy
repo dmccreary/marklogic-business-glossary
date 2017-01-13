@@ -55,7 +55,7 @@ let $content :=
              <form action="/services/make-property.xqy">
                  <input type="hidden" name="uri" value="{$uri}"/>
                  {b:bootstrap-radio('entity', $entities)}
-                 <input type="submit"/>
+                 <button type="submit">Save</button>
              </form>
              <a href="/views/view-concept.xqy?uri={$uri}">View Concept</a><br/>
              <a href="/views/view-xml.xqy?uri={$uri}">View XML</a>
