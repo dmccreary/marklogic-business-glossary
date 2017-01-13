@@ -211,7 +211,7 @@ let $content :=
           <div class="skos-concept">
             {$count + $start - 1}.
             {'' (:<span class="green-uri">{$uri}</span><br/>:) }
-            <span class="field-label">Term: </span> <b>{$prefLabel}</b> <br/>
+            <span class="field-label">Concept: </span> <a href="/views/view-concept.xqy?uri={$uri}"><b>{$prefLabel}</b></a> <br/>
             
             {'' (:<span class="field-label">Definition:</span> {$definition}<br/>:) }
             {if ($altLabel)
