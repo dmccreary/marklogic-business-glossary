@@ -29,7 +29,7 @@ return
 
 let $update :=
    if (exists($concept/skos:entity))
-      then xdmp:node-replace($concept/skos:entity/text(), 'true')
+      then xdmp:node-replace($concept/skos:entity, <skos:entity>true</skos:entity>)
       else xdmp:node-insert-child($concept, <skos:entity>true</skos:entity>)
 
 let $content :=

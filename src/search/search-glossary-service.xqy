@@ -195,7 +195,7 @@ let $content :=
         <span class="field-label">Query:</span>"{$q}"<br/>
         <a href="{xdmp:get-request-path()}?debug=true&amp;q={$q}">View Debug</a><br/>
       {
-      style:prev-next-pagination-links($start, $page-length, $count, $q)
+      style:prev-next-pagination-links($start, $page-length, $count, 'q=' || $q)
       }
       {
       for $result at $count in $search-results/search:result
@@ -221,6 +221,7 @@ let $content :=
                  </div>
                else ()
             }
+            
             {if ($broader)
                then
                  <div>
@@ -230,51 +231,50 @@ let $content :=
             }
           </div>
 
-        {
+        { (: each of these is match somewhere in the concept :)
         for $snippet in $result/search:snippet
+        let $match-count := count($snippet/search:match)
         return
           <div class="snippit">
           {
-          for $match in $snippet/search:match
-            let $path := $match/@path
-            (: convert the path to get the last element
-             the last() does not work when there are emphaisis elements.
-             let $para-num := substring-after(tokenize($path, '/')[last()], '*:')
-            :)
-            let $definition-indicator := ends-with($path, 'definition')
-            let $preferred-label-indicator := ends-with($path, 'prefLabel')
-          return
-            <div class="match">
-            {
-            if ($definition-indicator) then
-              <span class="field-label">Definition:</span>
-             else
-              ()
-            }
-            {
-            if ($preferred-label-indicator) then
-              ()
-            else
-              for $text-or-highlight in $match/node()
-              return
-                if ($text-or-highlight instance of element()) then
-                  <span class="highlight">{$text-or-highlight/text()}</span>
-                else
-                  $text-or-highlight
-            }
-            </div>
+                for $match in $snippet/search:match
+                  let $path := $match/@path
+                  (: convert the path to get the last element
+                   the last() does not work when there are emphaisis elements.
+                   let $para-num := substring-after(tokenize($path, '/')[last()], '*:')
+                  :)
+                  let $definition-indicator := ends-with($path, 'definition')
+                  let $preferred-label-indicator := ends-with($path, 'prefLabel')
+                return
+                  <div class="match">
+                    
+                    
+                    
+                     {
+                     if ($preferred-label-indicator) then
+                       ()
+                     else
+                       for $text-or-highlight in $match/node()
+                       return
+                         if ($text-or-highlight instance of element()) then
+                           <span class="highlight">{$text-or-highlight/text()}</span>
+                         else
+                           $text-or-highlight
+                     }
+                  </div>
           }
           </div>
         }
           <div class="green-url"><a href="/views/view-xml.xqy?uri={$uri}">{$uri}</a></div>
           <div class="action-buttons">
             <span class="field-label">Actions:</span>
-            <a class="btn btn-info" role="button" href="/views/view-concept.xqy?uri={$uri}">View Details</a>
-            <a class="btn btn-info" role="button" href="/forms/edit-glossary-term.xqy?uri={$uri}">Edit</a>
-            <a class="btn btn-info" role="button" href="/forms/add-to-term-list.xqy?uri={$uri}">Add to Term List</a>
+            
+            
             <a class="btn btn-info" role="button" href="/services/make-entity.xqy?uri={$uri}">Make Entity</a>
             <a class="btn btn-info" role="button" href="/services/make-property.xqy?uri={$uri}">Make Property</a>
             <a class="btn btn-info" role="button" href="/services/make-relationship.xqy?uri={$uri}">Make Relationship</a>
+            
+            <!-- <a class="btn btn-info" role="button" href="/forms/add-to-term-list.xqy?uri={$uri}">Add to Term List</a> -->
 
          </div>
        </div>

@@ -50,8 +50,8 @@ declare function style:header() as element() {
                   <li>
                      <form class="navbar-form" role="search" action="/search/search-glossary-service.xqy">
                         <div class="input-group">
-                            <input type="search" class="form-control" size="50" placeholder="Search Glossary" name="q"/>
-                            <input id="autocomplete" type="hidden"  name="debug" value="false"/>
+                            <input id="autocomplete" type="search" class="form-control" size="50" placeholder="Search Glossary" name="q"/>
+                            <input name="debug" type="hidden" value="false"/>
                                 <div class="input-group-btn">
                                     <button class="btn btn-default" type="submit">Search</button>
                                 </div>
@@ -73,18 +73,18 @@ declare function style:footer() as element() {
     <a href="http://marklogic.com"><img src="/resources/images/powered-by-marklogic.png"/></a>
     <span class="title-in-footer">MarkLogic Business Glossary Manager</span>
   </center>
-  <script>
-      $( "#autocomplete" ).autocomplete({{
-        source: function(request, response) {{
-         jQuery.get('/services/suggest-skos-label.xqy', {{
-            q: request.term
-         }}, function(data) {{  
-            response(data);
-         }})
-        }},  
-        minLength: 3
-      }});
-    </script>
+<script>
+            $( "#autocomplete" ).autocomplete({{
+              source: function(request, response) {{
+               jQuery.get('/services/suggest-skos-label.xqy', {{
+                  q: request.term
+               }}, function(data) {{  
+                  response(data);
+               }})
+              }},   
+              minLength: 3
+            }});
+          </script>
 </div>
 };
 

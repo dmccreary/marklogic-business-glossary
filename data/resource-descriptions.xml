@@ -62,6 +62,58 @@
       <name>List Concepts A-Z</name>
       <description>Listing concepts that start with a specific prefix.  The default is "A".</description>
    </resource>
+   <resource>
+      <uri>/scripts/cms-glossary-splitter.xqy</uri>
+      <name>CMS Glossary Splitter</name>
+      <description>Convert a single very large file of all the terms and defintions scrapped from the CMS glossary site into many
+      small SKOS files so we can use search ranking.</description>
+   </resource>
+   
+   <resource>
+      <uri>/scripts/splitter.xqy</uri>
+      <name>Splitter Template</name>
+      <description>General single threaded splitter demonstrating document-insert on concept files.</description>
+   </resource>
+   
+   <resource>
+      <uri>/scripts/splitter-rdf-to-concept-files.xqy</uri>
+      <name>Multithreaded W3C SKOS splitter.</name>
+      <description>Example script that splits W3C RDF SKOS concept files into documents for search.  Good example
+      use of multi-threaded document inserts using spaws-function() and the auto-update-commit option.  Input parameter
+      is the URI of the RDF file of SKOS definitions.</description>
+   </resource>
+   
+   
+   <resource>
+      <uri>/services/delete-entity.xqy</uri>
+      <name>Entity Element Set to False</name>
+      <description>Set the entity element to be be false.</description>
+   </resource>
+   <resource>
+      <uri>/services/make-entity.xqy</uri>
+      <name>Make a Concept an Entity</name>
+      <description>Make a SKOS Concept and Entity for Entity Services</description>
+   </resource>
+   <resource>
+      <uri>/services/make-property.xqy</uri>
+      <name>Make a Concept a Property</name>
+      <description>Make a SKOS Concept a Property</description>
+   </resource>
+   <resource>
+      <uri>/services/make-relationship.xqy</uri>
+      <name>Make a Concept a Relationship</name>
+      <description>Make a SKOS Concept a Relationship</description>
+   </resource>
+   <resource>
+      <uri>/services/suggest-pref-label.xqy</uri>
+      <name>Suggest Preferred label</name>
+      <description>Autocomplete Suggest Service for SKOS preferred labels.</description>
+   </resource>
+   <resource>
+      <uri>/services/suggest-skos-label.xqy</uri>
+      <name>Suggest SKOS Label</name>
+      <description>Autocomplete Suggest Service for SKOS preferred or alternate labels.</description>
+   </resource>
    <!--
    <resource>
       <uri>/views/list-concepts.xqy</uri>

@@ -11,7 +11,7 @@ declare option xdmp:output "indent=yes";
 
 (: Note, in order for this to work the maintain last modified property of the
 database MUST be set to be true :)
-let $title := 'List of Database Views'
+let $title := 'List of Scripts'
 let $lstng := l:get-listing("/scripts", ".xqy")
 let $resource-descriptions := doc('/resource-descriptions.xml')/resource-descriptions
 
@@ -21,7 +21,7 @@ Description Count: {count($resource-descriptions/resource)}
 let $content :=
 <div class="container">
     <h4>{$title}</h4>
-    Number of Scripts = {count($lstng)}<br/>
+    Number of Scripts = {count($lstng) - 1 }<br/>
     
     <table class="table table-striped table-bordered table-hover table-condensed">
         <thead>

@@ -1,30 +1,20 @@
 xquery version "1.0-ml";
 import module namespace search = "http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
 
-(: Suggest SKOS Label service.
-This service returns a JSON array with all SKOS prefLabel in it. 
-It uses search:suggest which assumes a range index on skos:prefLabel
-TODO - create a field of both prefLabel and altLabel
-:)
+(: this service returns a JSON document with all the labels in it :)
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
 
-declare option xdmp:output "method=html";
-
+declare option xdmp:output "method=json";
+let $content-type := xdmp:set-response-content-type('application/json')
 
 let $q := xdmp:get-request-field('q')
-return
-   if (not($q))
-     then
-        <error>
-           <message>Error, q is a required parameter.  Try adding q=per to the URL.</message>
-        </error> else (: continue :)
-
-let $content-type := xdmp:set-response-content-type('application/json')
 let $debug := xs:boolean(xdmp:get-request-field('debug', 'false'))
 
-(: do a simple word query 
-cts:search(/, cts:word-query($q), 'unfiltered')
-:)
+return
+  if (not($q))
+     then ()
+     else (: continue :)
+
 let $options := 
 <search:options xmlns="http://marklogic.com/appservices/search">
  <default-suggestion-source>
@@ -36,17 +26,15 @@ let $options :=
 
 let $strings := search:suggest($q, $options, 30)
 
+(: our data sources might have quotes in the labels :)
 let $sorted-preferred-lables :=
   for $label in $strings
   order by $label
-  return replace($label, '"', '')
+  return '"' || replace($label, '"', '') || '"'
 
 let $labels-in-quotes :=
    for $label in $sorted-preferred-lables
-     return
-       if (starts-with($label, '"'))
-         then $label
-         else concat('"', $label, '"')
+     return $label
      
 let $internal-string := string-join($labels-in-quotes, ', ')
 

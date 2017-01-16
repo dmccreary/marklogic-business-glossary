@@ -11,7 +11,7 @@ declare option xdmp:output "indent=yes";
 
 (: Note, in order for this to work the maintain last modified property of the
 database MUST be set to be true :)
-let $title := 'List of Database Views'
+let $title := 'List of Services'
 let $lstng := l:get-listing("/services", ".xqy")
 let $resource-descriptions := doc('/resource-descriptions.xml')/resource-descriptions
 
