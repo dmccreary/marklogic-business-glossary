@@ -19,7 +19,6 @@ declare function se:properites($entity as xs:string) as xs:string* {
 };
 
 declare function se:properites-html($entity as xs:string) as element(div) {
-
 <div class="properties">
     <h5>Properties</h5>
    {for $property in se:properites($entity)
@@ -38,3 +37,6 @@ return
       else 'Error: No concept with prefLabe of ' || $prefLabel
 };
 
+declare function se:concept-from-pref-label($pref-label as xs:string) as element() {
+ (/skos:concept[skos:prefLabel = $pref-label])[1]
+};

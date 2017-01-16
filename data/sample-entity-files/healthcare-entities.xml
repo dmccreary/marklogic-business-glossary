@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marklogic-entities>
+   <info>
+      <title>Sample Healthcare Entities</title>
+      <baseURI>http://github.com/dmccreary/marklogic-business-glossary</baseURI>
+      <description>Sample entities file for Healthcare.  Many taken from the glossary at cms.gov/healthcare</description>
+      <version>0.0.1</version>
+   </info>
+   <entities>
+      <entity>
+         <name>CLAIM</name>
+         <description>A claim is a request for payment for services and benefits you received. Claims are also called bills for all Part A and Part B services billed through Fiscal Intermediaries. "Claim" is the word used for Part B physician/supplier services billed through the Carrier. (See Carrier; Fiscal Intermediaries; Medicare Part A; Medicare Part B.)</description>
+         <properties>
+            <property>
+               <property-name>UNASSIGNED CLAIM</property-name>
+               <datatype>string</datatype>
+               <description>A claim submitted for a service or supply by a provider who does not accept assignment.</description>
+            </property>
+            <property>
+               <property-name>CLAIM STATUS CATEGORY CODES</property-name>
+               <datatype>string</datatype>
+               <description>A national administrative code set that indicates the general category of the status of health care claims. This code set is used in the X12 277 Claim Status Notification transaction, and is maintained by the Health Care Code Maintenance Committee.</description>
+            </property>
+            <property>
+               <property-name>HEALTHCARE COMMON PROCEDURAL CODING SYSTEM</property-name>
+               <datatype>string</datatype>
+               <description>A medical code set that identifies health care procedures, equipment, and supplies for claim submission purposes. It has been selected for use in the HIPAA transactions. HCPCS Level I contains numeric CPT codes which are maintained by the AMA. HCPCS Level II contains alphanumeric codes used to identify various items and services that are not included in the CPT medical code set. These are maintained by HCFA, the BCBSA, and the HIAA. HCPCS Level III contains alphanumeric codes that are assigned by Medicaid state agencies to identify additional items and services not included in levels I or II. These are usually called "local codes", and must have "W", "X", "Y", or "Z" in the first position. HCPCS Procedure Modifier Codes can be used with all three levels, with the WA - ZY range used for locally assigned procedure modifiers.</description>
+            </property>
+            <property>
+               <property-name>HCFA-1500</property-name>
+               <datatype>string</datatype>
+               <description>HCFA's name for the professional uniform claim form. Also known as the UCF-1500.</description>
+            </property>
+            <property>
+               <property-name>CLAIM ATTACHMENT</property-name>
+               <datatype>string</datatype>
+               <description>Any of a variety of hardcopy forms or electronic records needed to process a claim in addition to the claim itself.</description>
+            </property>
+            <property>
+               <property-name>AUTOMATED CLAIM REVIEW</property-name>
+               <datatype>string</datatype>
+               <description>Claim review and determination made using system logic (edits). Automated claim reviews never require the intervention of a human to make a claim determination.</description>
+            </property>
+            <property>
+               <property-name>CLAIM ADJUSTMENT REASON CODES</property-name>
+               <datatype>string</datatype>
+               <description>A national administrative code set that identifies the reasons for any differences, or adjustments, between the original provider charge for a claim or service and the payer's payment for it. This code set is used in the X12 835 Claim Payment &amp; Remittance Advice and the X12 837 Claim transactions, and is maintained by the Health Care Code Maintenance Committee.</description>
+            </property>
+            <property>
+               <property-name>ATTACHMENT(S)</property-name>
+               <datatype>string</datatype>
+               <description>Information, hard copy or electronic, related to a particular claim. Attachments may be structured (such as Certificates of Medical Necessity) or non-structured (such as an Operative Report). Though attachments may be submitted separately, it is common to say the attachment was "submitted with the claim."</description>
+            </property>
+            <property>
+               <property-name>STATUS LOCATION</property-name>
+               <datatype>string</datatype>
+               <description>An indicator on a claim record describing the queue where the claim is currently situated and the action that needs to be performed on the claim.</description>
+            </property>
+         </properties>
+      </entity>
+      <entity>
+         <name>GENERIC DRUG</name>
+         <description>A prescription drug that has the same active-ingredient formula as a brand name drug. Generic drugs usually cost less than brand name drugs and are rated by the Food and Drug Administration (FDA) to be as safe and effective as brand name drugs.</description>
+         <properties/>
+      </entity>
+      <entity>
+         <name>HEALTH CARE PROVIDER</name>
+         <description>A person who is trained and licensed to give health care. Also, a place that is licensed to give health care. Doctors, nurses, and hospitals are examples of health care providers.</description>
+         <properties>
+            <property>
+               <property-name>PROVIDER TAXONOMY CODES</property-name>
+               <datatype>string</datatype>
+               <description>An administrative code set for identifying the provider type and area of specialization for all health care providers. A given provider can have several Provider Taxonomy Codes. This code set is used in the X12 278 Referral Certification and Authorization and the X12 837 Claim transactions, and is maintained by the NUCC.</description>
+            </property>
+            <property>
+               <property-name>HEALTHCARE PROVIDER TAXONOMY CODES</property-name>
+               <datatype>string</datatype>
+               <description>An administrative code set that classifies health care providers by type and area of specialization. The code set will be used in certain adopted transactions. (Note: A given provider may have more than one Healthcare Provider Taxonomy Code.)</description>
+            </property>
+         </properties>
+      </entity>
+      <entity>
+         <name>PAYER</name>
+         <description>In health care, an entity that assumes the risk of paying for medical treatments. This can be an uninsured patient, a self-insured employer, a health plan, or an HMO.</description>
+         <properties/>
+      </entity>
+      <entity>
+         <name>PROVIDER</name>
+         <description>Any Medicare provider (e.g., hospital, skilled nursing facility, home health agency, outpatient physical therapy, comprehensive outpatient rehabilitation facility, end-stage renal disease facility, hospice, physician, non-physician provider, laboratory, supplier, etc.) providing medical services covered under Medicare Part B. Any organization, institution, or individual that provides health care services to Medicare beneficiaries. Physicians, ambulatory surgical centers, and outpatient clinics are some of the providers of services covered under Medicare Part B.</description>
+         <properties>
+            <property>
+               <property-name>NATIONAL PROVIDER IDENTIFIER (NPI)</property-name>
+               <datatype>string</datatype>
+               <description>The name of the standard unique health identifier for health care providers that was adopted by the Secretary in January 2004.</description>
+            </property>
+         </properties>
+      </entity>
+   </entities>
+</marklogic-entities>

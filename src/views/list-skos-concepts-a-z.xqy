@@ -3,10 +3,14 @@ import module namespace style = "http://danmccreary.com/style" at "/modules/styl
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
 declare option xdmp:output "method=html";
 
-let $title := 'List Concepts'
+
+let $title := 'List Concepts A-Z'
+
+let $starts-with := xs:positiveInteger(xdmp:get-request-field('starts-with', 'a'))
 let $start := xs:positiveInteger(xdmp:get-request-field('start', '1'))
 let $page-length := xs:positiveInteger(xdmp:get-request-field('page-length', '10'))
 (: we could just use /skos:concept :)
+
 let $all-concepts := cts:search(/skos:concept, cts:true-query(), ('unfiltered', 'score-zero'), 0)
 let $concept-count := count($all-concepts)
 
