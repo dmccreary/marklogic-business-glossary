@@ -12,36 +12,37 @@ let $page-length := xs:positiveInteger(xdmp:get-request-field('page-length', '10
 let $entity-concepts := cts:search(/skos:concept, cts:element-value-query(xs:QName('skos:entity'), 'true'), ('unfiltered', 'score-zero'), 0)
 let $entity-count := count($entity-concepts)
 
-let $rootmap := map:new()
-
-
 
 let $add-entities := 
    for $concept at $count in $entity-concepts
-       let $entity-map := map:new()
-       
-       
+       let $entity-map := json:object()
        let $property-maps :=
           for $property in se:properites($concept/skos:prefLabel/text())
              let $property-map := map:new()
              let $add := map:put($property-map, 'property',$property)
-           return $property-map    
-        let $add-properties := map:put($entity-map, 'properties', $property-maps)
-        
-        let $add-entity-description := map:put($entity-map, 'description', normalize-space($concept/skos:definition/text()))
+           return $property-map
         let $add-entity-name := map:put($entity-map, 'name', normalize-space($concept/skos:prefLabel/text()))
+        let $add-entity-description := map:put($entity-map, 'description', normalize-space($concept/skos:definition/text()))
+        let $add-properties := map:put($entity-map, 'properties', $property-maps)
         return $entity-map
 
 (: these are not really definitions, they are entities :)
-let $entities := map:put($rootmap, "definitions", $add-entities)
 
-let $info := map:new()
-let $add-name := map:put($info, "title", "Healthcare Entities")
-let $add-desc := map:put($info, "description", "Sample entities file for Healthcare.  Many taken from the glossary at cms.gov/healthcare")
-let $add-count := map:put($info, "baseUri", "http://github.com/dmccreary/marklogic-business-glossary")
-let $add-count := map:put($info, "version", "0.0.1")
-let $add-count := map:put($info, "entity-count", $entity-count)
+let $info := json:object()
+let $add-info := 
+      (
+         map:put($info, "title", "Healthcare Entities"),
+         map:put($info, "description", "Sample entities file for Healthcare.  Many taken from the glossary at cms.gov/healthcare"),
+         map:put($info, "baseUri", "http://github.com/dmccreary/marklogic-business-glossary"),
+         map:put($info, "version", "0.0.1"),
+         map:put($info, "entity-count", $entity-count)
+      )
 
-let $add-info := map:put($rootmap, "info", $info)
+let $root := json:object()
+let $assemble-root := 
+   (
+      map:put($root, "info", $info),
+      map:put($root, "definitions", $add-entities)
+   )
 
-return $rootmap
+return xdmp:to-json($root)

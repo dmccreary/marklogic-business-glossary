@@ -47,6 +47,21 @@
       <name>View Taxonomny</name>
       <description>View a Taxonomy</description>
    </resource>
+   <resource>
+      <uri>/views/list-entities-json.xqy</uri>
+      <name>List Entities JSON</name>
+      <description>Listing of entities using JSON format.</description>
+   </resource>
+   <resource>
+      <uri>/views/list-entities-xml.xqy</uri>
+      <name>List Entities XML</name>
+      <description>Listing of entities using XML format.</description>
+   </resource>
+   <resource>
+      <uri>/views/list-concepts-a-z.xqy</uri>
+      <name>List Concepts A-Z</name>
+      <description>Listing concepts that start with a specific prefix.  The default is "A".</description>
+   </resource>
    <!--
    <resource>
       <uri>/views/list-concepts.xqy</uri>
