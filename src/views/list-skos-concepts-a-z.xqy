@@ -6,23 +6,47 @@ declare option xdmp:output "method=html";
 
 let $title := 'List Concepts A-Z'
 
-let $starts-with := xs:positiveInteger(xdmp:get-request-field('starts-with', 'a'))
+let $starts-with := xdmp:get-request-field('starts-with', 'A')
+let $filter := 'starts-with=' || $starts-with
 let $start := xs:positiveInteger(xdmp:get-request-field('start', '1'))
 let $page-length := xs:positiveInteger(xdmp:get-request-field('page-length', '10'))
 (: we could just use /skos:concept :)
 
 let $all-concepts := cts:search(/skos:concept, cts:true-query(), ('unfiltered', 'score-zero'), 0)
-let $concept-count := count($all-concepts)
+let $total-concept-count := count($all-concepts)
+
+let $filtered-concepts :=
+  for $concept in $all-concepts
+   let $pref-label := $concept/skos:prefLabel
+   return
+      if (starts-with($pref-label, $starts-with))
+         then $concept
+         else ()
+let $filtered-concept-count := count($filtered-concepts)
 
 let $sorted-concepts :=
-  for $concept in $all-concepts
-  order by $concept/skos:prefLabel
-  return $concept
-  
+  for $concept in $filtered-concepts
+   order by $concept/skos:prefLabel
+   return
+      $concept
+
+let $number-for-a := string-to-codepoints('A')
+let $number-for-z := string-to-codepoints('Z')
+   
 let $content := 
 <div class="content">
-   <span class="field-label">Total Concept Count:</span> {format-number($concept-count, '#,###')}<br/>
-   {style:prev-next-pagination-links($start, $page-length, $concept-count)}
+   <div class="letter-bar">
+   {for $number in ($number-for-a to $number-for-z)
+      let $letter := codepoints-to-string($number)
+      return
+         <a href="{xdmp:get-request-path()}?starts-with={$letter}">{$letter}</a>
+   }
+   </div>
+   <h4>Concepts that start with "{$starts-with}"</h4>
+   <span class="field-label">Total Concept Count:</span> {format-number($total-concept-count, '#,###')}<br/>
+   <span class="field-label">Filtered Concept Count:</span> {format-number($filtered-concept-count, '#,###')}<br/>
+   
+   {style:prev-next-pagination-links($start, $page-length, $filtered-concept-count, $filter)}
 
       {for $concept at $count in subsequence($sorted-concepts, $start, $page-length)
        let $uri := xdmp:node-uri($concept)

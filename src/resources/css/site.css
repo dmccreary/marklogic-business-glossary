@@ -23,3 +23,6 @@ a.btn-info {margin-left: 4px;}
 
 .view-concept {border: silver 1px solid; margin:10px; padding:10px;border-radius: 7px;}
 .view-concept * {font-size: 16px;}
+
+/* A-Z Letter Bar Menu */
+.letter-bar * {font-size: 16pt; padding: 0 12px; margin: 2px 0;}

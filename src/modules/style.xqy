@@ -152,7 +152,7 @@ let $current-page := round($start div $page-length) + 1
 let $last-page := round($total-count div $page-length)
 let $query-parameter :=
    if (exists($query))
-     then '&amp;q=' || $query
+     then '&amp;' || $query
      else ()
 
 (: used to calculate the page min and maxs :)

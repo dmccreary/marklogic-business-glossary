@@ -58,7 +58,7 @@
       <description>Listing of entities using XML format.</description>
    </resource>
    <resource>
-      <uri>/views/list-concepts-a-z.xqy</uri>
+      <uri>/views/list-skos-concepts-a-z.xqy</uri>
       <name>List Concepts A-Z</name>
       <description>Listing concepts that start with a specific prefix.  The default is "A".</description>
    </resource>
