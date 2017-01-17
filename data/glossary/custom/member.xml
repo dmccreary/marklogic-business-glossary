@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <concept xmlns="http://www.w3.org/2004/02/skos/core#">
-   <prefLabel>Encounter</prefLabel>
-   <altLabel>Visit</altLabel>
-   <definition>An interaction between a patient and healthcare provider(s) for the purpose of 
-      providing healthcare service(s) or assessing the health status of a patient. </definition>
+   <prefLabel>Member</prefLabel>
+   <definition>A person covered under a health plan, either the enrollee or eligible dependent.</definition>
    <source>https://www.hl7.org/fhir/encounter-definitions.html</source>
+   
+   <created-by>dmccreary</created-by>
+   <created-date-time></created-date-time>
+   <approved-by>dmccreary</approved-by>
+   <approved-date-time></approved-date-time>
 </concept>
