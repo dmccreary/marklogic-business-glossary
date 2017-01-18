@@ -114,6 +114,11 @@
       <name>Suggest SKOS Label</name>
       <description>Autocomplete Suggest Service for SKOS preferred or alternate labels.</description>
    </resource>
+   <resource>
+      <uri>/views/view-freemind-as-html.xqyy</uri>
+      <name>Freemind to HTML</name>
+      <description>Convert Freemind Mindmap input to HTML</description>
+   </resource>
    <!--
    <resource>
       <uri>/views/list-concepts.xqy</uri>

@@ -10,7 +10,7 @@
         <altLabel>Dictionary</altLabel>
         <definition>A collection of terms or concepts used to communicate and govern the organization's business. Business
             Glossarys store concepts as terms and definitions and relationships between those terms.</definition>
-        <broader>Software Application</broader>
+        <broader>Semantics and Data Governance Applications</broader>
     </Concept>
     <Concept>
         <prefLabel>Dictionary</prefLabel>
@@ -18,29 +18,30 @@
         <broader>Business Glossary</broader>
     </Concept>
     <Concept>
-        <prefLabel>Simple Knowledge Organization System</prefLabel>
-        <abbreviation>SKOS</abbreviation>
+        <prefLabel>SKOS</prefLabel>
+        <altLabel>Simple Knowledge Organization System</altLabel>
+        <abbreviation></abbreviation>
         <definition>A W3C standard for representing business vocabularies, controlled vocabularies,
             taxonomies and thesauri.</definition>
-        <broader>Business Glossary</broader>
+        <broader>Data Standards</broader>
     </Concept>
     <Concept>
         <prefLabel>Taxonomy</prefLabel>
         <definition>A scheme of classification of items usually in a hierarchial structure where
             broader terms are higher in a tree structure.</definition>
-        <broader>Software Application</broader>
+        <broader>Semantics and Data Governance Applications</broader>
     </Concept>
     <Concept>
         <prefLabel>Thesaurus</prefLabel>
         <definition>A collection of words with their synonyms and related concepts.</definition>
-        <broader>Software Application</broader>
+        <broader>Semantics and Data Governance Applications</broader>
     </Concept>
     <Concept>
         <prefLabel>Ontology</prefLabel>
         <definition>A formal naming and definition of the types, properties, and interrelationships
             of the entities that really or fundamentally exist for a particular domain of discourse.
             Ontologies frequently contain rules that govern taxonomies. </definition>
-        <broader>Software Application</broader>
+        <broader>Taxonomy</broader>
     </Concept>
     <Concept>
         <prefLabel>Not Only SQL</prefLabel>
@@ -55,12 +56,63 @@
         <broader>Software Application</broader>
     </Concept>
     <Concept>
+        <prefLabel>Search Application</prefLabel>
+        <definition>TBD</definition>
+        <broader>Software Application</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Keyword Search</prefLabel>
+        <definition>TBD</definition>
+        <broader>Search Application</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Concept Search</prefLabel>
+        <definition>TBD</definition>
+        <broader>Search Application</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Search Enrichment</prefLabel>
+        <definition>TBD</definition>
+        <broader>Search Application</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Document Classification</prefLabel>
+        <definition>TBD</definition>
+        <broader>Search Enrichment</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Keyword Expansion</prefLabel>
+        <definition>TBD</definition>
+        <broader>Search Enrichment</broader>
+    </Concept>
+    <Concept>
         <prefLabel>Doument Store</prefLabel>
         <alternateLabel>Document Database</alternateLabel>
         <alternateLabel>Document-Oriented Database</alternateLabel>
         <definition>A document-oriented database, or document store, is a database architecture
             designed for storing, retrieving, and managing document-oriented information, also known
             as semi-structured data. </definition>
+        <broader>Database Management System</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Key-Value Store</prefLabel>
+        <alternateLabel>Document-Oriented Database</alternateLabel>
+        <definition>TBD</definition>
+        <broader>Database Management System</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Analytical Database</prefLabel>
+        <definition>TBD</definition>
+        <broader>Database Management System</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Column-Family Store</prefLabel>
+        <definition>TBD</definition>
+        <broader>Database Management System</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Graph Store</prefLabel>
+        <definition>TBD</definition>
         <broader>Database Management System</broader>
     </Concept>
     <Concept>
@@ -75,11 +127,17 @@
         <prefLabel>Metadata Registry</prefLabel>
         <definition>A metadata registry is a central location in an organization where metadata definitions are stored and maintained in a controlled method.</definition>
         <source>https://en.wikipedia.org/wiki/Metadata_registry</source>
-        <broader>Software Application</broader>
+        <broader>Metadata Management System</broader>
         <see-also>Metadata Repository</see-also>
     </Concept>
     <Concept>
         <prefLabel>Metadata Repository</prefLabel>
+        <definition>A metadata repository is a database where metadata is stored without a focus on deduplication.</definition>
+        <broader>Metadata Management System</broader>
+        <see-also>Metadata Registry</see-also>
+    </Concept>
+    <Concept>
+        <prefLabel>Metadata Management System</prefLabel>
         <definition>A metadata repository is a database where metadata is stored without a focus on deduplication.</definition>
         <broader>Software Application</broader>
         <see-also>Metadata Registry</see-also>
@@ -88,6 +146,56 @@
         <prefLabel>Software Application</prefLabel>
         <definition>A software application is a software program that is used by user or agents to solve business problems.</definition>
         <broader>Thing</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Data Standards</prefLabel>
+        <definition>A standardized way of storing data.</definition>
+        <broader>Thing</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>XML</prefLabel>
+        <definition>Extensible Markup Language.</definition>
+        <broader>Data Standards</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>RDF</prefLabel>
+        <definition>TBD</definition>
+        <broader>Data Standards</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>XML Schema</prefLabel>
+        <definition>TBD</definition>
+        <broader>Data Standards</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>XForms</prefLabel>
+        <definition>TBD</definition>
+        <broader>Data Standards</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>OWL</prefLabel>
+        <definition>TBD</definition>
+        <broader>Data Standards</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Schematron</prefLabel>
+        <definition>TBD</definition>
+        <broader>Data Standards</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>XProc</prefLabel>
+        <definition>TBD</definition>
+        <broader>Data Standards</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>SKOS-XL</prefLabel>
+        <definition>TBD</definition>
+        <broader>SKOS</broader>
+    </Concept>
+    <Concept>
+        <prefLabel>Semantics and Data Governance Applications</prefLabel>
+        <definition>TBD</definition>
+        <broader>Software Application</broader>
     </Concept>
     <Concept>
         <prefLabel>Thing</prefLabel>

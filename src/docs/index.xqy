@@ -9,9 +9,11 @@ let $content :=
 
   <h4>{$title}</h4>
   
-  <p>How do we accelerate the creation of Data Hubs?  The fundamental difference between a Data Lake and a Data Hub is semantics.  And by that I mean strong
-  data definitions for every byte in a Data Hub.  To be useful, Data Hubs
-  need precise defintions for documents, and their elements.  This means we need to excel at data governance and stewardship.  Here is
+  <p>How do we accelerate the creation of Data Hubs?  
+  I belive that the fundamental difference between a costly data Data Lake and a valuable Data Hub is semantics (with a small s).
+  And by that I mean strong data definitions for every element in a Data Hub.
+  
+  To be useful, Data Hubs need precise defintions for documents, and their elements.  This means we need to excel at data governance and stewardship.  Here is
   one suggestion on how to get started in this area.</p>
   
   <p>Whenever I start on a new project, I listen carefully to the words customers use to state their requirements.</p>
@@ -81,6 +83,11 @@ let $content :=
          <td>Job Title</td>
       </tr>
       <tr>
+         <th>Data Hub</th>
+         <td>An integration pattern that stores data in consistent and semantically precise documents.</td>
+         <td>Integration Pattern</td>
+      </tr>
+      <tr>
          <th>POC</th>
          <td>Proof of Concept</td>
          <td>Application category or development stage</td>
@@ -103,9 +110,11 @@ let $content :=
      </tbody>
   </table>
   
-  <p>Most business glossaries typically have a list
-  of terms and their defintions.  You can also start to classify each term by assigning types to each term.
-  By looking at term types, we often start to get a sense of the key entities, entity properties and replationships within a project.</p>
+  <p>Most business glossaries typically have a list of terms and their defintions.
+  You can also start to classify each term by assigning types to each term.  We can also arrange terms into tree-like
+  structures called taxonomies by indicateing that some terms have a narrower meaning than other terms.
+  More importantly, by looking at terms and their types, we often start to get a sense of the key entities, 
+  entity properties and replationships within a project.</p>
   
   <p>We can also import these terms into MarkLogic and build a search application.  If we put the terms into a standard format called
   SKOS, we can use a pre-built application.</p>
@@ -130,8 +139,11 @@ let $content :=
   entities, properties and relationships they can also be used as a foundation of building a entity model.  Entity models are critical
   for quickly building Data Hubs.</p>
   
-  <p>If you use these tooks to convert your business glossaries to SKOS format, you can also import them into other third party taxonomy and ontology editing tools.
+  <p>If you use these tools to convert your business glossaries to SKOS format, you can also import them into other third party taxonomy and ontology editing tools.
   Our hope is that in the near future, there will be third part tools that display these entities.</p>
+  
+  <p>Don't get me wrong.  Building Enterprise Class data hubs in hard.  Finding the relationships between data, business rules, workflows and taxonomies
+  can't be done with any single tool or process.  Our teams need to be trained in creating and customizing tools that accelerate this process.</p>
   
   <p>The bottom line is that to be a great integration company, we have to do more than build search applications.  We need
   to be able to build tools and workflows that leverage semantics standards and work with third parties that embrace these standards.</p>
