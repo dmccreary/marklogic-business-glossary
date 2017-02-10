@@ -45,7 +45,7 @@ let $items := $codes/r:items/r:item
 let $content :=
 <div class="content">
     <h2>{$title}</h2>
-   <form method="post" action="/unit-tests/view-post-data.xqy">
+   <form method="post" action="/forms/save-reference-code.xqy">
          <div class="form-group">
               <label for="code-name">Code Name: </label>
               <input class="form-control" id="code-name" name="name" xize="50" value="{$codes/r:code-name/text()}"/><br/>
