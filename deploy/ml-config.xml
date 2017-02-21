@@ -190,6 +190,7 @@
         </fragment-parent>
       </fragment-parents>
 -->
+      
 <!--
       <fields>
         <field>
@@ -238,6 +239,28 @@
         </field>
       </fields>
 -->
+      <!-- boost a hit in the prefLabel to be 10x a hit in the altLabel or definitions -->
+      <fields>
+        <field>
+          <field-name/>
+          <include-root>true</include-root>
+          <included-elements>
+            <included-element>
+              <namespace-uri>http://www.w3.org/2004/02/skos/core#</namespace-uri>
+              <localname>prefLabel</localname>
+              <weight>10.0</weight>
+            </included-element>
+            <included-element>
+              <namespace-uri>http://www.w3.org/2004/02/skos/core#</namespace-uri>
+              <localname>altLabel</localname>
+              <weight>5.0</weight>
+            </included-element>
+          </included-elements>
+          <excluded-elements/>
+          <tokenizer-overrides/>
+        </field>
+      </fields>
+      
       <range-element-indexes>
         <range-element-index>
           <scalar-type>string</scalar-type>
@@ -293,6 +316,7 @@
         </range-element-index>
 -->
       </range-element-indexes>
+      
       <range-element-attribute-indexes>
 <!--
         Sample for:
