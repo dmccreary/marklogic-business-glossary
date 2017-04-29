@@ -59,14 +59,16 @@ let $content :=
                   </td>
                   <td>{$desc}</td>
                   {
+                  (: format-dateTime(xs:dateTime($entry/last-modified),"[FNn,*-3],  [MNn,*-3] [D01] '[Y01] [H01]:[m01]:[s01]") :)
                   if (($entry/last-modified castable as xs:dateTime)) then
-                    <td>{format-dateTime(xs:dateTime($entry/last-modified),"[FNn,*-3],  [MNn,*-3] [D01] '[Y01] [H01]:[m01]:[s01]")}</td>
+                    <td>{format-dateTime(xs:dateTime($entry/last-modified),"[FNn,*-3],  [MNn,*-3] [D01] '[Y01] [H01]:[m01]")}</td>
                   else
                     <td>&nbsp;</td>
                   }
                   <td>
-                  { if (($entry/last-modified castable as xs:dateTime)) then
-                  current-dateTime() - xs:dateTime($entry/last-modified)
+                  { if (($entry/last-modified castable as xs:dateTime))
+                  then
+                     substring(string(current-dateTime() - xs:dateTime($entry/last-modified)), 2)
                   else ()
                   }
                   </td>
