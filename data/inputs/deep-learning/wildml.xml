@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glossary>
+    <desc>thhp://wildml.com/deep-learning-glossary by Denny Britz</desc>
+    <concept>
+        <p>
+            <a name="activation-function"/>
+        </p>
+        <prefLabel>Activation Function</prefLabel>
+        <p>To allow Neural Networks to learn complex decision boundaries, we apply a nonlinear
+            activation function to some of its layers. Commonly used functions include <a
+                href="https://en.wikipedia.org/wiki/Sigmoid_function">sigmoid</a>, <a
+                href="http://mathworld.wolfram.com/HyperbolicTangent.html">tanh</a>, <a href="#relu"
+                >ReLU (Rectified Linear Unit)</a> and variants of these.</p>
+
+    </concept>
+    <concept>
+        <p>
+            <a name="adadelta"/>
+        </p>
+        <prefLabel>Adadelta</prefLabel>
+        <p>Adadelta is a gradient descent based learning algorithm that adapts the learning rate per
+            parameter over time. It was proposed as an improvement over <a href="#adagrad"
+                >Adagrad</a>, which is more sensitive to hyperparameters and may decrease the
+            learning rate too aggressively. Adadelta It is similar to <a href="#rmsprop">rmsprop</a>
+            and can be used instead of vanilla <a href="#sgd">SGD</a>.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1212.5701">ADADELTA: An Adaptive Learning Rate
+                    Method</a>
+            </li>
+            <li>
+                <a href="http://cs231n.github.io/neural-networks-3/">Stanford CS231n: Optimization
+                    Algorithms</a>
+            </li>
+            <li>
+                <a href="http://sebastianruder.com/optimizing-gradient-descent/">An overview of
+                    gradient descent optimization algorithms</a>
+            </li>
+        </ul>
+
+
+    </concept>
+    <concept>
+        <p>
+            <a name="adagrad"/>
+        </p>
+        <prefLabel>Adagrad</prefLabel>
+        <p>Adagrad is an adaptive learning rate algorithms that keeps track of the squared gradients
+            over time and automatically adapts the learning rate per-parameter. It can be used
+            instead of vanilla SGD and is particularly helpful for sparse data, where it assigns a
+            higher learning rate to infrequently updated parameters.</p>
+        <ul>
+            <li>
+                <a href="http://www.magicbroom.info/Papers/DuchiHaSi10.pdf">Adaptive Subgradient
+                    Methods for Online Learning and Stochastic Optimization</a>
+            </li>
+            <li>
+                <a href="http://cs231n.github.io/neural-networks-3/">Stanford CS231n: Optimization
+                    Algorithms</a>
+            </li>
+            <li>
+                <a href="http://sebastianruder.com/optimizing-gradient-descent/">An overview of
+                    gradient descent optimization algorithms</a>
+            </li>
+        </ul>
+
+
+    </concept>
+    <concept>
+        <p>
+            <a name="adam"/>
+        </p>
+        <prefLabel>Adam</prefLabel>
+        <p>Adam is an adaptive learning rate algorithm similar to <a href="#rmsprop">rmsprop</a>,
+            but updates are<br/> directly estimated using a running average of the first and second
+            moment of the gradient and also include a bias correction term.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1412.6980">Adam: A Method for Stochastic
+                    Optimization</a>
+            </li>
+            <li>
+                <a href="http://sebastianruder.com/optimizing-gradient-descent/">An overview of
+                    gradient descent optimization algorithms</a>
+            </li>
+        </ul>
+
+    </concept>
+    <concept>
+        <p>
+            <a name="affine-layer"/>
+        </p>
+        <prefLabel>Affine Layer</prefLabel>
+        <p>A fully-connected layer in a Neural Network. Affine means that each neuron in the
+            previous layer is connected to each neuron in the current layer. In many ways, this is
+            the &#8220;standard&#8221; layer of a Neural Network. Affine layers are often added on
+            top of the outputs of <a href="#cnn">Convolutional Neural Networks</a> or <a href="#rnn"
+                >Recurrent Neural Networks</a> before making a final prediction. An affine layer is
+            typically of the form <code>y = f(Wx + b)</code> where <code>x</code> are the layer
+            inputs, <code>W</code> the parameters, <code>b</code> a bias vector, and <code>f</code>
+            a nonlinear <a href="#activation-function">activation function</a></p>
+    </concept>
+    <concept>
+        <p>
+            <a name="attention"/>
+        </p>
+        <prefLabel>Attention Mechanism</prefLabel>
+        <p>Attention Mechanisms are inspired by human visual attention, the ability to focus on
+            specific parts of an image. Attention mechanisms can be incorporated in both Language
+            Processing and Image Recognition architectures to help the network learn what to
+            &#8220;focus&#8221; on when making predictions.</p>
+        <ul>
+            <li>
+                <a
+                    href="http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/"
+                    >Attention and Memory in Deep Learning and NLP</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="alexnet"/>
+        </p>
+        <prefLabel>Alexnet</prefLabel>
+        <p>Alexnet is the name of the Convolutional Neural Network architecture that won the ILSVRC
+            2012 competition by a large margin and was responsible for a resurgence of interest in
+            CNNs for Image Recognition. It consists of five convolutional layers, some of which are
+            followed by max-pooling layers, and three fully-connected layers with a final 1000-way
+            softmax. Alexnet was introduced in <a
+                href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
+                >ImageNet Classification with Deep Convolutional Neural Networks</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="autoencoder"/>
+        </p>
+        <prefLabel>Autoencoder</prefLabel>
+        <p>An Autoencoder is a Neural Network model whose goal is to predict the input itself,
+            typically through a &#8220;bottleneck&#8221; somewhere in the network. By introducing a
+            bottleneck, we force the network to learn a lower-dimensional representation of the
+            input, effectively compressing the input into a good representation. Autoencoders are
+            related to PCA and other dimensionality reduction techniques, but can learn more complex
+            mappings due to their nonlinear nature. A wide range of autoencoder architectures exist,
+            including <a href="http://www.jmlr.org/papers/volume11/vincent10a/vincent10a.pdf"
+                >Denoising Autoencoders</a>, <a href="http://arxiv.org/abs/1312.6114">Variational
+                Autoencoders</a>, or <a href="http://arxiv.org/abs/1511.01432">Sequence
+                Autoencoders</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="average-pooling"/>
+        </p>
+        <prefLabel>Average-Pooling</prefLabel>
+        <p>Average-Pooling is a <a href="#pooling">pooling</a> technique used in Convolutional
+            Neural Networks for Image Recognition. It works by sliding a window over patches of
+            features, such as pixels, and taking the average of all values within the window. It
+            compresses the input representation into a lower-dimensional representation.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="backpropagation"/>
+        </p>
+        <prefLabel>Backpropagation</prefLabel>
+        <p>Backpropagation is an algorithm to efficiently calculate the gradients in a Neural
+            Network, or more generally, a feedforward computational graph. It boils down to applying
+            the chain rule of differentiation starting from the network output and propagating the
+            gradients backward. The first uses of backpropagation go back to Vapnik in the
+            1960&#8217;s, but <a
+                href="http://www.nature.com/nature/journal/v323/n6088/abs/323533a0.html">Learning
+                representations by back-propagating errors</a> is often cited as the source.</p>
+        <ul>
+            <li>
+                <a href="http://colah.github.io/posts/2015-08-Backprop/">Calculus on Computational
+                    Graphs: Backpropagation</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="bptt"/>
+        </p>
+        <prefLabel>Backpropagation Through Time (BPTT)</prefLabel>
+        <p>Backpropagation Through Time (<a
+                href="http://axon.cs.byu.edu/~martinez/classes/678/Papers/Werbos_BPTT.pdf"
+            >paper</a>) is the <a href="#backpropagation">Backpropagation algorithm</a> applied to
+            Recurrent Neural Networks (RNNs). BPTT can be seen as the standard backpropagation
+            algorithm applied to an RNN, where each time step represents a layer and the parameters
+            are shared across layers. Because an RNN shares the same parameters across all time
+            steps, the errors at one time step must be backpropagated &#8220;through time&#8221; to
+            all previous time steps, hence the name. When dealing with long sequences (hundreds of
+            inputs), a truncated version of BPTT is often used to reduce the computational cost.
+            Truncated BPTT stops backpropagating the errors after a fixed number of steps.</p>
+        <ul>
+            <li>
+                <a href="http://axon.cs.byu.edu/~martinez/classes/678/Papers/Werbos_BPTT.pdf"
+                    >Backpropagation Through Time: What It Does and How to Do It</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="batch-normalization"/>
+        </p>
+        <prefLabel>Batch Normalization</prefLabel>
+        <p>Batch Normalization is a technique that normalizes layer inputs per mini-batch. It speed
+            up training, allows for the usage of higher learner rates, and can act as a regularizer.
+            Batch Normalization has been found to be very effective for Convolutional and
+            Feedforward Neural Networks but hasn&#8217;t been successfully applied to Recurrent
+            Neural Networks.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1502.03167">Batch Normalization: Accelerating Deep
+                    Network Training by Reducing Internal Covariate Shift</a>
+            </li>
+            <li>
+                <a href="http://arxiv.org/abs/1510.01378">Batch Normalized Recurrent Neural
+                    Networks</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="bidirectional-rnn"/>
+        </p>
+        <prefLabel>Bidirectional RNN</prefLabel>
+        <p>A Bidirectional Recurrent Neural Network is a type of Neural Network that contains two <a
+                href="#rnn">RNNs</a> going into different directions. The forward RNN reads the
+            input sequence from start to end, while the backward RNN reads it from end to start. The
+            two RNNs are stacked on top of each others and their states are typically combined by
+            appending the two vectors. Bidirectional RNNs are often used in Natural Language
+            problems, where we want to take the context from both before and after a word into
+            account before making a prediction.</p>
+        <ul>
+            <li>
+                <a href="http://www.di.ufpe.br/~fnj/RNA/bibliografia/BRNN.pdf">Bidirectional
+                    Recurrent Neural Networks</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="caffe"/>
+        </p>
+        <prefLabel>Caffe</prefLabel>
+        <p><a href="http://caffe.berkeleyvision.org/">Caffe</a> is a deep learning framework
+            developed by the Berkeley Vision and Learning Center. Caffe is particularly popular and
+            performant for vision tasks and <a href="#cnn">CNN</a> models.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="ce-loss"/>
+        </p>
+        <prefLabel>Categorical Cross-Entropy Loss</prefLabel>
+        <p>The categorical cross-entropy loss is also known as the negative log likelihood. It is a
+            popular loss function for categorization problems and measures the similarity between
+            two probability distributions, typically the true labels and the predicted labels. It is
+            given by <code>L = -sum(y * log(y_prediction))</code> where <code>y</code> is the
+            probability distribution of true labels (typically a one-hot vector) and
+                <code>y_prediction</code> is the probability distribution of the predicted labels,
+            often coming from a <a href="#softmax">softmax</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="channel"/>
+        </p>
+        <prefLabel>Channel</prefLabel>
+        <p>Input data to Deep Learning models can have multiple channels. The canonical examples are
+            images, which have red, green and blue color channels. A image can be represented as a
+            3-dimensional Tensor with the dimensions corresponding to channel, height, and width.
+            Natural Language data can also have multiple channels, in the form of different types of
+                <a href="#embedding">embeddings</a> for example.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="cnn"/>
+        </p>
+        <prefLabel>Convolutional Neural Network (CNN, ConvNet)</prefLabel>
+        <p>A CNN uses <a href="https://en.wikipedia.org/wiki/Convolution">convolutions</a> to
+            connected extract features from local regions of an input. Most CNNs contain a
+            combination of convolutional, <a href="#pooling">pooling</a> and <a href="#affine-layer"
+                >affine</a> layers. CNNs have gained popularity particularly through their excellent
+            performance on visual recognition tasks, where they have been setting the state of the
+            art for several years.</p>
+        <ul>
+            <li>
+                <a href="http://cs231n.github.io/">Stanford CS231n class &#8211; Convolutional
+                    Neural Networks for Visual Recognition</a>
+            </li>
+            <li>
+                <a
+                    href="http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/"
+                    >Understanding Convolutional Neural Networks for NLP</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="dbn"/>
+        </p>
+        <prefLabel>Deep Belief Network (DBN)</prefLabel>
+        <p>DBNs are a type of probabilistic graphical model that learn a hierarchical representation
+            of the data in an unsupervised manner. DBNs consist of multiple hidden layers with
+            connections between neurons in each successive pair of layers. DBNs are built by
+            stacking multiple <a href="#rbn">RBNs</a> on top of each other and training them one by
+            one.</p>
+        <ul>
+            <li>
+                <a href="https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf">A fast learning
+                    algorithm for deep belief nets</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="deep-dream"/>
+        </p>
+        <prefLabel>Deep Dream</prefLabel>
+        <p>A technique invented by Google that tries to distill the knowledge captured by a deep
+            Convolutional Neural Network. The technique can generate new images, or transform
+            existing images and give them a dreamlike flavor, especially when applied
+            recursively.</p>
+        <ul>
+            <li>
+                <a href="https://github.com/google/deepdream">Deep Dream on Github</a>
+            </li>
+            <li>
+                <a
+                    href="http://googleresearch.blogspot.ch/2015/06/inceptionism-going-deeper-into-neural.html"
+                    >Inceptionism: Going Deeper into Neural Networks</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="dropout"/>
+        </p>
+        <prefLabel>Dropout</prefLabel>
+        <p>Dropout is a regularization technique for Neural Networks that prevents overfitting. It
+            prevents neurons from co-adapting by randomly setting a fraction of them to 0 at each
+            training iteration. Dropout can be interpreted in various ways, such as randomly
+            sampling from an exponential number of different networks. Dropout layers first gained
+            popularity through their use in <a href="#cnn">CNNs</a>, but have since been applied to
+            other layers, including input embeddings or recurrent networks.</p>
+        <ul>
+            <li>
+                <a href="https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf">Dropout: A Simple
+                    Way to Prevent Neural Networks from Overfitting</a>
+            </li>
+            <li>
+                <a href="http://arxiv.org/abs/1409.2329">Recurrent Neural Network Regularization</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="embedding"/>
+        </p>
+        <prefLabel>Embedding</prefLabel>
+        <p>An embedding maps an input representation, such as a word or sentence, into a vector. A
+            popular type of embedding are word embeddings such as <a href="#word2vec">word2vec</a>
+            or <a href="#glove">GloVe</a>. We can also embed sentences, paragraphs or images. For
+            example, by mapping images and their textual descriptions into a common embedding space
+            and minimizing the distance between them, we can match labels with images. Embeddings
+            can be learned explicitly, such as in <a href="#word2vec">word2vec</a>, or as part of a
+            supervised task, such as Sentiment Analysis. Often, the input layer of a network is
+            initialized with pre-trained embeddings, which are then <a href="#fine-tuning"
+                >fine-tuned</a> to the task at hand.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="exploding-gradient-problem"/>
+        </p>
+        <prefLabel>Exploding Gradient Problem</prefLabel>
+        <p>The Exploding Gradient Problem is the opposite of the <a
+                href="#vanishing-gradient-problem">Vanishing Gradient Problem</a>. In Deep Neural
+            Networks gradients may explode during backpropagation, resulting number overflows. A
+            common technique to deal with exploding gradients is to perform <a
+                href="#gradient-clipping">Gradient Clipping</a>.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1211.5063">On the difficulty of training recurrent
+                    neural networks</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="fine-turning"/>
+        </p>
+        <prefLabel>Fine-Tuning</prefLabel>
+        <p>Fine-Tuning refers to the technique of initializing a network with parameters from
+            another task (such as an unsupervised training task), and then updating these parameters
+            based on the task at hand. For example, NLP architecture often use pre-trained word
+            embeddings like <a href="#word2vec">word2vec</a>, and these word embeddings are then
+            updated during training based for a specific task like Sentiment Analysis.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="gradient-clipping"/>
+        </p>
+        <prefLabel>Gradient Clipping</prefLabel>
+        <p>Gradient Clipping is a technique to prevent <a href="#exploding-gradients">exploding
+                gradients</a> in very deep networks, typically Recurrent Neural Networks. There
+            exist various ways to perform gradient clipping, but the a common one is to normalize
+            the gradients of a parameter vector when its L2 norm exceeds a certain threshold
+            according to <code>new_gradients = gradients * threshold /
+            l2_norm(gradients)</code>.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1211.5063">On the difficulty of training recurrent
+                    neural networks</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="glove"/>
+        </p>
+        <prefLabel>GloVe</prefLabel>
+        <p><a href="http://nlp.stanford.edu/projects/glove/">GloVe</a> is an unsupervised learning
+            algorithm for obtaining vector representations (<a href="#embedding">embeddings</a>) for
+            words. GloVe vectors serve the same purpose as word2vec but have different vector
+            representations due to being trained on co-occurrence statistics.</p>
+        <ul>
+            <li>
+                <a href="http://nlp.stanford.edu/pubs/glove.pdf">GloVe: Global Vectors for Word
+                    Representation</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="googlelenet"/>
+        </p>
+        <prefLabel>GoogleLeNet</prefLabel>
+        <p>The name of the Convolutional Neural Network architecture that won the ILSVRC 2014
+            challenge. The network uses <a href="#inception-module">Inception modules</a> to reduce
+            the parameters and improve the utilization of the computing resources inside the
+            network.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1409.4842">Going Deeper with Convolutions</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="gru"/>
+        </p>
+        <prefLabel>GRU</prefLabel>
+        <p>The Gated Recurrent Unit is a simplified version of an LSTM unit with fewer parameters.
+            Just like an LSTM cell, it uses a gating mechanism to allow RNNs to efficiently learn
+            long-range dependency by preventing the <a href="#vanishing-gradient-problem">vanishing
+                gradient problem</a>. The GRU consists of a reset and update gate that determine
+            which part of the old memory to keep vs. update with new values at the current time
+            step.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1406.1078v3">Learning Phrase Representations using RNN
+                    Encoder-Decoder for Statistical Machine Translation</a>
+            </li>
+            <li>
+                <a
+                    href="http://www.wildml.com/2015/10/recurrent-neural-network-tutorial-part-4-implementing-a-grulstm-rnn-with-python-and-theano/"
+                    >Recurrent Neural Network Tutorial, Part 4 – Implementing a GRU/LSTM RNN with
+                    Python and Theano</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="highway-layer"/>
+        </p>
+        <prefLabel>Highway Layer</prefLabel>
+        <p>A Highway Layer (<a href="http://arxiv.org/abs/1505.00387">paper</a>) is a type of Neural
+            Network layer that uses a gating mechanism to control the information flow through a
+            layer. Stacking multiple Highway Layers allows for training of very deep networks.
+            Highway Layers work by learning a gating function that chooses which parts of the inputs
+            to pass through and which parts to pass through a transformation function, such as a
+            standard <a href="#affine-layer">affine</a> layer for example. The basic formulation of
+            a Highway Layer is <code>T * h(x) + (1 - T) * x</code>, where <code>T</code> is the
+            learned gating function with values between 0 and 1, <code>h(x)</code> is an arbitrary
+            input transformation and <code>x</code> is the input. Note that all of these must have
+            the same size.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="icml"/>
+        </p>
+        <prefLabel>ICML</prefLabel>
+        <p>The <a href="http://icml.cc/">International Conference for Machine Learning</a>, a
+            top-tier machine learning conference.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="ilsvrc"/>
+        </p>
+        <prefLabel>ILSVRC</prefLabel>
+        <p>The <a href="http://www.image-net.org/challenges/LSVRC/">ImageNet Large Scale Visual
+                Recognition Challenge</a> evaluates algorithms for object detection and image
+            classification at large scale. It is the most popular academic challenge in computer
+            vision. Over the past years, Deep Learning techniques have led to a significant
+            reduction in error rates, from 30% to less than 5%, beating human performance on several
+            classification tasks.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="inception-module"/>
+        </p>
+        <prefLabel>Inception Module</prefLabel>
+        <p>Inception Modules are used in Convolutional Neural Networks to allow for more efficient
+            computation and deeper Networks trough a dimensionality reduction with stacked 1&#215;1
+            convolutions.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1409.4842">Going Deeper with Convolutions</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="keras"/>
+        </p>
+        <prefLabel>Keras</prefLabel>
+        <p><a href="http://keras.io/">Kears</a> is a Python-based Deep Learning library that
+            includes many high-level building blocks for deep Neural Networks. It can run on top of
+            either <a href="#tensorflow">TensorFlow</a> or <a href="#theano">Theano</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="lstm"/>
+        </p>
+        <prefLabel>LSTM</prefLabel>
+        <p>Long Short-Term Memory networks were invented to prevent the <a
+                href="#vanishing-gradient-problem">vanishing gradient problem</a> in Recurrent
+            Neural Networks by using a memory gating mechanism. Using LSTM units to calculate the
+            hidden state in an RNN we help to the network to efficiently propagate gradients and
+            learn long-range dependencies.</p>
+        <ul>
+            <li>
+                <a href="http://deeplearning.cs.cmu.edu/pdfs/Hochreiter97_lstm.pdf">Long Short-Term
+                    Memory</a>
+            </li>
+            <li>
+                <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding
+                    LSTM Networks</a>
+            </li>
+            <li>
+                <a
+                    href="http://www.wildml.com/2015/10/recurrent-neural-network-tutorial-part-4-implementing-a-grulstm-rnn-with-python-and-theano/"
+                    >Recurrent Neural Network Tutorial, Part 4 – Implementing a GRU/LSTM RNN with
+                    Python and Theano</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="max-pooling"/>
+        </p>
+        <prefLabel>Max-Pooling</prefLabel>
+        <p>A <a href="#pooling">pooling</a> operations typically used in Convolutional Neural
+            Networks. A max-pooling layer selects the maximum value from a patch of features. Just
+            like a convolutional layer, pooling layers are parameterized by a window (patch) size
+            and stride size. For example, we may slide a window of size 2&#215;2 over a 10&#215;10
+            feature matrix using stride size 2, selecting the max across all 4 values within each
+            window, resulting in a new 5&#215;5 feature matrix. Pooling layers help to reduce the
+            dimensionality of a representation by keeping only the most salient information, and in
+            the case of image inputs, they provide basic invariance to translation (the same maximum
+            values will be selected even if the image is shifted by a few pixels). Pooling layers
+            are typically inserted between successive convolutional layers.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="mnist"/>
+        </p>
+        <prefLabel>MNIST</prefLabel>
+        <p>The <a href="http://yann.lecun.com/exdb/mnist/">MNIST data set</a> is the perhaps most
+            commonly used Image Recognition dataset. It consists of 60,000 training and 10,000 test
+            examples of handwritten digits. Each image is 28&#215;28 pixels large. State of the art
+            models typically achieve accuracies of 99.5% or higher on the test set.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="momentum"/>
+        </p>
+        <prefLabel>Momentum</prefLabel>
+        <p>Momentum is an extension to the Gradient Descent Algorithm that accelerates or damps the
+            parameter updates. In practice, including a momentum term in the gradient descent
+            updates leads to better convergence rates in Deep Networks.</p>
+        <ul>
+            <li>
+                <a href="http://www.nature.com/nature/journal/v323/n6088/abs/323533a0.html">Learning
+                    representations by back-propagating errors</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="mlp"/>
+        </p>
+        <prefLabel>Multilayer Perceptron (MLP(</prefLabel>
+        <p>A Multilayer Perceptron is a Feedforward Neural Network with multiple fully-connected
+            layers that use nonlinear <a href="#activation-function">activation functions</a> to
+            deal with data which is not linearly separable. An MLP is the most basic form of a
+            multilayer Neural Network, or a deep Neural Networks if it has more than 2 layers.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="nll"/>
+        </p>
+        <prefLabel>Negative Log Likelihood (NLL)</prefLabel>
+        <p>See <a href="#ce-loss">Categorical Cross Entropy Loss</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="nmt"/>
+        </p>
+        <prefLabel>Neural Machine Translation (NMT)</prefLabel>
+        <p>An NMT system uses Neural Networks to translate between languages, such as English and
+            French. NMT systems can be trained end-to-end using bilingual corpora, which differs
+            from traditional Machine Translation systems that require hand-crafted features and
+            engineering. NMT systems are typically implemented using encoder and decoder recurrent
+            neural networks that encode a source sentence and produce a target sentence,
+            respectively.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1409.3215">Sequence to sequence learning with neural
+                    networks</a>
+            </li>
+            <li>
+                <a href="http://arxiv.org/abs/1406.1078">Learning Phrase Representations using RNN
+                    Encoder-Decoder for Statistical Machine Translation</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="ntm"/>
+        </p>
+        <prefLabel>Neural Turing Machine (NTM)</prefLabel>
+        <p>NMTs are Neural Network architectures that can infer simple algorithms from examples. For
+            example, a NTM may learn a sorting algorithm through example inputs and outputs. NTMs
+            typically learn some form of memory and attention mechanism to deal with state during
+            program execution.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1410.5401">Neural Turing Machines</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="nonlinearity"/>
+        </p>
+        <prefLabel>Nonlinearity</prefLabel>
+        <p>See <a href="#activation-function">Activation Function</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="nce"/>
+        </p>
+        <prefLabel>Noise-contrastive estimation (NCE)</prefLabel>
+        <p>Noise-contrastive estimation is a sampling loss typically used to train classifiers with
+            a large output vocabulary. Calculating the <a href="#softmax">softmax</a> over a large
+            number of possible classes is prohibitively expensive. Using NCE, we can reduce the
+            problem to binary classification problem by training the classifier to discriminate
+            between samples from the &#8220;real&#8221; distribution and an artificially generated
+            noise distribution.</p>
+        <ul>
+            <li>
+                <a href="http://www.jmlr.org/proceedings/papers/v9/gutmann10a/gutmann10a.pdf"
+                    >Noise-contrastive estimation: A new estimation principle for unnormalized
+                    statistical models</a>
+            </li>
+            <li>
+                <a
+                    href="http://papers.nips.cc/paper/5165-learning-word-embeddings-efficiently-with-noise-contrastive-estimation.pdf"
+                    >Learning word embeddings efficiently with noise-contrastive estimation</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="pooling"/>
+        </p>
+        <prefLabel>Pooling</prefLabel>
+        <p>See <a href="#max-pooling">Max-Pooling</a> or <a href="#average-pooling"
+                >Average-Pooling</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="rbn"/>
+        </p>
+        <prefLabel>Restricted Boltzmann Machine (RBN)</prefLabel>
+        <p>RBMs are a type of probabilistic graphical model that can be interpreted as a stochastic
+            artificial neural network. RBNs learn a representation of the data in an unsupervised
+            manner. An RBN consists of visible and hidden layer, and connections between binary
+            neurons in each of these layers. RBNs can be efficiently trained using <a
+                href="http://www.cs.toronto.edu/~fritz/absps/nccd.pdf">Contrastive Divergence</a>,
+            an approximation of gradient descent.</p>
+        <ul>
+            <li>
+                <a href="http://www-psych.stanford.edu/~jlm/papers/PDP/Volume%201/Chap6_PDP86.pdf"
+                    >Chapter 6: Information Processing in Dynamical Systems: Foundations of Harmony
+                    Theory</a>
+            </li>
+            <li>
+                <a href="http://image.diku.dk/igel/paper/AItRBM-proof.pdf">An Introduction to
+                    Restricted Boltzmann Machines</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="rnn"/>
+        </p>
+        <prefLabel>Recurrent Neural Network (RNN)</prefLabel>
+        <p>A RNN models sequential interactions through a hidden state, or memory. It can take up to
+            N inputs and produce up to N outputs. For example, an input sequence may be a sentence
+            with the outputs being the part-of-speech tag for each word (N-to-N). An input could be
+            a sentence, and the output a sentiment classification of the sentence (N-to-1). An input
+            could be a single image, and the output could be a sequence of words corresponding to
+            the description of an image (1-to-N). At each time step, an RNN calculates a new hidden
+            state (&#8220;memory&#8221;) based on the current input and the previous hidden state.
+            The &#8220;recurrent&#8221; stems from the facts that at each step the same parameters
+            are used and the network performs the same calculations based on different inputs.</p>
+        <ul>
+            <li>
+                <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding
+                    LSTM Networks</a>
+            </li>
+            <li>
+                <a
+                    href="http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/"
+                    >Recurrent Neural Networks Tutorial, Part 1 – Introduction to RNNs</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="recursive-neural-network"/>
+        </p>
+        <prefLabel>Recursive Neural Network</prefLabel>
+        <p>Recursive Neural Networks are a generalization of <a href="#rnn">Recurrent Neural
+                Networks</a> to a tree-like structure. The same weights are applied at each
+            recursion. Just like RNNs, Recursive Neural Networks can be trained end-to-end using
+            backpropagation. While it is possible to learn the tree structure as part of the
+            optimization problem, Recursive Neural Networks are often applied to problem that
+            already have a predefined structure, like a parse tree in Natural Language
+            Processing.</p>
+        <ul>
+            <li>
+                <a
+                    href="http://ai.stanford.edu/~ang/papers/icml11-ParsingWithRecursiveNeuralNetworks.pdf"
+                    >Parsing Natural Scenes and Natural Language with Recursive Neural Networks</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="relu"/>
+        </p>
+        <prefLabel>ReLU</prefLabel>
+        <p>Short for Rectified Linear Unit(s). ReLUs are often used as <a
+                href="#activation-function">activation functions</a> in Deep Neural Networks. They
+            are defined by <code>f(x) = max(0, x)</code>. The advantages of ReLUs over functions
+            like <code>tanh</code> include that they tend to be sparse (their activation easily be
+            set to 0), and that they suffer less from the <a href="#vanishing-gradient-problem"
+                >vanishing gradient problem</a>. ReLUs are the most commonly used activation
+            function in Convolutional Neural Networks. There exist several variations of ReLUs, such
+            as <a href="http://web.stanford.edu/~awni/papers/relu_hybrid_icml2013_final.pdf">Leaky
+                ReLUs</a>, <a href="http://arxiv.org/abs/1502.01852">Parametric ReLU (PReLU)</a> or
+            a smoother <a
+                href="http://papers.nips.cc/paper/1920-incorporating-second-order-functional-knowledge-for-better-option-pricing.pdf"
+                >softplus</a> approximation.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1502.01852">Delving Deep into Rectifiers: Surpassing
+                    Human-Level Performance on ImageNet Classification</a>
+            </li>
+            <li>
+                <a href="http://web.stanford.edu/~awni/papers/relu_hybrid_icml2013_final.pdf"
+                    >Rectifier Nonlinearities Improve Neural Network Acoustic Models</a>
+            </li>
+            <li>
+                <a href="http://www.cs.toronto.edu/~fritz/absps/reluICML.pdf">Rectified Linear Units
+                    Improve Restricted Boltzmann Machines</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="resnet"/>
+        </p>
+        <prefLabel>ResNet</prefLabel>
+        <p>Deep Residual Networks won the ILSVRC 2015 challenge. These networks work by introducing
+            shortcut connection across stacks of layers, allowing the optimizer to learn
+            &#8220;easier&#8221; residual mappings instead of the more complicated original
+            mappings. These shortcut connections are similar to <a href="#highway-layer">Highway
+                Layers</a>, but they are data-independent and don&#8217;t introduce additional
+            parameters or training complexity. ResNets achieved a 3.57% error rate on the ImageNet
+            test set.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1512.03385">Deep Residual Learning for Image
+                    Recognition</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="rmsprop"/>
+        </p>
+        <prefLabel>RMSProp</prefLabel>
+        <p>RMSProp is a gradient-based optimization algorithm. It is similar to <a href="#adagrad"
+                >Adagrad</a>, but introduces an additional decay term to counteract Adagrad&#8217;s
+            rapid decrease in learning rate.</p>
+        <ul>
+            <li>
+                <a href="http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf"
+                    >Neural Networks for Machine Learning Lecture 6a</a>
+            </li>
+            <li>
+                <a href="http://cs231n.github.io/neural-networks-3/">Stanford CS231n: Optimization
+                    Algorithms</a>
+            </li>
+            <li>
+                <a href="http://sebastianruder.com/optimizing-gradient-descent/">An overview of
+                    gradient descent optimization algorithms</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="seq2seq"/>
+        </p>
+        <prefLabel>Seq2Seq</prefLabel>
+        <p>A Sequence-to-Sequence model reads a sequence (such as a sentence) as an input and
+            produces another sequence as an output. It differs from a standard <a href="#rnn"
+                >RNN</a> in that the input sequence is completely read before the network starts
+            producing any output. Typically, seq2seq models are implemented using two RNNs,
+            functioning as encoders and decoders. <a href="#nmt">Neural Machine Translation</a> is a
+            typical example of a seq2seq model.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1409.3215">Sequence to Sequence Learning with Neural
+                    Networks</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="sgd"/>
+        </p>
+        <prefLabel>SGD</prefLabel>
+        <p>Stochastic Gradient Descent (<a
+                href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent">Wikipedia</a>) is a
+            gradient-based optimization algorithm that is used to learn network parameters during
+            the training phase. The gradients are typically calculated using the <a
+                href="#backpropagation">backpropagation</a> algorithm. In practice, people use the
+            minibatch version of SGD, where the parameter updates are performed based on a batch
+            instead of a single example, increasing computational efficiency. Many extensions to
+            vanilla SGD exist, including <a href="#momentym">Momentum</a>, <a href="#adagrad"
+                >Adagrad</a>, <a href="#rmsprop">rmsprop</a>, <a href="#adadelta">Adadelta</a> or <a
+                href="#adam">Adam</a>.</p>
+        <ul>
+            <li>
+                <a href="http://www.magicbroom.info/Papers/DuchiHaSi10.pdf">Adaptive Subgradient
+                    Methods for Online Learning and Stochastic Optimization</a>
+            </li>
+            <li>
+                <a href="http://cs231n.github.io/neural-networks-3/">Stanford CS231n: Optimization
+                    Algorithms</a>
+            </li>
+            <li>
+                <a href="http://sebastianruder.com/optimizing-gradient-descent/">An overview of
+                    gradient descent optimization algorithms</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="softmax"/>
+        </p>
+        <prefLabel>Softmax</prefLabel>
+        <p>The <a href="https://en.wikipedia.org/wiki/Softmax_function">softmax function</a> is
+            typically used to convert a vector of raw scores into class probabilities at the output
+            layer of a Neural Network used for classification. It normalizes the scores by
+            exponentiating and dividing by a normalization constant. If we are dealing with a large
+            number of classes, a large vocabulary in Machine Translation for example, the
+            normalization constant is expensive to compute. There exist various alternatives to make
+            the computation more efficient, including <a
+                href="https://www.cs.toronto.edu/~amnih/papers/hlbl_final.pdf">Hierarchical
+                Softmax</a> or using a sampling-based loss such as <a href="#nce">NCE</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="tensorflow"/>
+        </p>
+        <prefLabel>TensorFlow</prefLabel>
+        <p><a href="https://www.tensorflow.org/">TensorFlow</a> is an open source C++/Python
+            software library for numerical computation using data flow graphs, particularly Deep
+            Neural Networks. It was created by Google. In terms of design, it is most similar to <a
+                href="#theano">Theano</a>, and lower-level than <a href="#caffe">Caffe</a> or <a
+                href="#keras">Keras</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="theano"/>
+        </p>
+        <prefLabel>Theano</prefLabel>
+        <p><a href="http://deeplearning.net/software/theano/">Theano</a> is a Python library that
+            allows you to define, optimize, and evaluate mathematical expressions. It contains many
+            building blocks for deep neural networks. Theano is a low-level library similar to <a
+                href="#tensorflow">Tensorflow</a>. Higher-level libraries include <a href="#keras"
+                >Keras</a> and <a href="#caffe">Caffe</a>.</p>
+    </concept>
+    <concept>
+        <p>
+            <a name="vanishing-gradient-problem"/>
+        </p>
+        <prefLabel>Vanishing Gradient Problem</prefLabel>
+        <p>The vanishing gradient problem arises in very deep Neural Networks, typically Recurrent
+            Neural Networks, that use activation functions whose gradients tend to be small (in the
+            range of 0 from 1). Because these small gradients are multiplied during backpropagation,
+            they tend to &#8220;vanish&#8221; throughout the layers, preventing the network from
+            learning long-range dependencies. Common ways to counter this problem is to use
+            activation functions like <a href="#relu">ReLUs</a> that do not suffer from small
+            gradients, or use architectures like <a href="#lstm">LSTMs</a> that explicitly combat
+            vanishing gradients. The opposite of this problem is called the <a
+                href="#exploding-gradient-problem">exploding gradient problem</a>.</p>
+        <ul>
+            <li>
+                <a href="http://www.jmlr.org/proceedings/papers/v28/pascanu13.pdf">On the difficulty
+                    of training recurrent neural networks</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="vgg"/>
+        </p>
+        <prefLabel>VGG</prefLabel>
+        <p>VGG refers to convolutional neural network model that secured the first and second place
+            in the 2014 ImageNet localization and classification tracks, respectively. The VGG model
+            consist of 16–19 weight layers and uses small convolutional filters of size 3&#215;3 and
+            1&#215;1.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1409.1556">Very Deep Convolutional Networks for
+                    Large-Scale Image Recognition</a>
+            </li>
+        </ul>
+    </concept>
+    <concept>
+        <p>
+            <a name="word2vec"/>
+        </p>
+        <prefLabel>word2vec</prefLabel>
+        <p>word2vec is an algorithm and <a href="https://code.google.com/p/word2vec/">tool</a> to
+            learn word <a href="#embedding">embeddings</a> by trying to predict the context of words
+            in a document. The resulting word vectors have some interesting properties, for example
+                <code>vector('queen') ~= vector('king') - vector('man') + vector('woman')</code>.
+            Two different objectives can be used to learn these embeddings: The Skip-Gram objective
+            tries to predict a context from on a word, and the CBOW objective tries to predict a
+            word from its context.</p>
+        <ul>
+            <li>
+                <a href="http://arxiv.org/abs/1301.3781">Efficient Estimation of Word
+                    Representations in Vector Space</a>
+            </li>
+            <li>
+                <a href="http://arxiv.org/abs/1310.4546">Distributed Representations of Words and
+                    Phrases and their Compositionality</a>
+            </li>
+            <li>
+                <a href="http://arxiv.org/abs/1411.2738">word2vec Parameter Learning Explained</a>
+            </li>
+        </ul>
+    </concept>
+
+
+</glossary>

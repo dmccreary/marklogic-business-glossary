@@ -1,0 +1,257 @@
+
+<concepts>
+   <title>Digital Product Management</title>
+   <desc>As the field of digital product management continues to rapidly evolve, so do the words and
+      phrases used by its practitioners. So we compiled a guide to help navigate the jargon. If you
+      hear any that aren’t on this list feel free to leave a comment, but they are probably made
+      up</desc>
+   <concept>
+      <prefLabel>Agile</prefLabel>
+      <definition> Agile product management is based on gathering customer and user feedback on
+         prototypes and early product developments, and adapting accordingly. It helps product teams
+         reduce waste through iterative work cadences. http://www.agilemanifesto.org </definition>
+   </concept>
+   <concept>
+      <prefLabel>Scrum</prefLabel>
+      <definition> a method within Agile where a development team works together to reach a goal,
+         often with physical co-location or close online collaboration of all team members, as well
+         as daily face-to-face communication among all team members. There’s hundreds of Agile and
+         Scrum tools out there, many of which may sound familiar.
+         http://agilescout.com/best-agile-scrum-tools </definition>
+   </concept>
+   <concept>
+      <prefLabel>Sprint</prefLabel>
+      <definition> a cycle of development, often ranging from a week to a month, defined to complete
+         a desired milestone </definition>
+   </concept>
+   <concept>
+      <prefLabel>User story</prefLabel>
+      <definition> a tool used in Agile environments to capture a description of a software feature
+         from an end-user perspective. The user story describes the type of user, what they want and
+         why. They typically follow a simple template As a type of user, I want some goal so that
+         some reason </definition>
+   </concept>
+   <concept>
+      <prefLabel>API</prefLabel>
+      <definition> Application program interface is a set of routines, protocols, and tools for
+         building software applications that defines how components should interact. APIs can extend
+         the functionality of your product to third-parties. For example, Uber lets Google bake the
+         ability to order a cab right from the Google Maps app. Tim Falls discusses the importance
+         of APIs on This is Product Management</definition>
+   </concept>
+   <category>
+      <category-name>UX / Design</category-name>
+   </category>
+
+   <concept>
+      <prefLabel>VOC</prefLabel>
+      <definition> Voice of the customer is a market research technique that produces a detailed set
+         of customer wants and needs, organized into a hierarchical structure, and then prioritized
+         in terms of relative importance and satisfaction with current alternatives.
+         https://en.wikipedia.org/wiki/Voice_of_the_customer </definition>
+   </concept>
+   <concept>
+      <prefLabel>Design Thinking</prefLabel>
+      <definition> a customer-focused, prototype-driven process for innovation. Tim Brown of IDEO
+         describes design thinking as “a discipline that uses the designer’s sensibility and methods
+         to match people’s needs with what is technologically feasible and what a viable business
+         strategy can convert into customer value and market opportunity. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Mockup</prefLabel>
+      <definition> a model or design replica of a product, used to gather user feedback earlier in
+         the product lifecycle. Mockups are often produced by designers prior to prototype or
+         feature testing</definition>
+   </concept>
+   <concept>
+      <prefLabel>Prototype</prefLabel>
+      <definition> a simulation of functionality or design meant to put testers in the proper
+         mindset to answer questions through behavior rather than self-reporting. Prototypes are the
+         means by which experiments generate actionable data and provide a framework by which
+         product managers can evaluate and benchmark new product features iteratively. Many tools
+         have been developed to make prototyping accessible to product managers.
+         http://blog.alpha-ux.co/why-product-teams-need-to-master-rapid-prototyping
+         http://blog.alpha-ux.co/a-guide-to-rapid-prototyping-tools-for-product-experiments
+      </definition>
+   </concept>
+   <concept>
+      <prefLabel>UI</prefLabel>
+      <definition> user interface — the visual dimension of any given product or service, as the
+         user connects to it. UI designers determine how information and features are laid out
+         visually within the greater product. </definition>
+   </concept>
+   <concept>
+      <prefLabel>UX</prefLabel>
+      <definition> user experience — how a user feels when interfacing with a product. UX designers
+         study and evaluate how users feels by looking at such things as ease of use, perception of
+         the value of the system, utility, and efficiency in performing tasks. Check out
+         uxisnotui.com for a direct comparison of the two.
+         http://www.smashingmagazine.com/2010/10/what-is-user-experience-design-overview-tools-and-resources
+         http://www.uxisnotui.com/ </definition>
+   </concept>
+   <concept>
+      <prefLabel>User Flow</prefLabel>
+      <definition> the user’s entire experience from initiating the mockup, prototype, or product to
+         closing it and returning to their life. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Variant / Design Concept</prefLabel>
+      <definition> a different version of a product or design, developed in order to see what will
+         receive the best response from customers. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Moderated User Test</prefLabel>
+      <definition> a qualitative data gathering session that makes use of live interaction to
+         follow-up on outlying responses and paint a fuller picture of the user’s experience using
+         the product. Check out Mind The Product for some great user testing tools.
+         http://mindtheproduct.com/2015/07/tools-for-customer-feedback/ </definition>
+   </concept>
+   <concept>
+      <prefLabel>Unmoderated User Test</prefLabel>
+      <definition> a user test with no interaction between the test team and the user. Results in
+         video clips of the user’s screen, audio recording of the user’s voice, and is often
+         tabulated with other user tests to generate quantitative insights </definition>
+   </concept>
+   <concept>
+      <prefLabel>Observed behavioral data / Self-reported data</prefLabel>
+      <definition> Data derived from behavior reflects unconscious or unintentional biases that may
+         be excluded when a tester is asked to self-report their experience using a mockup,
+         prototype or product
+         https://uxmag.com/articles/take-insights-in-stride-using-iterative-experiments-in-product-development
+      </definition>
+   </concept>
+   <concept>
+      <prefLabel>Perception of value</prefLabel>
+      <definition> A measure of a tester’s experience viewing a mockup, reflects how the product
+         concept translates into value in the user’s mind. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Net Promoter Score (NPS)</prefLabel>
+      <definition> how likely user is to recommend the product to a friend. This is considered to be
+         a good indication of how valuable they find the product. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Split-test &amp; A/B Test</prefLabel>
+      <definition> A survey pattern used against large, roughly equal groups of cohorts that
+         measures perception of value of two slightly different concepts.
+         http://uxmag.com/articles/how-split-testing-validates-new-product-concepts-without-code
+      </definition>
+   </concept>
+   <concept>
+      <prefLabel>Conversion rate</prefLabel>
+      <definition> The number of users who achieved a specific goal divided by the total number of
+         visitors. Often measured for a specific call-to-action, signup form, or other intended
+         goal. </definition>
+   </concept>
+
+   <category>Product</category>
+   <concept>
+      <prefLabel>Lean</prefLabel>
+      <definition> often confused with “cheap,” Lean is a term coined by Eric Ries to describe a
+         product development process focused on gathering customer feedback early and often in the
+         product lifecycle through customer development and developing a minimum viable product
+         https://blog.generalassemb.ly/lean-product-management https://twitter.com/ericries
+      </definition>
+   </concept>
+   <concept>
+      <prefLabel>GOOB</prefLabel>
+      <definition> Get out of the building — Coined by Steve Blank to refer to the process of going
+         out and talking to users instead of staying inside speculating about what they want.
+         http://www.inc.com/steve-blank/key-to-success-getting-out-of-building.html </definition>
+   </concept>
+   <concept>
+      <prefLabel>Alpha testing</prefLabel>
+      <definition> Typically done toward the end of a development process when the product is in a
+         near fully-usable state, to improve the quality of the product and ensure beta readiness.
+      </definition>
+   </concept>
+   <concept>
+      <prefLabel>Beta testing</prefLabel>
+      <definition> Typically done just prior to launch, to improve the quality of the product,
+         integrate customer input on the complete product, and ensure launch readiness.
+      </definition>
+   </concept>
+   <concept>
+      <prefLabel>Customer Development</prefLabel>
+      <definition> not to be confused with sales, marketing, or customer support, customer
+         development is the process of gaining customer insights through surveys and in-person
+         interviews. http://steveblank.com/category/customer-development-manifesto </definition>
+   </concept>
+   <concept>
+      <prefLabel>Panelists</prefLabel>
+      <definition> A group of people who fit a specific user criteria, used for surveys, interviews,
+         and prototype testing. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Landing page</prefLabel>
+      <definition> A single page website, emblematic of a larger product. Landing pages are
+         occasionally used to scaffold prototypes or mockups for the sake of providing the user with
+         extra context, or to test value propositions before building a product. </definition>
+   </concept>
+   <concept>
+      <prefLabel>MVP</prefLabel>
+      <definition> minimum viable product — A core component of Lean, an MVP is a stripped down
+         version of a product launched quickly in order to gather user feedback earlier in the
+         product lifecycle. Large companies are beginning to use “MVEs” instead of MVPs.
+         http://blog.alpha-ux.co/making-the-case-for-minimum-viable-experiments </definition>
+   </concept>
+   <concept>
+      <prefLabel> Experiment</prefLabel>
+      <definition> A tactic used to quickly gather user insights. Surveys, landing page split tests,
+         and interviews are examples of experiments.
+         http://blog.alpha-ux.co/making-the-case-for-minimum-viable-experiments </definition>
+   </concept>
+   <concept>
+      <prefLabel>Stimulus / test criteria</prefLabel>
+      <definition> the critical aspect of the experiment the user must view in order to measure
+         reaction. If the stimulus or test criteria is buried too deep within the mockup or is too
+         hard to find, the user may not know what they are supposed to be reacting to. </definition>
+   </concept>
+   <concept>
+      <prefLabel> CX</prefLabel>
+      <definition> customer experience — the interaction between a product and a customer over the
+         duration of the relationship. This includes a customer’s attraction, awareness, discovery,
+         experience, advocacy and purchase and use. </definition>
+   </concept>
+   <concept>
+      <prefLabel>USP</prefLabel>
+      <definition> unique selling proposition — the main reason why a user chooses one product over
+         another.","markups" https://blog.kissmetrics.com/unique-selling-proposition </definition>
+   </concept>
+   <concept>
+      <prefLabel>Value prop</prefLabel>
+      <definition> short for value proposition, this term describes the user’s primary motivation
+         for using the product or the main benefit they receive from it. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Pivot</prefLabel>
+      <definition> People use pivot in so many different contexts I don’t think anyone really knows
+         what it is anymore. It originally referred to a small change in a company’s business model
+         or product in order to meet customer needs, but now often refers to starting a new product
+         all together. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Incubator</prefLabel>
+      <definition> an organization that helps startups and entrepreneurs to grow by providing
+         services such as training and office space. </definition>
+   </concept>
+   <concept>
+      <prefLabel>Innovation lab / skunk works</prefLabel>
+      <definition> Typically started within a large company, an innovation lab is a small team of
+         employees tasked with building new products and businesses.
+         https://en.wikipedia.org/wiki/Skunk_Works </definition>
+   </concept>
+   <concept>
+      <prefLabel>Disruption</prefLabel>
+      <definition> coined by Clayton Christensen, disruption refers to an innovation that gives new
+         consumers access to product historically only available to consumers with a lot of money or
+         skill often with a new business model. http://www.claytonchristensen.com/key-concepts
+      </definition>
+   </concept>
+   <concept>
+      <prefLabel>Unicorn</prefLabel>
+      <definition> a startup whose valuation has exceeded (the somewhat arbitrary) $1 billion. Given
+         that most startups fail, this term is used to refer to the most successful of the most
+         successful startups. </definition>
+   </concept>
+</concepts>
