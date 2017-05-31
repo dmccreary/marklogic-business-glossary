@@ -192,7 +192,7 @@
                 href="http://yann.lecun.com/exdb/publis/pdf/lecun-88.pdf">Yann LeCun’s important
                 paper</a> on the subject.</p>
         <p>
-            <img src="/img/backprop_lecun.png" alt="Alt text"/>
+            <img src="https://deeplearning4j.org/img/backprop_lecun.png" alt="Alt text"/>
         </p>
         <p>A special form of backpropagation is called backpropagation through time, or BPTT, which
             is specifically useful for recurrent networks analyzing text and time series. With BPTT,
@@ -343,7 +343,7 @@
             hypotenuse) to compute the shape’s angles. By feeding the sides into ratios like
             these</p>
         <p>
-            <img src="/img/trig_functions2.png" alt="Alt text"/>
+            <img src="https://deeplearning4j.org/img/trig_functions2.png" alt="Alt text"/>
         </p>
         <p>we can also know the angles at which those sides intersect. Remember <a
                 href="http://mathworld.wolfram.com/SOHCAHTOA.html">SOH-CAH-TOA</a>?</p>
@@ -354,12 +354,12 @@
                 similarity</em>. You can think of words as points of light in a dark canopy,
             clustered together in constellations of meaning.</p>
         <p>
-            <img src="/img/angular_dist_cosine.png" alt="Alt text"/>
+            <img src="https://deeplearning4j.org/img/angular_dist_cosine.png" alt="Alt text"/>
         </p>
         <p>To find that distance knowing only the word vectors, we need the equation for vector dot
             multiplication (multiplying two vectors to produce a single, scalar value).</p>
         <p>
-            <img src="/img/colored_dot_product.png" alt="Alt text"/>
+            <img src="https://deeplearning4j.org/img/colored_dot_product.png" alt="Alt text"/>
         </p>
         <p>In Java, you can think of the formula to measure cosine similarity like this:</p>
         <div class="highlighter-rouge">
@@ -558,7 +558,7 @@
             positives.</p>
         <p>For f1 to be high, both recall and precision of the model have to be high.</p>
         <p>
-            <img src="/img/precision_recall.png" alt="Alt text"/>
+            <img src="https://deeplearning4j.org/img/precision_recall.png" alt="Alt text"/>
         </p>
     </concept>
     <concept>
@@ -1288,7 +1288,7 @@
         </h3>
         <p>Here is an example of tensor along dimension (TAD):</p>
         <p>
-            <img src="/img/tensorAlongDimension.png" alt="Alt text"/>
+            <img src="https://deeplearning4j.org/img/tensorAlongDimension.png" alt="Alt text"/>
         </p>
     </concept>
     <concept>
@@ -1345,13 +1345,13 @@
         <p>Therefore, we can represent two-dimensional vectors as arrows on an x-y graph, with the
             coordinates x and y each representing one of the vector’s values.</p>
         <p>
-            <img src="/img/vector.jpeg" alt="Alt text"/>
+            <img src="https://deeplearning4j.org/img/vector.jpeg" alt="Alt text"/>
         </p>
         <p>Two vectors can relate to one another mathematically, and similarities between them (and
             therefore between anything you can vectorize, including words) can be measured with
             precision.</p>
         <p>
-            <img src="/img/two_vectors2.png" alt="Alt text"/>
+            <img src="https://deeplearning4j.org/img/two_vectors2.png" alt="Alt text"/>
         </p>
         <p>As you can see, these vectors differ from one another in both their length, or magnitude,
             and in their angle, or direction. The angle is what concerns us here.</p>
