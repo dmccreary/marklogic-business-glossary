@@ -3,6 +3,7 @@ import module namespace style = "http://danmccreary.com/style" at "/modules/styl
 declare namespace dc="http://purl.org/dc/elements/1.1/";
 declare namespace rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
+declare option xdmp:output "method=html";
 
 let $title := 'List Input SKOS Glossary Concepts'
 
