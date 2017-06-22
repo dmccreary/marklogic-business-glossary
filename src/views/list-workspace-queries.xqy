@@ -33,11 +33,36 @@ let $content :=
       {for $query at $count in $queries
          return
             <div class="query">
-               <span class="field-label">{$count}. {$query/@name/string()}</span>
+               <span class="field-label">{$count}. {$query/@name/string()}, {$query/@mode/string()}</span>
                <div class="query-text">
+                 
                  <pre>{$query/text()}</pre>
                </div>
-               <a href="run-workspace-query.xqy?uri={$uri}&amp;num={$count}">run</a><br/><br/>
+               {if ($query/@mode = 'xquery')
+                  then
+                     <div>
+                        <a href="run-workspace-query.xqy?uri={$uri}&amp;num={$count}">run XQuery</a>
+                    </div>
+                    else if ($query/@mode = 'sparql')
+                    then
+                    <div>
+                        <a href="run-workspace-sparql.xqy?uri={$uri}&amp;num={$count}">run SPARQL</a>
+                    </div>
+                    else if ($query/@mode = 'sparql-update')
+                    then
+                    <div>
+                        <a href="run-workspace-sparql.xqy?uri={$uri}&amp;num={$count}">run SPARQL Update</a>
+                    </div>
+                    else if ($query/@mode = 'javascript')
+                    then
+                    <div>
+                        <a href="run-workspace-javascript.xqy?uri={$uri}&amp;num={$count}">run JavaScript</a>
+                    </div>
+                    else
+                    <div>
+                        <p>Error, unknown mode</p>
+                    </div>
+            }
             </div>
             
       }
