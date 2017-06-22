@@ -41,7 +41,7 @@ let $content :=
                {if ($query/@mode = 'xquery')
                   then
                      <div>
-                        <a href="run-workspace-query.xqy?uri={$uri}&amp;num={$count}">run XQuery</a>
+                        <a href="run-workspace-xquery.xqy?uri={$uri}&amp;num={$count}">run XQuery</a>
                     </div>
                     else if ($query/@mode = 'sparql')
                     then
@@ -51,7 +51,7 @@ let $content :=
                     else if ($query/@mode = 'sparql-update')
                     then
                     <div>
-                        <a href="run-workspace-sparql.xqy?uri={$uri}&amp;num={$count}">run SPARQL Update</a>
+                        <a href="run-workspace-sparql-update.xqy?uri={$uri}&amp;num={$count}">run SPARQL Update</a>
                     </div>
                     else if ($query/@mode = 'javascript')
                     then

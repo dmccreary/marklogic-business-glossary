@@ -2,17 +2,18 @@ xquery version "1.0-ml";
 import module namespace style = "http://danmccreary.com/style" at "/modules/style.xqy";
 declare option xdmp:output "method=html";
 
-let $title := 'Run Workspace Query'
+let $title := 'Run Workspace SPARQL'
 
 let $uri := xdmp:get-request-field('uri')
+(: the number query in the workspace :)
 let $num := xs:positiveInteger(xdmp:get-request-field('num', ''))
-let $mode := xdmp:get-request-field('mode', 'xquery')
+let $mode := xdmp:get-request-field('mode', 'sparql')
 
 return
   if (not($uri) or not($num))
      then
         <error>
-          <message>Both uri and num are required parameters.</message>
+          <message>Both the workspace uri and num are required parameters.</message>
         </error>
    else if (not(doc-available($uri)))
       then
@@ -25,7 +26,7 @@ return
 let $workspace-doc := doc($uri)/export/workspace
 let $query := $workspace-doc/query[$num]
 let $query-name := $query/@name/string()
-let $query-results := xdmp:eval($query/text())
+let $query-results := sem:sparql($query/text())
 
 let $types := xdmp:type($query-results)
       
@@ -51,7 +52,7 @@ let $content :=
             return
               <div class="result">
                  <span class="type">{xdmp:type($result)}</span>
-                 <pre>{xdmp:quote($result)}</pre>
+                 <pre>{$query-results}</pre>
               </div>
           }
        </div>
