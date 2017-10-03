@@ -89,7 +89,7 @@
             </xs:enumeration>
             <xs:enumeration value="pt">
                 <xs:annotation>
-                    <xs:documentation>Spanish</xs:documentation>
+                    <xs:documentation>Portugeuse</xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
         </xs:restriction>
