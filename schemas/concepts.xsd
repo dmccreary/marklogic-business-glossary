@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://www.w3.org/2004/02/skos/core#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    
+    <!-- XML Schema for validating a business glossary with three languages (English, Spanish and Portuguese) -->
+
+    <xs:element name="concepts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="concept" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="skos:conceptID"/>
+                                
+                            <xs:element ref="skos:prefLabel"/>
+                            
+                            <xs:element ref="skos:altLabel" minOccurs="0" maxOccurs="unbounded"/>
+
+                            <xs:element ref="skos:definition"/>
+                            
+                            <xs:element ref="skos:note" minOccurs="0" />
+
+                            
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="conceptID">
+        <xs:annotation>
+            <xs:documentation>An perminant identifier associated with this concept and assigned by the source system.  IDs should not change over time.  Re-importing a concpet with the same ID will overwrite the prior version.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:element name="prefLabel" type="skos:prefLabelType">
+        <xs:annotation>
+            <xs:documentation>The preferred label for this concept.  One one perferred labels should be used for each language, and preferred labels should be unique within a scheme.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="prefLabelType" mixed="true">
+        <xs:attribute name="lang" type="skos:languageCodeType"/>
+    </xs:complexType>
+
+    <xs:element name="altLabel">
+        <xs:annotation>
+            <xs:documentation>The an alternate label for this concept.  There can be many alternate labels for each prefLabel.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="altLabelType" mixed="true">
+        <xs:attribute name="lang" type="skos:languageCodeType"/>
+    </xs:complexType>
+
+   <!-- both prefLabel and altLabel should be uner 200 characters long -->
+    <xs:simpleType name="labelType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="200"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="definition">
+        <xs:annotation>
+            <xs:documentation>The defintion of this concept as written in a dictionary definition element.  Good defintions should be precise, concise, distinct, non-circular and not include business rules.  Use precise words whenever possible.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:any minOccurs="0" maxOccurs="unbounded"
+                    namespace="##any" processContents="skip"/>
+            </xs:sequence>
+            <xs:attribute name="lang" type="skos:languageCodeType"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes -->
+    <xs:simpleType name="languageCodeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="en">
+                <xs:annotation>
+                    <xs:documentation>English</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="es">
+                <xs:annotation>
+                    <xs:documentation>Spanish</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pt">
+                <xs:annotation>
+                    <xs:documentation>Spanish</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    <xs:element name="note">
+        <xs:annotation>
+            <xs:documentation>
+                Any additional information on the concept.  This might include approval notes, when the concept was added etc.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="10000"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+
+</xs:schema>
